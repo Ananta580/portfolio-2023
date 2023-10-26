@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -7,6 +8,10 @@ export class ThemeService {
   body = document.getElementsByTagName('body')[0];
 
   constructor() {}
+
+  get theme() {
+    return localStorage.getItem('preferred-theme') ?? 'system';
+  }
 
   initializeTheme() {
     const preferredTheme = localStorage.getItem('preferred-theme');

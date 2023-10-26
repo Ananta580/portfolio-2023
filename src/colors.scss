@@ -1,10 +1,30 @@
 :root{
 
     // Light theme colors
+
+    // Texts
     --background:white;
+    --text-color:#606060;
+    --title-color:#0f0f0f;
+
+    //Buttons
+    --primary-btn-bg:#0000000d;
+    --primary-btn-bg-hover:#00000022;
+    --primary-btn-text:#0f0f0f;
+    --primary-btn-text-hover:#0f0f0f;
 
     // Dark theme colors
     .dark{
+
+        //Texts
         --background:black;
+        --text-color:#aaa;
+        --title-color:white;
+
+        //Buttons
+        --primary-btn-bg:#0000000d;
+        --primary-btn-bg-hover:#00000027;
+        --primary-btn-text:#0f0f0f;
+        --primary-btn-text-hover:#0f0f0f;
     }
 }

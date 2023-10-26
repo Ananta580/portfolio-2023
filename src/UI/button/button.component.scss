@@ -1,0 +1,12 @@
+button{
+    line-height: 36px;
+    padding: 0 16px;
+    &.primary{
+        background-color: var(--primary-btn-bg);
+        color: var(--primary-btn-text);
+        &:hover{
+            background-color: var(--primary-btn-bg-hover);
+            color: var(--primary-btn-text-hover);
+        }
+    }
+}

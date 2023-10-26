@@ -1,1 +1,9 @@
-<p>button works!</p>
+<button
+  class="text-sm font-medium"
+  [ngClass]="{
+    primary: variant === 'primary',
+    'rounded-full': rounded === 'full'
+  }"
+>
+  <ng-content></ng-content>
+</button>
