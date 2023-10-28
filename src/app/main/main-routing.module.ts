@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { GraphicsComponent } from './pages/graphics/graphics.component';
 import { SkillComponent } from './pages/skill/skill.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { CommunityComponent } from './pages/community/community.component';
 
 const routes: Routes = [
   {
@@ -36,6 +38,14 @@ const routes: Routes = [
       {
         path: 'graphics',
         component: GraphicsComponent,
+      },
+      {
+        path: 'blog',
+        component: BlogComponent,
+      },
+      {
+        path: 'community',
+        component: CommunityComponent,
       },
       {
         path: '',
