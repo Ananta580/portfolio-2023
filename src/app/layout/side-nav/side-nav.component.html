@@ -1,22 +1,61 @@
-<div class="w-64 h-screen">
-  <div class="flex flex-col px-2 py-6">
-    <!-- Music Player -->
-    <div class="bg-red h-10">
-      <p-audio-player></p-audio-player>
-    </div>
-    <!-- Top Part -->
-    <div class="flex flex-col text-sm mt-5 border-b border-gray-200">
-      <a
-        class="p-3 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
-        ><span class="material-symbols-outlined thin">home</span> Home</a
-      >
-      <a class="p-3 flex items-center gap-3 cursor-pointer"
-        ><span class="material-symbols-outlined thin">videocam</span> Shorts</a
-      >
-      <a class="p-3 flex items-center gap-3 cursor-pointer"
-        ><span class="material-symbols-outlined thin">subscriptions</span>
-        Subscriptions</a
-      >
-    </div>
+<div class="flex flex-col px-2 py-6 h-screen fixed top-0 w-64">
+  <!-- Music Player -->
+  <p-audio-player class="mt-6" label="Ananta P."></p-audio-player>
+  <!-- Top Part -->
+  <div class="flex flex-col gap-2 text-sm py-5 pb-3 border-b border-gray-200">
+    <a
+      [routerLink]="'/home'"
+      [routerLinkActive]="'bg-gray-200 text-black'"
+      class="p-2 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
+      ><span class="material-symbols-outlined thin">home</span> Welcome</a
+    >
+    <a
+      [routerLink]="'/skill'"
+      [routerLinkActive]="'bg-gray-200 text-black'"
+      class="p-2 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
+      ><span class="material-symbols-outlined thin">videocam</span> Skills</a
+    >
+    <a
+      [routerLink]="'/experience'"
+      [routerLinkActive]="'bg-gray-200 text-black'"
+      class="p-2 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
+      ><span class="material-symbols-outlined thin">work_history</span>
+      Experience</a
+    >
+  </div>
+
+  <!-- Professional Part -->
+  <div class="flex flex-col text-sm py-5 border-b border-gray-200">
+    <p class="px-3 pb-3 font-medium text-base">Professional accounts</p>
+    <a
+      class="p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
+    >
+      <img height="20" width="20" src="../../../assets/github.svg" />
+      Github</a
+    >
+    <a
+      class="p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
+      ><img height="20" width="20" src="../../../assets/upwork.svg" /> Upwork</a
+    >
+    <a
+      class="p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
+      ><img height="20" width="20" src="../../../assets/behance.svg" />
+      Binance</a
+    >
+  </div>
+
+  <!-- Social Part -->
+  <div class="flex flex-col text-sm py-5">
+    <p class="px-3 pb-3 font-medium text-base">Social accounts</p>
+    <a
+      class="p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
+      ><img height="20" width="20" src="../../../assets/linkedin.svg" />
+      LinkedIn</a
+    >
+    <a
+      class="p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100 font-medium"
+      ><img height="20" width="20" src="../../../assets/youtube.svg" />
+      Youtube</a
+    >
   </div>
 </div>

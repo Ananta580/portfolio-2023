@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
 import { MainComponent } from './main.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { HomeComponent } from './pages/home/home.component';
+import { GraphicsComponent } from './pages/graphics/graphics.component';
+import { SkillComponent } from './pages/skill/skill.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
 
 const routes: Routes = [
   {
@@ -10,7 +14,7 @@ const routes: Routes = [
     component: MainComponent,
     children: [
       {
-        path: '',
+        path: 'home',
         component: HomeComponent,
       },
       {
@@ -18,8 +22,24 @@ const routes: Routes = [
         component: AboutComponent,
       },
       {
-        path: 'home',
-        redirectTo: '',
+        path: 'contact',
+        component: ContactComponent,
+      },
+      {
+        path: 'skill',
+        component: SkillComponent,
+      },
+      {
+        path: 'experience',
+        component: ExperienceComponent,
+      },
+      {
+        path: 'graphics',
+        component: GraphicsComponent,
+      },
+      {
+        path: '',
+        redirectTo: 'home',
         pathMatch: 'full',
       },
     ],
