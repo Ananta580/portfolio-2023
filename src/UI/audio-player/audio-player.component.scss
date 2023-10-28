@@ -1,0 +1,124 @@
+  .audio-player {
+    height: 50px;
+    width: 100%;
+    background: #0000000d;
+    color: rgb(96, 96, 96);
+    font-size: 0.75em;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  
+    display: grid;
+    grid-template-rows: 6px auto;
+    .timeline {
+      background: rgb(255, 132, 132);
+      width: 100%;
+      position: relative;
+      cursor: pointer;
+      .progress {
+        background: rgb(255, 0, 0);
+        width: 0%;
+        height: 100%;
+        transition: 0.25s;
+      }
+    }
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 0 20px;
+  
+      > * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .toggle-play {
+        &.play {
+          cursor: pointer;
+          position: relative;
+          left: 0;
+          height: 0;
+          width: 0;
+          border: 7px solid #0000;
+          border-left: 13px solid rgb(255, 0, 0);
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        &.pause {
+          height: 15px;
+          width: 20px;
+          cursor: pointer;
+          position: relative;
+          &:before {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            background: rgb(255, 0, 0);
+            content: "";
+            height: 15px;
+            width: 3px;
+          }
+          &:after {
+            position: absolute;
+            top: 0;
+            right: 8px;
+            background: rgb(255, 0, 0);
+            content: "";
+            height: 15px;
+            width: 3px;
+          }
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .time {
+        display: flex;
+  
+        > * {
+          padding: 2px;
+        }
+      }
+      .volume-container {
+        cursor: pointer;
+        
+        .volume-button {
+          height: 26px;
+            font-weight: 500;
+          display: flex;
+          align-items: center;
+          .volume {
+            transform: scale(0.7);
+          }
+        }
+        
+        position: relative;
+        z-index: 2;
+        .volume-slider {
+          position: absolute;
+          left: -10px; top: 17px;
+          z-index: -1;
+          width: 0;
+          height: 10px;
+          background: rgb(191, 191, 191);
+          transition: .25s;
+          .volume-percentage {
+            background: rgb(9, 9, 9);
+            height: 100%;
+            width: 75%;
+          }
+        }
+        &:hover {
+          .volume-slider {
+            left: -150px;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+  
