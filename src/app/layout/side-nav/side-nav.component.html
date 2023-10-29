@@ -1,26 +1,16 @@
 <div class="flex flex-col px-2 py-6 h-screen fixed top-0 w-64">
   <!-- Music Player -->
   <p-audio-player class="mt-6" label="Ananta P."></p-audio-player>
+
   <!-- Top Part -->
   <div class="flex flex-col gap-2 text-sm py-5 pb-3 border-b border-gray-200">
     <a
-      [routerLink]="'/home'"
+      *ngFor="let menu of sideMenus"
+      [routerLink]="menu.value"
       [routerLinkActive]="'bg-gray-200 text-black'"
       class="p-2 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
-      ><span class="material-symbols-outlined thin">home</span> Welcome</a
-    >
-    <a
-      [routerLink]="'/skill'"
-      [routerLinkActive]="'bg-gray-200 text-black'"
-      class="p-2 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
-      ><span class="material-symbols-outlined thin">videocam</span> Skills</a
-    >
-    <a
-      [routerLink]="'/experience'"
-      [routerLinkActive]="'bg-gray-200 text-black'"
-      class="p-2 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
-      ><span class="material-symbols-outlined thin">work_history</span>
-      Experience</a
+      ><span class="material-symbols-outlined thin">{{ menu.icon }}</span>
+      {{ menu.label }}</a
     >
   </div>
 
@@ -28,25 +18,13 @@
   <div class="flex flex-col text-sm py-5 border-b border-gray-200">
     <p class="px-3 pb-3 font-medium text-base">Professional accounts</p>
     <a
-      href="https://github.com/ananta580"
+      *ngFor="let account of professionalAccounts"
+      [href]="account.url"
       target="_blank"
       class="p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
     >
-      <img height="20" width="20" src="../../../assets/github.svg" />
-      Github</a
-    >
-    <a
-      href="https://www.upwork.com/freelancers/~0188bd9446a88c1e33"
-      target="_blank"
-      class="p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
-      ><img height="20" width="20" src="../../../assets/upwork.svg" /> Upwork</a
-    >
-    <a
-      href="https://www.behance.net/anantapoudel"
-      target="_blank"
-      class="p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
-      ><img height="20" width="20" src="../../../assets/behance.svg" />
-      Behance</a
+      <img height="20" width="20" [src]="account.image" />
+      {{ account.label }}</a
     >
   </div>
 
@@ -54,18 +32,12 @@
   <div class="flex flex-col text-sm py-5">
     <p class="px-3 pb-3 font-medium text-base">Social accounts</p>
     <a
-      href="https://www.linkedin.com/in/ananta580/"
+      *ngFor="let account of socialAccounts"
+      [href]="account.url"
       target="_blank"
       class="p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100"
-      ><img height="20" width="20" src="../../../assets/linkedin.svg" />
-      LinkedIn</a
-    >
-    <a
-      href="https://www.youtube.com/@ananta.poudel"
-      target="_blank"
-      class="p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md hover:bg-gray-100 font-medium"
-      ><img height="20" width="20" src="../../../assets/youtube.svg" />
-      Youtube</a
+      ><img height="20" width="20" [src]="account.image" />
+      {{ account.label }}</a
     >
   </div>
 </div>
