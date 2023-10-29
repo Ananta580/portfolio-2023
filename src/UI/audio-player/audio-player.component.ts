@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./audio-player.component.scss'],
 })
 export class AudioPlayerComponent implements OnInit {
-  @Input() src = '../../assets/audio.mp3';
+  @Input() src = '../../assets/audio/audio.mp3';
 
   @Input() label = 'Music';
 

@@ -15,17 +15,17 @@ export class SideNavComponent {
   professionalAccounts = [
     {
       label: 'Github',
-      image: '../../../assets/github.svg',
+      image: '../../../assets/professional/github.svg',
       url: 'https://github.com/ananta580',
     },
     {
       label: 'Upwork',
-      image: '../../../assets/upwork.svg',
+      image: '../../../assets/professional/upwork.svg',
       url: 'https://www.upwork.com/freelancers/~0188bd9446a88c1e33',
     },
     {
       label: 'Behance',
-      image: '../../../assets/behance.svg',
+      image: '../../../assets/professional/behance.svg',
       url: 'https://www.behance.net/anantapoudel',
     },
   ];
@@ -33,12 +33,12 @@ export class SideNavComponent {
   socialAccounts = [
     {
       label: 'Linkedin',
-      image: '../../../assets/linkedin.svg',
+      image: '../../../assets/social/linkedin.svg',
       url: 'https://www.linkedin.com/in/ananta580/',
     },
     {
       label: 'Youtube',
-      image: '../../../assets/youtube.svg',
+      image: '../../../assets/social/youtube.svg',
       url: 'https://www.youtube.com/@ananta.poudel',
     },
   ];

@@ -1,164 +1,36 @@
 <div class="flex flex-col gap-6 w-full p-6 px-24 items-center">
-  <!-- First Experience section -->
-  <div class="flex items-center w-full border-b pb-5 pt-3 border-gray-200">
+  <!-- Experience section -->
+  <div
+    *ngFor="let experience of workExperiences"
+    class="flex items-center w-full border-b pb-5 pt-3 border-gray-200"
+  >
     <div class="rotate-90">
-      <p class="text-xs py-1 px-4 font-semibold">NOV 2022 - PRESENT</p>
+      <p class="text-xs py-1 px-4 font-semibold">
+        {{ experience.timeline | uppercase }}
+      </p>
     </div>
 
     <div class="flex flex-col gap-3">
       <div class="flex flex-col">
         <p class="flex items-center gap-3">
-          <span class="font-semibold text-lg">Resimator</span>
+          <span class="font-semibold text-lg">{{ experience.company }}</span>
           <a
             class="cursor-pointer hover:underline"
-            href="https://izy.no/en/"
+            [href]="experience.projectUrl"
             target="_blank"
-            >IZY</a
+            >{{ experience.project | uppercase }}</a
           >
         </p>
 
-        <p class="italic text-xs">Platform for better tenant experience</p>
+        <p class="italic text-xs">{{ experience.companySlogan }}</p>
       </div>
       <div class="pb-4 px-3 rounded-bl-xl">
-        <p class="text-sm font-medium text-red-600">Senior Software Engineer</p>
-        <ul class="list-disc indent-3 ml-5 pt-3 text-sm leading-normal">
-          <li>
-            Senior Software Engineer at Izy, specializing in Angular, .NET, and
-            C# development.
-          </li>
-          <li>
-            Led web application enhancements for improved user experiences at
-            Izy.
-          </li>
-          <li>
-            Proficient in .NET for scalable solutions and seamless feature
-            integration.
-          </li>
-          <li>
-            Daily international team coordination at Izy for cross-border
-            collaboration.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Second Experience section -->
-  <div class="flex w-full items-center border-b pb-5 pt-3 border-gray-200">
-    <div class="rotate-90">
-      <p class="text-xs py-1 px-4 font-semibold">SEP 2022 - JUN 2023</p>
-    </div>
-
-    <div class="flex flex-col gap-3">
-      <div class="flex flex-col">
-        <p class="flex items-center gap-3">
-          <span class="font-semibold text-lg">Whitehat Engineering</span
-          ><a
-            class="cursor-pointer hover:underline"
-            href="https://rasiusa.com/"
-            target="_blank"
-            >RASI</a
-          >
+        <p class="text-sm font-medium text-red-600">
+          {{ experience.position }}
         </p>
-
-        <p class="italic text-xs">
-          Restaurant Accounting that Accelerates Growth
-        </p>
-      </div>
-      <div class="pb-4 px-3 rounded-bl-xl">
-        <p class="text-sm font-medium text-red-600">Senior Software Engineer</p>
         <ul class="list-disc indent-3 ml-5 pt-3 text-sm leading-normal">
-          <li>
-            Proficient in AWS, focusing on cloud infrastructure management.
-          </li>
-          <li>Developed software in C#, Angular, .NET, Node.js, and React.</li>
-          <li>
-            Innovated design patterns and maintained legacy software in a
-            research team.
-          </li>
-          <li>
-            Skillful architect in C#, Angular, .NET, Node.js, and React,
-            specializing in software design and development.
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Third Experience section -->
-  <div class="flex items-center w-full border-b pb-5 pt-3 border-gray-200">
-    <div class="rotate-90">
-      <p class="text-xs py-1 px-4 font-semibold">AUG 2021 - AUG 2022</p>
-    </div>
-
-    <div class="flex flex-col gap-3">
-      <div class="flex flex-col">
-        <p class="flex items-center gap-3">
-          <span class="font-semibold text-lg">Verisk</span>
-          <a
-            class="cursor-pointer hover:underline"
-            href="https://www.verisk.com/insurance/brands/iso/"
-            target="_blank"
-            >ISO</a
-          >
-        </p>
-
-        <p class="italic text-xs">Decision support for insurance & finances</p>
-      </div>
-      <div class="pb-4 px-3 rounded-bl-xl">
-        <p class="text-sm font-medium text-red-600">Software Engineer</p>
-        <ul class="list-disc indent-3 ml-5 pt-3 text-sm leading-normal">
-          <li>
-            Constructed full-stack software: .NET MVC, Angular, React, and
-            Node.js.
-          </li>
-          <li>Gained AWS experience in cloud infrastructure and deployment.</li>
-          <li>
-            Collaborated in Agile methodologies at a multinational company.
-          </li>
-          <li>Enhanced communication and leadership via mentoring trainees.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Fourth Experience section -->
-  <div class="flex w-full items-center pb-5 pt-3">
-    <div class="rotate-90">
-      <p class="text-xs py-1 px-4 font-semibold">DEC 2019 - AUG 2021</p>
-    </div>
-
-    <div class="flex flex-col gap-3">
-      <div class="flex flex-col">
-        <p class="flex items-center gap-3">
-          <span class="font-semibold text-lg">Crossover</span>
-          <a
-            class="cursor-pointer hover:underline"
-            href="http://sales.crossoverpms.com/"
-            target="_blank"
-            >PMS</a
-          >
-        </p>
-
-        <p class="italic text-xs">Ultimate solutions to maintain hospitality</p>
-      </div>
-      <div class="pb-4 px-3 rounded-bl-xl">
-        <p class="text-sm font-medium text-red-600">Software Engineer</p>
-        <ul class="list-disc indent-3 ml-5 pt-3 text-sm leading-normal">
-          <li>
-            Started as Intern Software Developer, learned diverse programming.
-          </li>
-          <li>
-            Promoted to Engineer, led Full-Stack projects for top Nepalese
-            hotels.
-          </li>
-          <li>
-            Mastered development phases, demonstrating expertise in software
-            engineering.
-          </li>
-          <li>
-            Progressed from intern to engineer, showcasing leadership in
-            full-stack projects.
+          <li *ngFor="let desc of experience.workDescription">
+            {{ desc }}
           </li>
         </ul>
       </div>
