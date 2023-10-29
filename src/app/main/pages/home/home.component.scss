@@ -1,0 +1,18 @@
+
+.p-text{
+    color: var(--p-text-color);
+}
+
+.section-title{
+    @apply text-xl font-medium;
+    color: var(--nav-title-color)
+}
+
+.section-arrow{
+    color: var(--nav-title-color)
+}
+
+.development-title{
+    @apply text-sm  font-medium;
+    color: var(--title-color);
+}
