@@ -2,32 +2,29 @@
   <!-- Body section -->
   <div class="flex w-[600px] flex-col items-center gap-3">
     <!-- Email  -->
-    <div class="py-2 border-b border-gray-200 flex flex-col w-full">
-      <p class="text-sm text-black font-semibold">Email</p>
+    <div class="contact-box">
+      <p class="contact-label">Email</p>
       <p class="text-base">ap.ananta.poudel@gmail.com</p>
     </div>
 
     <!-- Phone  -->
-    <div class="py-2 border-b border-gray-200 flex flex-col w-full">
-      <p class="text-sm text-black font-semibold">Phone</p>
+    <div class="contact-box">
+      <p class="contact-label">Phone</p>
       <p class="text-base">{{ contactNo }}</p>
     </div>
 
     <!-- Address  -->
-    <div class="py-2 border-b border-gray-200 flex flex-col w-full">
-      <p class="text-sm text-black font-semibold">Address</p>
+    <div class="contact-box">
+      <p class="contact-label">Address</p>
       <p class="text-base">{{ address }}</p>
     </div>
 
     <!-- Status  -->
-    <div class="py-2 border-b border-gray-200 flex flex-col w-full">
-      <p class="text-sm text-black font-semibold">Status</p>
-      <div
-        class="text-xs bg-green-100 rounded-r-xl w-fit p-2 my-1 text-black font-medium flex gap-4 items-center"
-      >
-        <span>Open to Work</span>
-
-        <p class="h-3 w-3 rounded-full bg-green-500"></p>
+    <div class="contact-box">
+      <p class="contact-label">Status</p>
+      <div class="status-box">
+        <span class="font-medium">Open to Work</span>
+        <p class="status-dot"></p>
       </div>
     </div>
   </div>

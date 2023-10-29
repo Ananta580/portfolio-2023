@@ -23,11 +23,16 @@
     --volume-slider-background:#bfbfbf;
     --volume-percentage-background:#0000000d;
 
-    // //Side Navigation Menu
+    //Side Navigation Menu
     --side-nav-button-text-hover-active:black;
     --side-nav-button-bg:transparent;
     --side-nav-button-bg-hover:#0000000d;
     --side-nav-button-bg-active:#0000000d;
+
+    //Availability Status
+    --status-bg-color:#dcfce7;
+    --status-dot-color:#22c55e;
+
 
     // Dark theme colors
     .dark{
@@ -58,5 +63,10 @@
         --side-nav-button-bg:transparent;
         --side-nav-button-bg-hover:#60606054;
         --side-nav-button-bg-active:#60606054;
+
+        //Availability Status
+        --status-bg-color:#86efac;
+        --status-dot-color:#15803d;
+
     }
 }
