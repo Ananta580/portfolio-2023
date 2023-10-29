@@ -110,7 +110,7 @@ export class HomeComponent {
         {
           image: '../../../../assets/images/foreveryng.jpg',
           title: `FOREVERYNG | Nepal's best Cosmetics website`,
-          url: 'https://ananta-poudel.com.np/#Foreveryng',
+          url: 'https://ananta-poudel.com.np/graphics#Foreveryng',
           tags: '#cosmetic #nepalibeauty',
           views: '6K views',
           timeline: '3 years ago',
@@ -118,7 +118,7 @@ export class HomeComponent {
         {
           image: '../../../../assets/images/khaiidim.jpg',
           title: `KHAAIDIM | Food delivery at your footstep`,
-          url: 'https://khatapana.com/',
+          url: 'https://ananta-poudel.com.np/graphics#Khaaidim',
           tags: '#fooddelivery #foodporn',
           views: '6K views',
           timeline: '3 years ago',
