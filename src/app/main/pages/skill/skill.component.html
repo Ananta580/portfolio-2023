@@ -1,161 +1,18 @@
 <div class="flex flex-col gap-8 w-full p-6 pt-9 px-24">
-  <div class="flex flex-col w-full gap-2">
-    <!-- Title section -->
+  <div class="flex flex-col w-full gap-2" *ngFor="let skill of skillSets">
+    <!-- Skill title -->
     <div class="flex items-center gap-6 cursor-pointer">
-      <h2 class="text-lg font-medium">Development skills</h2>
+      <h2 class="text-lg font-medium">{{ skill.name }}</h2>
     </div>
 
-    <!-- Core skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">Core</div>
+    <!-- Sub skills -->
+    <div
+      class="flex items-center gap-3 text-sm"
+      *ngFor="let subSkill of skill.subset"
+    >
+      <div class="py-2 w-40 rounded-md underline">{{ subSkill.name }}</div>
       <div class="flex items-center gap-5">
-        <p>.NET</p>
-        <p>Angular</p>
-      </div>
-    </div>
-
-    <!-- Frontend skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">Frontend</div>
-      <div class="flex items-center gap-5">
-        <p>Angular & Angularjs</p>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JS/TS</p>
-        <p>JQuery & Ajax</p>
-        <p>SCSS</p>
-        <p>Reactjs</p>
-        <p>Vuejs</p>
-      </div>
-    </div>
-
-    <!-- Backend skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">Backend</div>
-      <div class="flex items-center gap-5">
-        <p>.NET</p>
-        <p>C#</p>
-        <p>.Net Core</p>
-        <p>MVC</p>
-        <p>Nodejs</p>
-        <p>Django & Flask</p>
-      </div>
-    </div>
-
-    <!-- Database skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">Database</div>
-      <div class="flex items-center gap-5">
-        <p>SQL</p>
-        <p>MSSQL</p>
-        <p>Postgres</p>
-        <p>MySQL</p>
-        <p>NOSQL</p>
-        <p>Firebase</p>
-        <p>MongoDB</p>
-      </div>
-    </div>
-
-    <!-- Mobile App skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">Mobile App</div>
-      <div class="flex items-center gap-5">
-        <p>Ionic</p>
-        <p>Flutter</p>
-        <p>MAUI</p>
-        <p>Blazor</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="flex flex-col w-full gap-2">
-    <!-- Title section -->
-    <div class="flex items-center gap-6 cursor-pointer">
-      <h2 class="text-lg font-medium">Other software skills</h2>
-    </div>
-
-    <!-- Cloud skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">Cloud</div>
-      <div class="flex items-center gap-5">
-        <p>AWS</p>
-        <p>Google Cloud & Firebase</p>
-        <p>Sharepoint</p>
-      </div>
-    </div>
-
-    <!-- Graphics skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">UI/UX</div>
-      <div class="flex items-center gap-5">
-        <p>Adobe Illustrator</p>
-        <p>Adboe Phototshop</p>
-        <p>Figma</p>
-        <p>Adboe XD</p>
-        <p>Balsamiq</p>
-      </div>
-    </div>
-
-    <!-- PM skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">Project Management</div>
-      <div class="flex items-center gap-5">
-        <p>Agile</p>
-        <p>Jira</p>
-        <p>Trello</p>
-        <p>Clickup</p>
-      </div>
-    </div>
-
-    <!-- Version control skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">Version control</div>
-      <div class="flex items-center gap-5">
-        <p>Git</p>
-        <p>TFS</p>
-        <p>Github</p>
-        <p>Gitlab</p>
-        <p>Bitbucket</p>
-      </div>
-    </div>
-
-    <!-- CI/CD skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">CI/CD</div>
-      <div class="flex items-center gap-5">
-        <p>Bamboo</p>
-        <p>Octopus</p>
-        <p>Jenkins</p>
-        <p>Docker</p>
-        <p>Azure Devops</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="flex flex-col w-full gap-2">
-    <!-- Title section -->
-    <div class="flex items-center gap-6 cursor-pointer">
-      <h2 class="text-lg font-medium">Soft skills</h2>
-    </div>
-
-    <!-- Team skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">In team</div>
-      <div class="flex items-center gap-5">
-        <p>Mentorship</p>
-        <p>Leadership</p>
-        <p>Communication</p>
-        <p>Team work</p>
-      </div>
-    </div>
-
-    <!-- Personal skills -->
-    <div class="flex items-center gap-3 text-sm">
-      <div class="py-2 w-40 rounded-md underline">In personal</div>
-      <div class="flex items-center gap-5">
-        <p>Curious</p>
-        <p>Quick learner</p>
-        <p>Technophile</p>
+        <p *ngFor="let rootSkill of subSkill.skills">{{ rootSkill }}</p>
       </div>
     </div>
   </div>
