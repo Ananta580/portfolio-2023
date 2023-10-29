@@ -1,3 +1,4 @@
-.text-color{
+.text-description-box{
+    @apply flex items-center gap-3 pt-3 flex-wrap text-[15px];
     color: var(--p-text-color);
 }
