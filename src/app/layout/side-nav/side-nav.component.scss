@@ -1,0 +1,31 @@
+.nav-title{
+    color: var(--nav-title-color)
+}
+
+.side-nav-btn {
+    @apply p-2 flex items-center gap-3 cursor-pointer rounded-md;
+
+    &:hover {
+        background: var(--side-nav-button-bg-hover);
+        color: var(--side-nav-button-text-hover-active);
+    }
+
+    &.active {
+        background: var(--side-nav-button-bg-active);
+        color: var(--side-nav-button-text-hover-active);
+    }
+}
+
+.side-nav-social-btn {
+    @apply p-3 px-4 flex items-center gap-3 cursor-pointer rounded-md;
+
+    &:hover {
+        background: var(--side-nav-button-bg-hover);
+        color: var(--side-nav-button-text-hover-active);
+    }
+}
+
+.nav-border {
+    border-color: var(--border-color);
+}
+
