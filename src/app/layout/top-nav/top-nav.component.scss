@@ -1,0 +1,15 @@
+.top-nav{
+    @apply flex w-full px-24 gap-1 border-b sticky top-0 z-10;
+    background-color: var(--background);
+    border-color: var(--border-color);
+}
+
+.top-nav-active-item{
+    @apply border-black border-b-2;
+    color: var(--title-color);
+    border-color: var(--title-color);
+}
+
+.top-nav-inactive-item{
+    @apply hover:border-gray-400 hover:border-b-2;
+}
