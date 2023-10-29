@@ -46,13 +46,11 @@
   </a>
 
   <!-- Theme toogle section -->
-  <div
-    class="flex items-center gap-2 px-3 cursor-pointer bg-gray-100 rounded-full scale-[0.65]"
-  >
+  <div class="theme-toggler">
     <span
       *ngFor="let theme of themeSetting"
       (click)="themeService.changeTheme(theme.name)"
-      [ngClass]="{ '!text-black fill': theme.name === themeService.theme }"
+      [ngClass]="{ 'active-item fill': theme.name === themeService.theme }"
       class="material-symbols-outlined text-gray-400"
     >
       {{ theme.icon }}

@@ -13,3 +13,12 @@
 .top-nav-inactive-item{
     @apply hover:border-gray-400 hover:border-b-2;
 }
+
+.theme-toggler{
+    @apply flex items-center gap-2 px-3 cursor-pointer  rounded-full scale-[0.65];
+    background: var(--border-color);
+}
+
+.active-item{
+    color:var(--title-color) !important;
+}
