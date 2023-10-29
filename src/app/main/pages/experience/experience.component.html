@@ -1,19 +1,14 @@
-<div class="flex flex-col gap-6 w-full p-6 px-24 items-center">
+<div class="flex flex-col gap-6 w-[90%] p-6 px-24 items-center">
   <!-- Experience section -->
-  <div
-    *ngFor="let experience of workExperiences"
-    class="flex items-center w-full border-b pb-5 pt-3 border-gray-200"
-  >
-    <div class="rotate-90">
-      <p class="text-xs py-1 px-4 font-semibold">
-        {{ experience.timeline | uppercase }}
-      </p>
-    </div>
+  <div *ngFor="let experience of workExperiences" class="experience-box">
+    <p class="text-xs py-1 px-4 font-semibold">
+      {{ experience.timeline | uppercase }}
+    </p>
 
     <div class="flex flex-col gap-3">
       <div class="flex flex-col">
         <p class="flex items-center gap-3">
-          <span class="font-semibold text-lg">{{ experience.company }}</span>
+          <span class="company">{{ experience.company }}</span>
           <a
             class="cursor-pointer hover:underline"
             [href]="experience.projectUrl"
@@ -25,7 +20,7 @@
         <p class="italic text-xs">{{ experience.companySlogan }}</p>
       </div>
       <div class="pb-4 px-3 rounded-bl-xl">
-        <p class="text-sm font-medium text-red-600">
+        <p class="experience-text">
           {{ experience.position }}
         </p>
         <ul class="list-disc indent-3 ml-5 pt-3 text-sm leading-normal">

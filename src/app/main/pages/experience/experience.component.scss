@@ -1,0 +1,14 @@
+.experience-box{
+    @apply flex flex-row-reverse justify-between items-start w-full border-b pb-5 pt-3;
+    border-color: var(--border-color);
+}
+
+.company{
+    @apply font-semibold text-lg;
+    color: var(--nav-title-color);
+}
+
+.experience-text{
+    @apply text-sm font-medium;
+    color: var(--exp-text-color);
+}
