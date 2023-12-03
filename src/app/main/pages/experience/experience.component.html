@@ -1,4 +1,5 @@
-<div class="flex flex-col gap-6 w-[90%] p-6 px-24 items-center max-xl:px-5 max-lg:px-20 max-sm:px-10 max-xl:w-full">
+<div
+  class="flex flex-col gap-6 w-[90%] p-6 px-24 items-center max-xl:px-5 max-lg:px-20 max-sm:mx-10 max-sm:px-0 max-xl:w-auto">
   <!-- Experience section -->
   <div *ngFor="let experience of workExperiences" class="experience-box">
     <p class="text-xs py-1 font-semibold w-[200px] text-right max-md:hidden">
@@ -15,17 +16,17 @@
 
         <p class="italic text-xs">{{ experience.companySlogan }}</p>
 
-        <p class="text-xs py-1 font-semibold w-[200px] min-md:hidden">
+        <p class="text-xs py-1 font-semibold w-[200px] min-[768px]:hidden">
           [ {{ experience.timeline | uppercase }} ]
         </p>
       </div>
-      <div class="pb-4 pl-3 rounded-bl-xl w-full">
+      <div class="pb-4 pl-3 rounded-bl-xl w-full max-[768px]:pl-0">
         <p class="experience-text">
           {{ experience.position }}
         </p>
-        <ul class="list-disc ml-5 pt-3 text-sm leading-normal w-full">
+        <ul class="list-disc ml-5 pt-3 text-sm leading-normal w-auto">
           <li *ngFor="let desc of experience.workDescription">
-            <span class="relative left-3">{{ desc }}</span>
+            <span class="relative left-3 contents">{{ desc }}</span>
           </li>
         </ul>
       </div>
