@@ -18,7 +18,7 @@
 }
 
 .theme-toggler{
-    @apply flex items-center gap-2 px-3 cursor-pointer  rounded-full scale-[0.65] max-[800px]:fixed max-[800px]:p-3 max-[800px]:bottom-3 max-[800px]:right-3;
+    @apply flex items-center gap-2 px-3 cursor-pointer  rounded-full scale-[0.65] max-[800px]:fixed max-[800px]:p-3 max-[800px]:bottom-10 max-[800px]:right-10;
     background: var(--border-color);
 }
 
