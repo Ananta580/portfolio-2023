@@ -1,21 +1,25 @@
-<div class="flex flex-col px-2 py-6 h-screen fixed top-0 w-64">
+<p class="hidden max-lg:block cursor-pointer pt-[14px] px-2 w-min" (click)="showMenu()">
+  <span class="material-symbols-outlined">
+    menu
+  </span>
+</p>
+
+<div #sideMenu
+  class="flex flex-col px-2 py-6 h-screen fixed top-0 w-64 bg-[var(--side-nav-bg)] shadow-sm max-lg:hidden">
+  <p class="hidden max-lg:block -mt-[10px] cursor-pointer w-12" (click)="hideMenu()">
+    <span class="material-symbols-outlined">
+      menu
+    </span>
+  </p>
   <!-- Music Player -->
-  <p-audio-player
-    [src]="'../../../assets/audio/audio.mp3'"
-    class="mt-6"
-    [label]="'Ananta P.'"
-  ></p-audio-player>
+  <p-audio-player [src]="'../../../assets/audio/audio.mp3'" class="mt-6 max-lg:mt-2"
+    [label]="'Ananta P.'"></p-audio-player>
 
   <!-- Top Part -->
   <div class="flex flex-col gap-2 text-sm py-5 pb-3 border-b nav-border">
-    <a
-      *ngFor="let menu of sideMenus"
-      [routerLink]="menu.value"
-      [routerLinkActive]="'active'"
-      class="side-nav-btn"
-      ><span class="material-symbols-outlined thin">{{ menu.icon }}</span>
-      {{ menu.label }}</a
-    >
+    <a *ngFor="let menu of sideMenus" [routerLink]="menu.value" [routerLinkActive]="'active'" class="side-nav-btn"><span
+        class="material-symbols-outlined thin">{{ menu.icon }}</span>
+      {{ menu.label }}</a>
   </div>
 
   <!-- Professional Part -->
@@ -23,28 +27,17 @@
     <p class="px-3 pb-3 font-medium text-base nav-title">
       Professional accounts
     </p>
-    <a
-      *ngFor="let account of professionalAccounts"
-      [href]="account.url"
-      target="_blank"
-      [ngClass]="{ github: account.label === 'Github' }"
-      class="side-nav-social-btn"
-    >
+    <a *ngFor="let account of professionalAccounts" [href]="account.url" target="_blank"
+      [ngClass]="{ github: account.label === 'Github' }" class="side-nav-social-btn">
       <img height="20" width="20" [src]="account.image" />
-      {{ account.label }}</a
-    >
+      {{ account.label }}</a>
   </div>
 
   <!-- Social Part -->
   <div class="flex flex-col text-sm py-5">
     <p class="px-3 pb-3 font-medium text-base nav-title">Social accounts</p>
-    <a
-      *ngFor="let account of socialAccounts"
-      [href]="account.url"
-      target="_blank"
-      class="side-nav-social-btn"
-      ><img height="20" width="20" [src]="account.image" />
-      {{ account.label }}</a
-    >
+    <a *ngFor="let account of socialAccounts" [href]="account.url" target="_blank" class="side-nav-social-btn"><img
+        height="20" width="20" [src]="account.image" />
+      {{ account.label }}</a>
   </div>
 </div>

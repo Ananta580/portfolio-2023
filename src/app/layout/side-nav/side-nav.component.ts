@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'p-side-nav',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-nav.component.scss'],
 })
 export class SideNavComponent {
+  @ViewChild('sideMenu') sideMenu?: ElementRef;
+
   sideMenus = [
     { label: 'Welcome', icon: 'home', value: 'home' },
     { label: 'Skills', icon: 'videocam', value: 'skill' },
@@ -42,4 +44,16 @@ export class SideNavComponent {
       url: 'https://www.youtube.com/@ananta.poudel',
     },
   ];
+
+  hideMenu() {
+    const nat = this.sideMenu?.nativeElement as HTMLElement;
+    nat.classList.add('max-lg:hidden');
+    nat.classList.remove('max-lg:flex');
+  }
+
+  showMenu() {
+    const nat = this.sideMenu?.nativeElement as HTMLElement;
+    nat.classList.add('max-lg:flex');
+    nat.classList.remove('max-lg:hidden');
+  }
 }

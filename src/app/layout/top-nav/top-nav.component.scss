@@ -1,5 +1,8 @@
 .top-nav{
-    @apply flex w-full px-24 gap-1 border-b sticky top-0 z-10;
+    @apply flex w-full px-24 gap-1 border-b sticky top-0 z-10 max-xl:px-5 max-xl:gap-0 max-lg:px-0 max-lg:mx-20 max-lg:w-auto max-md:overflow-x-auto  max-sm:mx-10;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling: touch; /* Enables native scrolling on mobile */
     background-color: var(--background);
     border-color: var(--border-color);
 }
@@ -15,10 +18,15 @@
 }
 
 .theme-toggler{
-    @apply flex items-center gap-2 px-3 cursor-pointer  rounded-full scale-[0.65];
+    @apply flex items-center gap-2 px-3 cursor-pointer  rounded-full scale-[0.65] max-[800px]:fixed max-[800px]:p-3 max-[800px]:bottom-3 max-[800px]:right-3;
     background: var(--border-color);
 }
 
 .active-item{
     color:var(--title-color) !important;
 }
+  
+  ::-webkit-scrollbar {
+      display: none;
+  }
+

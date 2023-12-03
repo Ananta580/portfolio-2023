@@ -1,13 +1,17 @@
-<div class="flex w-full p-6 px-24 gap-5">
+<div class="flex w-full p-6 px-24 gap-5 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-12">
   <!-- Profile Image -->
-  <img
-    class="rounded-full w-40 h-40 hover:grayscale-[40%] cursor-pointer"
-    src="./../../../assets/images/mypic.jpg"
-  />
+  <img class="rounded-full w-40 h-40 hover:grayscale-[40%] cursor-pointer max-sm:hidden"
+    src="./../../../assets/images/mypic.jpg" />
 
   <!-- Title and Descriptions -->
-  <div class="flex flex-col">
-    <h1 class="text-4xl font-semibold leading-[3rem] mb-1">Ananta Poudel</h1>
+  <div class="flex flex-col w-auto max-sm:mt-10">
+    <div class="flex gap-4 items-center">
+      <img class="hidden rounded-full w-10 h-10 hover:grayscale-[40%] cursor-pointer max-sm:flex"
+        src="./../../../assets/images/mypic.jpg" />
+      <h1 class="text-4xl font-semibold leading-[3rem] mb-1">
+        Ananta Poudel
+      </h1>
+    </div>
     <p class="text-sm">
       <span>ap.ananta.poudel@gmail.com </span>
       <span class="px-2">*</span>
@@ -15,46 +19,31 @@
       <span class="px-2">*</span>
       <span>works remotely</span>
     </p>
-    <p
-      class="py-3 text-sm cursor-pointer items-center flex gap-2"
-      routerLink="/about"
-    >
-      I am a Software developer, with a hobby of graphic designing. I am
-      experienced with graphic....
+    <p class="py-3 text-sm cursor-pointer items-center flex gap-2" routerLink="/about">
+      I am a Software engineer, with a hobby of graphic designing and User inteface ...
       <span class="material-symbols-outlined text-sm">chevron_right</span>
     </p>
     <div class="flex gap-2 py-2">
       <p-button routerLink="contact">Contact info</p-button>
-      <a href="mailto:ap.ananta.poudel@gmail.com"
-        ><p-button>Send email</p-button></a
-      >
+      <a href="mailto:ap.ananta.poudel@gmail.com"><p-button>Send email</p-button></a>
     </div>
   </div>
 </div>
 
 <!-- Top Navigation bar -->
 <div class="top-nav">
-  <a
-    *ngFor="let menu of topMenus"
-    (click)="changeMenu(menu.value)"
-    [routerLink]="menu.value"
-    [ngClass]="{
+  <a *ngFor="let menu of topMenus" (click)="changeMenu(menu.value)" [routerLink]="menu.value" [ngClass]="{
       'top-nav-inactive-item': menu.value != currentMenu,
       'top-nav-active-item': menu.value === currentMenu
-    }"
-    class="py-3 px-1 mx-2 font-medium cursor-pointer first:px-0 first:ml-0"
-  >
+    }" class="py-3 px-1 mx-2 font-medium cursor-pointer first:px-0 first:ml-0">
     {{ menu.label }}
   </a>
 
   <!-- Theme toogle section -->
   <div class="theme-toggler">
-    <span
-      *ngFor="let theme of themeSetting"
-      (click)="themeService.changeTheme(theme.name)"
+    <span *ngFor="let theme of themeSetting" (click)="themeService.changeTheme(theme.name)"
       [ngClass]="{ 'active-item fill': theme.name === themeService.theme }"
-      class="material-symbols-outlined text-gray-400"
-    >
+      class="material-symbols-outlined text-gray-400">
       {{ theme.icon }}
     </span>
   </div>
