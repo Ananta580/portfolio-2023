@@ -1,5 +1,5 @@
 .experience-box{
-    @apply flex flex-row-reverse justify-between items-start w-full border-b pb-5 pt-3;
+    @apply flex flex-row-reverse justify-between items-start w-full border-b pb-5 pt-3 max-md:flex-row;
     border-color: var(--border-color);
     &:last-child{
         border: none;
