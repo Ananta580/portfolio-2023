@@ -23,9 +23,17 @@
       I am a Software engineer, with a hobby of graphic designing and User inteface ...
       <span class="material-symbols-outlined text-sm">chevron_right</span>
     </p>
-    <div class="flex gap-2 py-2">
+    <div class="flex gap-2 py-2 items-center">
       <p-button routerLink="contact">Contact info</p-button>
       <a href="mailto:ap.ananta.poudel@gmail.com"><p-button>Send email</p-button></a>
+      <!-- Theme toogle section -->
+      <div class="max-[800px]:flex hidden theme-toggler p-3 !scale-75 -ml-3 py-[11px] !gap-4">
+        <span *ngFor="let theme of themeSetting" (click)="themeService.changeTheme(theme.name)"
+          [ngClass]="{ 'active-item fill': theme.name === themeService.theme }"
+          class="material-symbols-outlined text-gray-400">
+          {{ theme.icon }}
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -40,7 +48,7 @@
   </a>
 
   <!-- Theme toogle section -->
-  <div class="theme-toggler">
+  <div class="theme-toggler flex max-[800px]:hidden">
     <span *ngFor="let theme of themeSetting" (click)="themeService.changeTheme(theme.name)"
       [ngClass]="{ 'active-item fill': theme.name === themeService.theme }"
       class="material-symbols-outlined text-gray-400">

@@ -1,4 +1,4 @@
-<div class="flex flex-col gap-6 w-[90%] p-6 px-24 items-center">
+<div class="flex flex-col gap-6 w-[90%] p-6 px-24 items-center max-xl:px-5 max-lg:px-20 max-sm:px-10">
   <!-- Experience section -->
   <div *ngFor="let experience of workExperiences" class="experience-box">
     <p class="text-xs py-1 px-4 font-semibold">
@@ -9,12 +9,8 @@
       <div class="flex flex-col">
         <p class="flex items-center gap-3">
           <span class="company">{{ experience.company }}</span>
-          <a
-            class="cursor-pointer hover:underline"
-            [href]="experience.projectUrl"
-            target="_blank"
-            >{{ experience.project | uppercase }}</a
-          >
+          <a class="cursor-pointer hover:underline" [href]="experience.projectUrl" target="_blank">{{ experience.project
+            | uppercase }}</a>
         </p>
 
         <p class="italic text-xs">{{ experience.companySlogan }}</p>
