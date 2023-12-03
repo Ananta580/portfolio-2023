@@ -61,3 +61,40 @@ html::-webkit-scrollbar-thumb:hover
 	background-color: #5f5f5f;
 }
 
+
+
+.fade-in {
+    animation: fadeIn 0.6s;
+}
+
+.fade-in-1 {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.6s;
+}
+
+.fade-out-2 {
+    animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

@@ -47,13 +47,18 @@ export class SideNavComponent {
 
   hideMenu() {
     const nat = this.sideMenu?.nativeElement as HTMLElement;
-    nat.classList.add('max-lg:hidden');
-    nat.classList.remove('max-lg:flex');
+    nat.classList.add('fade-out');
+    setTimeout(() => {
+      nat.classList.add('max-lg:hidden');
+      nat.classList.remove('max-lg:flex');
+      nat.classList.remove('fade-out');
+    }, 500);
   }
 
   showMenu() {
     const nat = this.sideMenu?.nativeElement as HTMLElement;
     nat.classList.add('max-lg:flex');
+    nat.classList.add('fade-in');
     nat.classList.remove('max-lg:hidden');
   }
 }

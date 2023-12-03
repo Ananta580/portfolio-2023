@@ -1,4 +1,4 @@
-<div class="flex w-full p-6 px-24 gap-5 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-12">
+<div class="flex w-full p-6 px-24 gap-5 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-12 fade-in-1">
   <!-- Profile Image -->
   <img class="rounded-full w-40 h-40 hover:grayscale-[40%] cursor-pointer max-sm:hidden"
     src="./../../../assets/images/mypic.jpg" />
@@ -39,11 +39,12 @@
 </div>
 
 <!-- Top Navigation bar -->
-<div class="top-nav">
+<div class="top-nav fade-in-1">
   <a *ngFor="let menu of topMenus" (click)="changeMenu(menu.value)" [routerLink]="menu.value" [ngClass]="{
       'top-nav-inactive-item': menu.value != currentMenu,
       'top-nav-active-item': menu.value === currentMenu
-    }" class="py-3 px-1 mx-2 font-medium cursor-pointer first:px-0 first:ml-0">
+    }" [routerLinkActive]="'top-nav-active-item'"
+    class="py-3 px-1 mx-2 font-medium cursor-pointer first:px-0 first:ml-0">
     {{ menu.label }}
   </a>
 

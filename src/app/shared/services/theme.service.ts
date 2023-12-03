@@ -62,10 +62,10 @@ export class ThemeService {
 
   toogleTheme() {
     if (this.body.className === 'dark') {
-      this.body.className = '';
+      this.body.className = 'fade-out-2';
       localStorage.setItem('preferred-theme', 'light');
     } else {
-      this.body.className = 'dark';
+      this.body.className = 'dark fade-in-1';
       localStorage.setItem('preferred-theme', 'dark');
     }
   }
