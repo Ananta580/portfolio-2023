@@ -1,11 +1,7 @@
-<div class="flex flex-col gap-6 w-full p-6 px-24">
-  <div
-    class="flex flex-col w-full gap-3"
-    *ngFor="let collection of graphicsCollection"
-    [id]="collection.company"
-  >
+<div class="flex flex-col gap-6 w-full p-6 px-24 max-xl:px-5 max-lg:px-20 max-sm:px-10">
+  <div class="flex flex-col w-full gap-3" *ngFor="let collection of graphicsCollection" [id]="collection.company">
     <!-- Title section -->
-    <div class="flex flex-col cursor-pointer mr-20 my-3">
+    <div class="flex flex-col cursor-pointer mr-20 my-3 max-md:mr-0 max-sm:mr-0">
       <h2 class="text-lg font-medium">{{ collection.company }}</h2>
       <p class="text-sm text-justify">
         {{ collection.description }}
@@ -13,41 +9,26 @@
     </div>
 
     <!-- Body section -->
-    <div
-      class="flex items-center gap-5 flex-wrap"
-      *ngIf="collection.companyCode != 'LEO'; else leoClubTemplate"
-    >
-      <img
-        *ngFor="let image of collection.images"
-        class="w-fit h-80 object-contain rounded-md"
-        [src]="image"
-      />
+    <div class="flex items-center gap-5 flex-wrap" *ngIf="collection.companyCode != 'LEO'; else leoClubTemplate">
+      <img *ngFor="let image of collection.images"
+        class="w-fit h-80 object-contain rounded-md max-xl:h-72 max-lg:h-56 max-sm:h-48 max-[500px]:h-[50%]"
+        [src]="image" />
     </div>
 
     <!-- For leo club -->
     <ng-template #leoClubTemplate>
       <div class="flex items-center gap-5 flex-wrap">
         <div class="flex gap-5">
-          <img
-            class="w-fit h-[640px] object-contain rounded-md"
-            [src]="collection.images[0]"
-          />
+          <img class="w-fit h-[640px] object-contain rounded-md" [src]="collection.images[0]" />
           <div class="flex flex-col gap-1">
-            <img
-              *ngFor="let image of collection.images.slice(1, 3)"
-              class="w-fit h-80 object-contain rounded-md"
-              [src]="image"
-            />
+            <img *ngFor="let image of collection.images.slice(1, 3)" class="w-fit object-contain rounded-md h-80 "
+              [src]="image" />
           </div>
         </div>
-        <ng-container
-          *ngFor="let image of collection.images.slice(3, 5); let i = index"
-        >
-          <img
-            [ngClass]="{ '!h-72': i === 1 }"
-            class="w-fit h-80 object-contain rounded-md"
-            [src]="image"
-          />
+        <ng-container *ngFor="let image of collection.images.slice(3, 5); let i = index">
+          <img [ngClass]="{ '!h-72': i === 1 }"
+            class="w-fit h-80 object-contain rounded-md max-xl:h-72 max-lg:h-56 max-sm:h-48 max-[500px]:h-[50%]"
+            [src]="image" />
         </ng-container>
       </div>
     </ng-template>
