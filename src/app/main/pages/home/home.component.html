@@ -1,4 +1,6 @@
-<div class="flex flex-col w-full p-6 pt-9 px-24 gap-8 max-xl:px-5 max-lg:px-20 max-sm:px-10 fade-in-1">
+<div
+  class="flex flex-col w-full p-6 pt-9 px-24 gap-8 max-xl:px-5 max-lg:px-20 max-sm:px-10 fade-in-1"
+>
   <!-- Introductions -->
   <div class="flex flex-col w-full gap-3 pt-1">
     <!-- Title section -->
@@ -18,12 +20,20 @@
     </div>
 
     <!-- Body section -->
-    <div class="flex items-center gap-3 flex-wrap max-[500px]:items-start max-[500px]:justify-between">
+    <div
+      class="flex items-center gap-3 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
+    >
       <!-- Cards -->
-      <a [href]="showcase.url" target="_blank"
+      <a
+        [href]="showcase.url"
+        target="_blank"
         class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%]"
-        *ngFor="let showcase of section.showCases">
-        <img class="w-full h-32  object-cover object-top rounded-lg" [src]="showcase.image" />
+        *ngFor="let showcase of section.showCases"
+      >
+        <img
+          class="w-full h-32 object-cover object-top rounded-lg"
+          [src]="showcase.image"
+        />
         <h3 class="development-title">
           {{ showcase.title }}
         </h3>
@@ -31,7 +41,7 @@
           {{ showcase.tags }}
         </p>
         <p class="text-xs flex items-center gap-2">
-          {{ showcase.views }} <span>•</span> {{ showcase.timeline }}
+          {{ showcase.workDone }} <span>•</span> {{ showcase.timeline }}
         </p>
       </a>
     </div>
