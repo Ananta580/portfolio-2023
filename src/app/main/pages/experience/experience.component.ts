@@ -8,12 +8,26 @@ import { Component } from '@angular/core';
 export class ExperienceComponent {
   workExperiences = [
     {
+      company: 'Software Q',
+      companySlogan: 'Digital Insurance Bridge For Partners',
+      project: 'Senang',
+      projectUrl: 'https://senang.io/',
+      position: 'Senior Software Engineer',
+      timeline: 'April 2024 - present',
+      workDescription: [
+        'As a Senior Software Engineer at Senang, I specialize in Angular development.',
+        'Leading the implementation of enhancements to web applications, enhancing user experiences at Senang.',
+        'My expertise lies in frontend technologies, ensuring the creation of intuitive and responsive interfaces.',
+        'Active engagement in daily coordination with an international team at Senang to facilitate cross-border collaboration.',
+      ],
+    },
+    {
       company: 'Resimator',
       companySlogan: 'Platform for better tenant experience',
       project: 'Izy',
       projectUrl: 'https://izy.no/en/',
       position: 'Senior Software Engineer',
-      timeline: 'Nov 2022 - present',
+      timeline: 'Nov 2022 - Feb 2024',
       workDescription: [
         'Senior Software Engineer at Izy, specializing in Angular, .NET, and C# development.',
         'Led web application enhancements for improved user experiences at Izy.',

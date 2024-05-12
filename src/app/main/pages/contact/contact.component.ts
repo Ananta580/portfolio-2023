@@ -12,10 +12,10 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
     if (
       Intl.DateTimeFormat().resolvedOptions().timeZone.toLocaleLowerCase() !==
-      'asia/katmandu'
+      'asia/kuala_lumpur '
     ) {
       this.contactNo = '+1-4378187032';
-      this.address = '3765 Sheppard Avenue E | Ontario | Canada';
+      this.address = '6 Amulet Street | Ontario | Canada';
     }
   }
 }
