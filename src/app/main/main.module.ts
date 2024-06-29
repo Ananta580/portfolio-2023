@@ -10,9 +10,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { GraphicsComponent } from './pages/graphics/graphics.component';
 import { SkillComponent } from './pages/skill/skill.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
+import { ShowcaseListComponent } from './pages/showcase-list/showcase-list.component';
+import { ShowcaseDetailComponent } from './pages/showcase-detail/showcase-detail.component';
 
 @NgModule({
-  declarations: [HomeComponent, MainComponent, AboutComponent, ContactComponent, GraphicsComponent, SkillComponent, ExperienceComponent],
+  declarations: [HomeComponent, MainComponent, AboutComponent, ContactComponent, GraphicsComponent, SkillComponent, ExperienceComponent, ShowcaseListComponent, ShowcaseDetailComponent],
   imports: [CommonModule, MainRoutingModule, SharedModule, LayoutModule],
 })
 export class MainModule {}

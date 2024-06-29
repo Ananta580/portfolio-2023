@@ -1,0 +1,42 @@
+<div class="flex">
+  <p-side-nav class="w-64 max-lg:w-auto max-lg:fixed max-lg:z-50"></p-side-nav>
+  <div class="block relative w-[calc(100%-256px)] max-lg:w-[calc(100%)]">
+    <div class="p-10">
+      <a class="text-xs flex gap-3 items-center" routerLink="/"
+        ><span class="material-symbols-outlined text-lg">west</span> Back to
+        home page</a
+      >
+      <h2 class="text-xl my-5">Web applications</h2>
+
+      <!-- Body section -->
+      <div
+        class="flex mt-5 items-center gap-3 gap-y-5 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
+      >
+        <!-- Cards -->
+        <a
+          [href]="showcase.url"
+          target="_blank"
+          class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%]"
+          *ngFor="let showcase of section.showCases"
+        >
+          <img
+            class="w-full h-auto object-cover object-top rounded-lg"
+            [src]="showcase.image"
+          />
+          <h3 class="development-title">
+            {{ showcase.title }}
+          </h3>
+          <p class="text-xs text-blue-500 -my-1 font-medium">
+            {{ showcase.tags }}
+          </p>
+          <p class="text-xs flex items-center gap-2">
+            {{ showcase.workDone }}
+          </p>
+          <!-- <p class="text-xs flex items-center gap-2">
+        {{ showcase.workedDate | dateDifference }} ago
+      </p> -->
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

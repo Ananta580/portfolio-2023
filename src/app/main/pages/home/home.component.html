@@ -14,14 +14,19 @@
   <!-- Section -->
   <div class="flex flex-col w-full gap-3" *ngFor="let section of sections">
     <!-- Title section -->
-    <div class="flex items-center gap-6 cursor-pointer">
+    <div class="flex items-center gap-4 cursor-pointer">
       <h2 class="section-title">{{ section.name }}</h2>
-      <span class="material-symbols-outlined section-arrow">east</span>
+      <span
+        routerLink="/showcase/1"
+        class="material-symbols-outlined text-base font-bold"
+      >
+        fullscreen
+      </span>
     </div>
 
     <!-- Body section -->
     <div
-      class="flex items-center gap-3 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
+      class="flex items-center gap-3 gap-y-5 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
     >
       <!-- Cards -->
       <a
@@ -31,7 +36,7 @@
         *ngFor="let showcase of section.showCases"
       >
         <img
-          class="w-full h-32 object-cover object-top rounded-lg"
+          class="w-full h-auto object-cover object-top rounded-lg"
           [src]="showcase.image"
         />
         <h3 class="development-title">
@@ -41,9 +46,19 @@
           {{ showcase.tags }}
         </p>
         <p class="text-xs flex items-center gap-2">
-          {{ showcase.workDone }} <span>•</span> {{ showcase.timeline }}
+          {{ showcase.workDone }}
         </p>
+        <!-- <p class="text-xs flex items-center gap-2">
+          {{ showcase.workedDate | dateDifference }} ago
+        </p> -->
       </a>
+    </div>
+
+    <div
+      *ngIf="section.showCases.length > 5"
+      class="p-2 flex gap-3 items-center px-5 view-more rounded-md w-auto cursor-pointer mt-3"
+    >
+      View all <span class="material-symbols-outlined text-lg">east</span>
     </div>
   </div>
 </div>
