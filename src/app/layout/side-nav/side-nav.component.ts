@@ -9,9 +9,9 @@ export class SideNavComponent {
   @ViewChild('sideMenu') sideMenu?: ElementRef;
 
   sideMenus = [
-    { label: 'Welcome', icon: 'home', value: 'home' },
-    { label: 'Skills', icon: 'videocam', value: 'skill' },
-    { label: 'Experience', icon: 'work_history', value: 'experience' },
+    { label: 'Welcome', icon: 'home', value: '/home' },
+    { label: 'Skills', icon: 'videocam', value: '/skill' },
+    { label: 'Experience', icon: 'work_history', value: '/experience' },
   ];
 
   professionalAccounts = [
