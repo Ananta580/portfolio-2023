@@ -88,7 +88,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         image: '../../../../assets/images/softwareqadminportal.jpg',
         title:
-          'Admin Portal for managing overall flow and data for Vehicle Portal',
+          'Admin Portal for managing overall flow and data for Vehicle Portal.',
         url: 'https://khatapana.com/',
         tags: '#Freelancing',
         workDone: 'Frontend (Angular)',
