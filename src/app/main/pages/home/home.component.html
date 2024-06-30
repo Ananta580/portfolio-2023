@@ -17,7 +17,7 @@
     <div class="flex items-center gap-4 cursor-pointer">
       <h2 class="section-title">{{ section.name }}</h2>
       <span
-        routerLink="/showcase/1"
+        [routerLink]="'/showcase/' + section.id"
         class="material-symbols-outlined text-base font-bold"
       >
         fullscreen
@@ -33,7 +33,7 @@
         [href]="showcase.url"
         target="_blank"
         class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%]"
-        *ngFor="let showcase of section.showCases"
+        *ngFor="let showcase of section.showCases | slice : 0 : 5"
       >
         <img
           class="w-full h-auto object-cover object-top rounded-lg"
@@ -48,14 +48,15 @@
         <p class="text-xs flex items-center gap-2">
           {{ showcase.workDone }}
         </p>
-        <!-- <p class="text-xs flex items-center gap-2">
+        <p class="text-[0.6rem] -mt-2 flex items-center gap-2">
           {{ showcase.workedDate | dateDifference }} ago
-        </p> -->
+        </p>
       </a>
     </div>
 
     <div
       *ngIf="section.showCases.length > 5"
+      [routerLink]="'/showcase/' + section.id"
       class="p-2 flex gap-3 items-center px-5 view-more rounded-md w-auto cursor-pointer mt-3"
     >
       View all <span class="material-symbols-outlined text-lg">east</span>

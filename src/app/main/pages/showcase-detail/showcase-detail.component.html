@@ -1,1 +1,26 @@
-<p>showcase-detail works!</p>
+<div class="flex">
+  <p-side-nav class="w-64 max-lg:w-auto max-lg:fixed max-lg:z-50"></p-side-nav>
+  <div class="block relative w-[calc(100%-256px)] max-lg:w-[calc(100%)]">
+    <div class="p-10" *ngIf="showcase">
+      <a
+        class="text-xs flex gap-3 items-center cursor-pointer"
+        (click)="goBack()"
+        ><span class="material-symbols-outlined text-lg">west</span> Go back</a
+      >
+      <div class="my-7 flex flex-col gap-2">
+        <h2 class="text-2xl font-medium">{{ showcase.title }}</h2>
+        <p>
+          Crossover Nepal
+          <span class="mx-2"> ● </span>
+          <span>{{ showcase.workedDate | dateDifference }} ago</span>
+        </p>
+      </div>
+
+      <div class="flex gap-5">
+        <img [src]="showcase.image" class="w-[50%] rounded-md" />
+
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>

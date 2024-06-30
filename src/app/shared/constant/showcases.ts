@@ -1,13 +1,56 @@
-export const SHOWCASE_SECTION = [
+import { ShowcaseSection } from '../models/showcase';
+
+export const SHOWCASE_SECTION: ShowcaseSection[] = [
   {
+    id: 1,
     name: 'Web applications',
     showCases: [
       {
         image: '../../../../assets/images/crossoverpms.jpg',
-        title: 'Khatapana | Simplest way to manage your money!',
+        title: 'Crossover Hotel & Resort Management Software',
         url: 'https://khatapana.com/',
-        tags: '#Freelancing',
-        workDone: 'Frontend (Angular)',
+        tags: '#crossover-nepal #pms',
+        workDone: '.Net Core | Angular | Ant design',
+        workedDate: new Date('2019/12/20'),
+      },
+      {
+        image: '../../../../assets/images/crossoverappointment.jpg',
+        title: 'BHC Patient Appointment Administration Software',
+        url: 'https://khatapana.com/',
+        tags: '#crossover #bhc #healthcare',
+        workDone: 'Angular | .Net API | Material UI',
+        workedDate: new Date('2020/07/12'),
+      },
+      {
+        image: '../../../../assets/images/veriskadmintool.jpg',
+        title: 'Verisk Insurance Claims Management Admin Tool',
+        url: 'https://khatapana.com/',
+        tags: '#verisk #iso #insurance',
+        workDone: '.Net | Angular | AWS',
+        workedDate: new Date('2021/08/20'),
+      },
+      {
+        image: '../../../../assets/images/veriskinsuranceclaim.jpg',
+        title: 'Verisk’s claims solutions with claims management',
+        url: 'https://khatapana.com/',
+        tags: '#insurance #verisk #claims',
+        workDone: '.Net | Add-ins | Angular | SP',
+        workedDate: new Date('2021/08/20'),
+      },
+      {
+        image: '../../../../assets/images/whitehatrasi.jpg',
+        title: 'RASI : Restaurant Accounting that Accelerates Growth',
+        url: 'https://khatapana.com/',
+        tags: '#restaurant #accounting #rasi',
+        workDone: '.Net | AWS | React & NodeJS',
+        workedDate: new Date('2022/08/18'),
+      },
+      {
+        image: '../../../../assets/images/whitehatuniversal.jpg',
+        title: 'RASI Universal Services for Backoffice support',
+        url: 'https://khatapana.com/',
+        tags: '#accounting #backoffice #universal',
+        workDone: 'React | Node JS | AWS & Postgres',
         workedDate: new Date('2019/07/12'),
       },
       {
@@ -61,6 +104,7 @@ export const SHOWCASE_SECTION = [
     ],
   },
   {
+    id: 2,
     name: 'Mobile applications',
     showCases: [
       {
@@ -106,6 +150,7 @@ export const SHOWCASE_SECTION = [
     ],
   },
   {
+    id: 3,
     name: 'Graphics design',
     showCases: [
       {

@@ -1,5 +1,8 @@
+import { Location } from '@angular/common';
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { SHOWCASE_SECTION } from 'src/app/shared/constant/showcases';
+import { ShowcaseSection } from 'src/app/shared/models/showcase';
 
 @Component({
   selector: 'p-showcase-list',
@@ -7,5 +10,14 @@ import { SHOWCASE_SECTION } from 'src/app/shared/constant/showcases';
   styleUrls: ['./showcase-list.component.scss'],
 })
 export class ShowcaseListComponent {
-  section = SHOWCASE_SECTION[0];
+  section?: ShowcaseSection;
+
+  constructor(private _route: ActivatedRoute, private location: Location) {
+    const id = this._route.snapshot.paramMap.get('id');
+    if (id) this.section = SHOWCASE_SECTION.find((x) => x.id == Number(id));
+  }
+
+  goBack() {
+    this.location.back();
+  }
 }

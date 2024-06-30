@@ -1,12 +1,14 @@
 <div class="flex">
   <p-side-nav class="w-64 max-lg:w-auto max-lg:fixed max-lg:z-50"></p-side-nav>
   <div class="block relative w-[calc(100%-256px)] max-lg:w-[calc(100%)]">
-    <div class="p-10">
-      <a class="text-xs flex gap-3 items-center" routerLink="/"
+    <div *ngIf="section" class="p-10">
+      <a
+        class="text-xs flex gap-3 items-center cursor-pointer"
+        (click)="goBack()"
         ><span class="material-symbols-outlined text-lg">west</span> Back to
         home page</a
       >
-      <h2 class="text-xl my-5">Web applications</h2>
+      <h2 class="text-2xl my-7 font-medium">{{ section.name }}</h2>
 
       <!-- Body section -->
       <div
@@ -14,8 +16,7 @@
       >
         <!-- Cards -->
         <a
-          [href]="showcase.url"
-          target="_blank"
+          routerLink="/showcase-detail/1"
           class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%]"
           *ngFor="let showcase of section.showCases"
         >
@@ -32,9 +33,9 @@
           <p class="text-xs flex items-center gap-2">
             {{ showcase.workDone }}
           </p>
-          <!-- <p class="text-xs flex items-center gap-2">
-        {{ showcase.workedDate | dateDifference }} ago
-      </p> -->
+          <p class="text-[0.6rem] -mt-2 flex items-center gap-2">
+            {{ showcase.workedDate | dateDifference }} ago
+          </p>
         </a>
       </div>
     </div>
