@@ -1,13 +1,16 @@
 <div class="flex">
   <p-side-nav class="w-64 max-lg:w-auto max-lg:fixed max-lg:z-50"></p-side-nav>
   <div class="block relative w-[calc(100%-256px)] max-lg:w-[calc(100%)]">
-    <div class="p-10 max-w-[80%]" *ngIf="showcase">
+    <div
+      class="flex flex-col w-full p-6 pt-9 px-24 gap-8 max-xl:px-5 max-lg:px-20 max-sm:px-10 fade-in-1"
+      *ngIf="showcase"
+    >
       <a
         class="text-xs flex gap-3 items-center cursor-pointer"
         (click)="goBack()"
         ><span class="material-symbols-outlined text-lg">west</span> Go back</a
       >
-      <div class="my-7 flex flex-col gap-2">
+      <div class="flex flex-col gap-2">
         <h2 class="text-2xl font-medium">{{ showcase.title }}</h2>
         <p class="text-sm flex gap-2 items-center">
           <span class="text-[var(--exp-text-color)]">{{
@@ -39,8 +42,11 @@
         <p class="text-xs text-blue-500">{{ showcase.tags }}</p>
       </div>
 
-      <div class="flex gap-10">
-        <img [src]="showcase.image" class="w-[55%] h-fit rounded-md" />
+      <div class="flex gap-10 flex-row max-lg:flex-col">
+        <img
+          [src]="showcase.image"
+          class="w-[55%] h-fit rounded-md max-lg:w-[100%]"
+        />
 
         <div class="flex justify-center flex-col gap-3">
           <div *ngFor="let skill of showcase.skills">
@@ -50,9 +56,9 @@
         </div>
       </div>
 
-      <p class="mt-8">{{ showcase.subtitle }}</p>
+      <p>{{ showcase.subtitle }}</p>
 
-      <div class="mt-8 text-justify flex gap-4 flex-col">
+      <div class="text-justify flex gap-4 flex-col">
         <p
           class="even:p-4 even:border even:rounded-md border-[var(--border-color)] even:bg-[var(--border-color)] even:text-[var(--nav-title-color)]"
           *ngFor="let item of showcase.body; let i = index"
@@ -61,14 +67,14 @@
         </p>
       </div>
 
-      <div class="text-justify mt-8">
+      <div>
         <h2 class="text-lg mb-1">My Responsibilities</h2>
         <ul class="list-inside list-disc">
           <li *ngFor="let item of showcase.responsibilities">{{ item }}</li>
         </ul>
       </div>
 
-      <div class="my-8 text-justify">
+      <div>
         <h2 class="text-lg mb-1">Learning outcomes</h2>
         <ul class="list-inside list-disc">
           <li *ngFor="let item of showcase.learningOutcomes">{{ item }}</li>
