@@ -39,7 +39,7 @@ export class ThemeService {
     if (darkThemeMq.matches) {
       this.body.className = 'dark';
     } else {
-      this.body.className = '';
+      this.body.className = 'light';
     }
   }
 
@@ -56,7 +56,7 @@ export class ThemeService {
     }
     // Otherwise light
     else {
-      this.body.className = '';
+      this.body.className = 'light';
     }
   }
 

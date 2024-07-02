@@ -10,6 +10,7 @@ export interface Showcase {
   companyName?: string;
   image: string;
   title: string;
+  bgClass?: string;
   subtitle?: string;
   responsibilities?: string[];
   learningOutcomes?: string[];

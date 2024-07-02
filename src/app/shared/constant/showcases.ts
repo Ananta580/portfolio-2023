@@ -9,6 +9,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         id: 1,
         isPrivate: true,
         companyName: 'Crossover Nepal',
+        bgClass: 'bg-blue-100 dark:bg-blue-950',
         image: '../../../../assets/images/crossoverpms.jpg',
         title: 'Crossover Hotel & Resort Management Software',
         subtitle: `
@@ -73,6 +74,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 2,
         companyName: 'Crossover Nepal * BHC',
+        bgClass: 'bg-green-100 dark:bg-green-950',
         image: '../../../../assets/images/crossoverappointment.jpg',
         title: 'BHC Patient Appointment Administration Software',
         url: 'https://khatapana.com/',
@@ -83,6 +85,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 3,
         companyName: 'Verisk ISO',
+        bgClass: 'bg-red-100 dark:bg-red-950',
         image: '../../../../assets/images/veriskadmintool.jpg',
         title: 'Verisk Insurance Claims Management Admin Tool',
         url: 'https://khatapana.com/',
@@ -93,6 +96,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 4,
         companyName: 'Verisk ISO',
+        bgClass: 'bg-purple-100 dark:bg-purple-950',
         image: '../../../../assets/images/veriskinsuranceclaim.jpg',
         title: 'Verisk’s claims solutions with claims management',
         url: 'https://khatapana.com/',
@@ -104,6 +108,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         id: 5,
         image: '../../../../assets/images/whitehatrasi.jpg',
         companyName: 'RASI * Whitehat',
+        bgClass: 'bg-pink-100 dark:bg-pink-950',
         title: 'RASI : Restaurant Accounting that Accelerates Growth',
         url: 'https://khatapana.com/',
         tags: '#restaurant #accounting #rasi',

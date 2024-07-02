@@ -45,7 +45,7 @@
       <div class="flex gap-10 flex-row max-lg:flex-col">
         <img
           [src]="showcase.image"
-          class="w-[55%] h-fit rounded-md max-lg:w-[100%]"
+          class="w-[55%] h-fit rounded-md max-lg:w-[100%] shadow-lg"
         />
 
         <div class="flex justify-center flex-col gap-3">
@@ -81,5 +81,11 @@
         </ul>
       </div>
     </div>
+
+    <!-- Background effect -->
+    <div
+      [ngClass]="showcase?.bgClass"
+      class="rounded-md h-[50vh] right-32 top-52 left-20 absolute -z-10 blur-3xl"
+    ></div>
   </div>
 </div>
