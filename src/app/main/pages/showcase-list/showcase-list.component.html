@@ -16,8 +16,8 @@
       >
         <!-- Cards -->
         <a
-          routerLink="/showcase-detail/1"
-          class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%]"
+          (click)="showDetail(showcase)"
+          class="flex cursor-pointer flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%]"
           *ngFor="let showcase of section.showCases"
         >
           <img

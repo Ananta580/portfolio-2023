@@ -1,7 +1,7 @@
 <div class="flex">
   <p-side-nav class="w-64 max-lg:w-auto max-lg:fixed max-lg:z-50"></p-side-nav>
   <div class="block relative w-[calc(100%-256px)] max-lg:w-[calc(100%)]">
-    <div class="p-10" *ngIf="showcase">
+    <div class="p-10 max-w-[80%]" *ngIf="showcase">
       <a
         class="text-xs flex gap-3 items-center cursor-pointer"
         (click)="goBack()"
@@ -9,17 +9,68 @@
       >
       <div class="my-7 flex flex-col gap-2">
         <h2 class="text-2xl font-medium">{{ showcase.title }}</h2>
-        <p>
-          Crossover Nepal
-          <span class="mx-2"> ● </span>
+        <p class="text-sm flex gap-2 items-center">
+          <span class="text-[var(--exp-text-color)]">{{
+            showcase.companyName
+          }}</span>
+          <span> ● </span>
           <span>{{ showcase.workedDate | dateDifference }} ago</span>
+
+          <a
+            class="ml-5 py-[2px] px-3 border rounded-full border-red-600 flex gap-2 items-center hover:bg-red-600 hover:text-white"
+            target="_blank"
+            [href]="showcase.url"
+          >
+            <ng-container *ngIf="showcase.isPrivate">
+              Private
+              <span class="text-sm material-symbols-outlined">
+                water_lock
+              </span>
+            </ng-container>
+            <ng-container *ngIf="!showcase.isPrivate">
+              Open Link
+              <span class="text-sm material-symbols-outlined">
+                open_in_new
+              </span>
+            </ng-container>
+          </a>
+        </p>
+
+        <p class="text-xs text-blue-500">{{ showcase.tags }}</p>
+      </div>
+
+      <div class="flex gap-10">
+        <img [src]="showcase.image" class="w-[55%] h-fit rounded-md" />
+
+        <div class="flex justify-center flex-col gap-3">
+          <div *ngFor="let skill of showcase.skills">
+            <h2 class="text-lg mb-1">{{ skill.name }}</h2>
+            <span class="text-sm">{{ skill.list.join("  |  ") }}</span>
+          </div>
+
+          <!-- <p [innerHTML]="showcase.subtitle_one"></p>
+          <p class="text-sm" [innerHTML]="showcase.subtitle_two"></p> -->
+        </div>
+      </div>
+
+      <div class="mt-8 text-justify">
+        <p *ngFor="let item of showcase.body; let i = index">
+          {{ item }} <br /><br />
         </p>
       </div>
 
-      <div class="flex gap-5">
-        <img [src]="showcase.image" class="w-[50%] rounded-md" />
+      <div class="text-justify">
+        <h2 class="text-lg mb-1">My Responsibilities</h2>
+        <ul class="list-inside list-disc">
+          <li *ngFor="let item of showcase.responsibilities">{{ item }}</li>
+        </ul>
+      </div>
 
-        <div></div>
+      <div class="my-8 text-justify">
+        <h2 class="text-lg mb-1">Learning outcomes</h2>
+        <ul class="list-inside list-disc">
+          <li *ngFor="let item of showcase.learningOutcomes">{{ item }}</li>
+        </ul>
       </div>
     </div>
   </div>

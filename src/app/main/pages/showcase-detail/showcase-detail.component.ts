@@ -14,8 +14,11 @@ export class ShowcaseDetailComponent {
 
   constructor(private _route: ActivatedRoute, private location: Location) {
     const id = this._route.snapshot.paramMap.get('id');
-    if (id) {
-      this.showcase = SHOWCASE_SECTION[0].showCases[0];
+    const parentId = this._route.snapshot.queryParamMap.get('parentId');
+    if (id && parentId) {
+      this.showcase = SHOWCASE_SECTION.find(
+        (x) => x.id == Number(parentId)
+      )?.showCases.find((x) => x.id == Number(id));
     }
   }
 
