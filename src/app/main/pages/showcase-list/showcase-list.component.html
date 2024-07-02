@@ -1,18 +1,21 @@
 <div class="flex">
   <p-side-nav class="w-64 max-lg:w-auto max-lg:fixed max-lg:z-50"></p-side-nav>
   <div class="block relative w-[calc(100%-256px)] max-lg:w-[calc(100%)]">
-    <div *ngIf="section" class="p-10">
+    <div
+      *ngIf="section"
+      class="flex flex-col w-full p-6 pt-9 px-24 gap-8 max-xl:px-5 max-lg:px-20 max-sm:px-10 fade-in-1"
+    >
       <a
         class="text-xs flex gap-3 items-center cursor-pointer"
         (click)="goBack()"
         ><span class="material-symbols-outlined text-lg">west</span> Back to
         home page</a
       >
-      <h2 class="text-2xl my-7 font-medium">{{ section.name }}</h2>
+      <h2 class="text-2xl font-medium">{{ section.name }}</h2>
 
       <!-- Body section -->
       <div
-        class="flex mt-5 items-center gap-3 gap-y-5 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
+        class="flex items-center gap-3 gap-y-5 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
       >
         <!-- Cards -->
         <a
