@@ -11,18 +11,14 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         companyName: 'Crossover Nepal',
         image: '../../../../assets/images/crossoverpms.jpg',
         title: 'Crossover Hotel & Resort Management Software',
-        subtitle_one: `
+        subtitle: `
         Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
         `,
-        subtitle_two: `
-        Crossover HMS is one of the best for keeping track of guest room booking, reservations, POS services, banquet services, inventory management, accounting, and bill processing, which will help the hotel to function in an effective manner, personalizing the guest experience, and on the whole, ensuring that the guest has a wonderful stay.
-        `,
         body: [
-          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling for groups and individuals, guest check-ins and room transfers, guest folio management, and a wide range of guest services like extra beds and complaints tracking. It also includes detailed reporting on guest arrivals, departures, room allocations, and occupancy, providing a seamless and efficient front desk operation.',
-          'The POS system supports multiple outlets, such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, and order processing with various billing methods. The system also provides detailed sales reports, KOT and BOT reports, and revenue segregation to enhance operational efficiency and profitability.',
-          'The banquet management module streamlines event management, handling hall bookings, seat arrangements, F&B menu management, and bill settlements for events like weddings, meetings, and parties. It includes comprehensive reporting on daily collections, bookings, hall availability, and running events, ensuring smooth event operations.',
-          'The housekeeping and laundry modules ensure up-to-date room status, inventory transactions, and seamless coordination with laundry services. This ensures timely service delivery and enhances the overall guest experience, including minibar management and guest billing integration.',
-          'The accounts and inventory modules provide extensive financial management features, including fiscal year transactions, ledger creation, voucher management, and batch posting. The system offers detailed financial reports, such as cash flow, aging reports, trial balances, and audit logs. The inventory management system handles product management, purchase orders, inventory movement tracking, and detailed stock reports, ensuring efficient resource management and financial transparency.',
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
         ],
         skills: [
           {

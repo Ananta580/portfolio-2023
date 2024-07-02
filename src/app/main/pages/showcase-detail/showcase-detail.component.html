@@ -47,19 +47,21 @@
             <h2 class="text-lg mb-1">{{ skill.name }}</h2>
             <span class="text-sm">{{ skill.list.join("  |  ") }}</span>
           </div>
-
-          <!-- <p [innerHTML]="showcase.subtitle_one"></p>
-          <p class="text-sm" [innerHTML]="showcase.subtitle_two"></p> -->
         </div>
       </div>
 
-      <div class="mt-8 text-justify">
-        <p *ngFor="let item of showcase.body; let i = index">
-          {{ item }} <br /><br />
+      <p class="mt-8">{{ showcase.subtitle }}</p>
+
+      <div class="mt-8 text-justify flex gap-4 flex-col">
+        <p
+          class="even:p-4 even:border even:rounded-md border-[var(--border-color)] even:bg-[var(--border-color)] even:text-[var(--nav-title-color)]"
+          *ngFor="let item of showcase.body; let i = index"
+        >
+          {{ item }}
         </p>
       </div>
 
-      <div class="text-justify">
+      <div class="text-justify mt-8">
         <h2 class="text-lg mb-1">My Responsibilities</h2>
         <ul class="list-inside list-disc">
           <li *ngFor="let item of showcase.responsibilities">{{ item }}</li>
