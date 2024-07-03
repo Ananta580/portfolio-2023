@@ -9,7 +9,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         id: 1,
         isPrivate: true,
         companyName: 'Crossover Nepal',
-        bgClass: 'bg-blue-100 dark:bg-blue-950',
+        bgClass: 'bg-blue-100 dark:bg-blue-950 dark:bg-opacity-50',
         image: '../../../../assets/images/crossoverpms.jpg',
         title: 'Crossover Hotel & Resort Management Software',
         subtitle: `
@@ -74,7 +74,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 2,
         companyName: 'Crossover Nepal * BHC',
-        bgClass: 'bg-green-100 dark:bg-green-950',
+        bgClass: 'bg-green-100 dark:bg-green-950 dark:bg-opacity-50',
         image: '../../../../assets/images/crossoverappointment.jpg',
         title: 'BHC Patient Appointment Administration Software',
         subtitle: `
@@ -139,7 +139,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 3,
         companyName: 'Verisk ISO',
-        bgClass: 'bg-red-100 dark:bg-red-950',
+        bgClass: 'bg-red-100 dark:bg-red-950 dark:bg-opacity-50',
         image: '../../../../assets/images/veriskadmintool.jpg',
         title: 'Verisk Insurance Claims Management Admin Tool',
         subtitle: `
@@ -204,7 +204,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 4,
         companyName: 'Verisk ISO',
-        bgClass: 'bg-purple-100 dark:bg-purple-950',
+        bgClass: 'bg-indigo-100 dark:bg-indigo-950 dark:bg-opacity-50',
         image: '../../../../assets/images/veriskinsuranceclaim.jpg',
         title: 'Verisk’s claims solutions with claims management',
         subtitle: `
@@ -270,7 +270,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         id: 5,
         image: '../../../../assets/images/whitehatrasi.jpg',
         companyName: 'RASI * Whitehat',
-        bgClass: 'bg-pink-100 dark:bg-pink-950',
+        bgClass: 'bg-fuchsia-100 dark:bg-fuchsia-950 dark:bg-opacity-50',
         title: 'RASI : Restaurant Accounting that Accelerates Growth',
         subtitle: `
         Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
@@ -334,6 +334,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 6,
         companyName: 'RASI * Whitehat',
+        bgClass: 'bg-sky-100 dark:bg-sky-950 dark:bg-opacity-50',
         image: '../../../../assets/images/whitehatuniversal.jpg',
         title: 'RASI Universal Services for Backoffice support',
         subtitle: `
@@ -398,6 +399,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 7,
         companyName: 'Resimator * IZY',
+        bgClass: 'bg-cyan-100 dark:bg-cyan-950 dark:bg-opacity-50',
         image: '../../../../assets/images/izyportal.jpg',
         title: 'IZY Portal Simpler everyday life for every landlords',
         subtitle: `
@@ -462,8 +464,63 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 8,
         companyName: 'Resimator * IZY',
+        bgClass: 'bg-slate-200 dark:bg-slate-900',
         image: '../../../../assets/images/izy.jpg',
         title: 'IZY Web Everything you need in one application',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://khatapana.com/',
         tags: '#Freelancing',
         workDone: 'Frontend (Angular)',
@@ -472,8 +529,63 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 9,
         companyName: 'SoftwareQ * Senang',
+        bgClass: 'bg-pink-100 dark:bg-pink-950 dark:bg-opacity-50',
         image: '../../../../assets/images/softwareqlp.jpg',
         title: 'Various websites for insurance providers linked with Senang',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://khatapana.com/',
         tags: '#Freelancing',
         workDone: 'Frontend (Angular)',
@@ -482,8 +594,63 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 10,
         companyName: 'SoftwareQ * Senang',
+        bgClass: 'bg-pink-100 dark:bg-pink-950 dark:bg-opacity-50',
         image: '../../../../assets/images/softwareqlp.jpg',
         title: 'Vehicle Portal for generation quotation for insurance',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://khatapana.com/',
         tags: '#Freelancing',
         workDone: 'Frontend (Angular)',
@@ -491,10 +658,65 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       },
       {
         id: 11,
+        bgClass: 'bg-amber-100 dark:bg-amber-950 dark:bg-opacity-50',
         companyName: 'SoftwareQ * Senang',
         image: '../../../../assets/images/softwareqadminportal.jpg',
         title:
           'Admin Portal for managing overall flow and data for Vehicle Portal.',
+        subtitle: `
+          Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+          `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://khatapana.com/',
         tags: '#Freelancing',
         workDone: 'Frontend (Angular)',
@@ -503,6 +725,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 12,
         companyName: 'Khatapana',
+        bgClass: 'bg-purple-100 dark:bg-purple-950 dark:bg-opacity-50',
         image: '../../../../assets/images/khatapana.jpg',
         title: 'Khatapana | Simplest way to manage your money!',
         url: 'https://khatapana.com/',
@@ -513,8 +736,63 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 13,
         companyName: 'TechNepal',
+        bgClass: 'bg-violet-100 dark:bg-violet-950 dark:bg-opacity-50',
         image: '../../../../assets/images/technepal.jpg',
         title: 'Tech Nepal | Website for tech learner and enthusiast',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://thetechnepal.com/',
         tags: '#Personal',
         workDone: 'Full Stack (.NET, Angular)',
@@ -523,8 +801,63 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 14,
         companyName: 'Personal Portfolio',
+        bgClass: 'bg-sky-100 dark:bg-sky-950 dark:bg-opacity-50',
         image: '../../../../assets/images/kgarney.jpg',
         title: 'Kgarney | Web-app that uses firebase tools for hosting',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://kgarne-0.web.app/home',
         tags: '#Freelancing',
         workDone: 'Full Stack (C#, Angular)',
@@ -533,8 +866,63 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 15,
         companyName: 'Personal Portfolio',
+        bgClass: 'bg-slate-200 dark:bg-slate-900 dark:bg-opacity-50',
         image: '../../../../assets/images/generate.jpg',
         title: 'Generate | Tried to implement clone of canva functioning',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://gen.thetechnepal.com',
         tags: '#Personal',
         workDone: 'Full Stack (Angular, GCP)',
@@ -550,6 +938,60 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         id: 1,
         image: '../../../../assets/images/khatapana.jpg',
         title: 'Khatapana | Simplest way to manage your money!',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://khatapana.com/',
         tags: '#Freelancing',
         workDone: 'Frontend (Angular)',
@@ -559,6 +1001,60 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         id: 2,
         image: '../../../../assets/images/technepal.jpg',
         title: 'Tech Nepal | Website for tech learner and enthusiast',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://thetechnepal.com/',
         tags: '#Personal',
         workDone: 'Full Stack (.NET, Angular)',
@@ -568,6 +1064,60 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         id: 3,
         image: '../../../../assets/images/kgarney.jpg',
         title: 'Kgarney | Web-app that uses firebase tools for hosting',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://kgarne-0.web.app/home',
         tags: '#Freelancing',
         workDone: 'Full Stack (C#, Angular)',
@@ -577,6 +1127,60 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         id: 4,
         image: '../../../../assets/images/generate.jpg',
         title: 'Generate | Tried to implement clone of canva functioning',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://gen.thetechnepal.com',
         tags: '#Personal',
         workDone: 'Full Stack (Angular, GCP)',
@@ -586,6 +1190,60 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         id: 5,
         image: '../../../../assets/images/izy.jpg',
         title: 'IZY | Simplest way to manage your money!',
+        subtitle: `
+        Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
+        `,
+        body: [
+          'The software offers a comprehensive front office management system, including user-wise role access control, reservation handling, guest check-ins and room transfers, guest folio management, and a wide range of guest services. Detailed reporting on guest arrivals, departures, room allocations, and occupancy ensures seamless front desk operations.',
+          'The POS system supports multiple outlets such as restaurants, bars, coffee shops, SPAs, and health clubs. It includes floor and table management, menu conversion, order processing, and various billing methods. Detailed sales reports, KOT/BOT reports, and revenue segregation enhance operational efficiency and profitability.',
+          'The banquet management module streamlines event management with hall bookings, seat arrangements, F&B menu management, and bill settlements for events. Comprehensive reporting on daily collections, bookings, hall availability, and running events ensures smooth event operations.',
+          'The housekeeping, laundry, accounts, and inventory modules ensure up-to-date room status, inventory transactions, and coordination with laundry services, enhancing guest experience. The accounts and inventory modules offer extensive financial management, including fiscal year transactions, ledger creation, voucher management, and detailed financial and stock reports for efficient resource management.',
+        ],
+        skills: [
+          {
+            name: 'Technical Skills',
+            list: [
+              '.NET Core',
+              '.NET Framework',
+              'Angular',
+              'C#',
+              'Material UI',
+              'Ant Design',
+              'JQuery',
+              'HTML',
+              'CSS',
+              'JS',
+            ],
+          },
+          {
+            name: 'Tools and Platforms',
+            list: ['Git', 'Bitbucket', 'Jira', 'LinqPad'],
+          },
+          {
+            name: 'Methodologies',
+            list: ['Agile Software Development', 'Incremental Development'],
+          },
+          {
+            name: 'Role',
+            list: ['Intern - Junior Software Engineer'],
+          },
+        ],
+        responsibilities: [
+          'Developed and maintained various modules within the Crossover HMS using .NET Core and Angular.',
+          'Collaborated with cross-functional teams to integrate new features and ensure seamless user experience.',
+          'Performed code reviews and provided feedback to improve code quality and maintainability.',
+          'Assisted in the design and implementation of the software architecture, contributing to system scalability and performance.',
+          'Participated in daily stand-ups and sprint planning meetings to ensure timely project delivery.',
+          'Implemented unit tests to ensure code reliability and reduce bugs in the production environment.',
+        ],
+        learningOutcomes: [
+          'Gained hands-on experience with .NET Core and Angular, enhancing full-stack development skills.',
+          'Developed a deep understanding of hotel management systems and their functional requirements.',
+          'Improved problem-solving skills by troubleshooting and debugging complex software issues.',
+          'Enhanced collaboration and communication skills through regular interaction with team members and stakeholders.',
+          'Learned to work efficiently in an Agile environment, participating in sprints and delivering tasks on time.',
+          'Acquired knowledge in integrating third-party APIs to extend software functionalities.',
+        ],
         url: 'https://izy.no/en/',
         tags: '#Resimator #Company',
         workDone: 'Full Stack(.NET, Angular)',
