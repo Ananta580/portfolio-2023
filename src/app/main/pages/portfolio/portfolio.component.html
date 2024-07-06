@@ -1,0 +1,36 @@
+<div
+  class="flex flex-col w-full p-6 pt-9 px-24 gap-8 max-xl:px-5 max-lg:px-20 max-sm:px-10 fade-in-1"
+>
+  <!-- Section -->
+  <div class="flex flex-col w-full gap-3" *ngFor="let section of sections">
+    <!-- Title section -->
+    <div class="flex items-center gap-4 cursor-pointer">
+      <h2 class="section-title">{{ section.name }}</h2>
+    </div>
+
+    <!-- Body section -->
+    <div
+      class="flex items-center gap-3 gap-y-5 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
+    >
+      <!-- Cards -->
+      <ng-container
+        class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%] cursor-pointer"
+        *ngFor="let showcase of section.showCases | slice : 0 : 5"
+      >
+        <p-show-card
+          [showcase]="showcase"
+          (click)="showDetail(section.id, showcase.id)"
+        >
+        </p-show-card>
+      </ng-container>
+
+      <div
+        *ngIf="section.showCases.length > 5"
+        [routerLink]="'/showcase/' + section.id"
+        class="p-2 flex gap-3 items-center px-5 view-more rounded-md w-full cursor-pointer mt-3"
+      >
+        View all <span class="material-symbols-outlined text-lg">east</span>
+      </div>
+    </div>
+  </div>
+</div>
