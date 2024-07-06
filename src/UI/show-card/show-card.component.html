@@ -1,6 +1,6 @@
 <a
   *ngIf="showcase"
-  class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%] cursor-pointer"
+  class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[45%] cursor-pointer"
 >
   <img
     class="w-full h-auto object-cover object-top rounded-lg"
@@ -9,10 +9,10 @@
   <h3 class="development-title line-clamp-2">
     {{ showcase.title }}
   </h3>
-  <p class="text-xs text-blue-500 -my-1 font-medium">
+  <p class="text-xs text-blue-500 -my-1 font-medium line-clamp-1">
     {{ showcase.tags }}
   </p>
-  <p class="text-xs flex items-center gap-2">
+  <p class="text-xs flex items-center gap-2 line-clamp-1">
     {{ showcase.workDone }}
   </p>
   <p class="text-[0.6rem] -mt-2 flex items-center gap-2">

@@ -1,5 +1,5 @@
 <div
-  class="flex w-full p-6 px-24 gap-5 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-12 fade-in-1"
+  class="flex w-full p-6 px-24 gap-5 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-10 fade-in-1"
 >
   <!-- Profile Image -->
   <img
@@ -31,7 +31,7 @@
       inteface ...
       <span class="material-symbols-outlined text-sm">chevron_right</span>
     </p>
-    <div class="flex gap-2 py-2 items-center">
+    <div class="flex gap-2 py-2 flex-wrap items-center">
       <p-button routerLink="contact">Contact info</p-button>
       <a href="mailto:ap.ananta.poudel@gmail.com"
         ><p-button [title]="'Send me an email'">
@@ -48,13 +48,13 @@
       >
       <!-- Theme toogle section -->
       <div
-        class="max-[800px]:flex hidden theme-toggler p-3 !scale-75 -ml-3 py-[11px] !gap-4"
+        class="max-[800px]:flex hidden items-center gap-2 px-3 !h-[40px] py-[11px] cursor-pointer rounded-full bg-[var(--border-color)]"
       >
         <span
           *ngFor="let theme of themeSetting"
           (click)="themeService.changeTheme(theme.name)"
           [ngClass]="{ 'active-item fill': theme.name === themeService.theme }"
-          class="material-symbols-outlined text-gray-400"
+          class="material-symbols-outlined text-base text-gray-400"
         >
           {{ theme.icon }}
         </span>
