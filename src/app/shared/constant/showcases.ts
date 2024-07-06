@@ -3,13 +3,13 @@ import { ShowcaseSection } from '../models/showcase';
 export const SHOWCASE_SECTION: ShowcaseSection[] = [
   {
     id: 1,
-    name: 'Web applications',
+    name: 'Web Applications',
     showCases: [
       {
         id: 1,
         isPrivate: true,
         companyName: 'Crossover Nepal',
-        bgClass: 'bg-blue-100 dark:bg-blue-950 dark:bg-opacity-50',
+        bgClass: 'bg-blue-100 dark:bg-blue-950 dark:bg-opacity-75',
         image: '../../../../assets/images/crossoverpms.jpg',
         title: 'Crossover Hotel & Resort Management Software',
         subtitle: `
@@ -74,7 +74,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 2,
         companyName: 'Crossover Nepal * BHC',
-        bgClass: 'bg-green-100 dark:bg-green-950 dark:bg-opacity-50',
+        bgClass: 'bg-green-100 dark:bg-green-950 dark:bg-opacity-75',
         image: '../../../../assets/images/crossoverappointment.jpg',
         title: 'BHC Patient Appointment Administration Software',
         subtitle: `
@@ -139,7 +139,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 3,
         companyName: 'Verisk ISO',
-        bgClass: 'bg-red-100 dark:bg-red-950 dark:bg-opacity-50',
+        bgClass: 'bg-red-100 dark:bg-red-950 dark:bg-opacity-75',
         image: '../../../../assets/images/veriskadmintool.jpg',
         title: 'Verisk Insurance Claims Management Admin Tool',
         subtitle: `
@@ -204,7 +204,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 4,
         companyName: 'Verisk ISO',
-        bgClass: 'bg-indigo-100 dark:bg-indigo-950 dark:bg-opacity-50',
+        bgClass: 'bg-indigo-100 dark:bg-indigo-950 dark:bg-opacity-75',
         image: '../../../../assets/images/veriskinsuranceclaim.jpg',
         title: 'Verisk’s claims solutions with claims management',
         subtitle: `
@@ -270,7 +270,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
         id: 5,
         image: '../../../../assets/images/whitehatrasi.jpg',
         companyName: 'RASI * Whitehat',
-        bgClass: 'bg-fuchsia-100 dark:bg-fuchsia-950 dark:bg-opacity-50',
+        bgClass: 'bg-fuchsia-100 dark:bg-fuchsia-950 dark:bg-opacity-75',
         title: 'RASI : Restaurant Accounting that Accelerates Growth',
         subtitle: `
         Crossover Hotel Management System is the ultimate management solution to maintain hospitality and customer relationship management by a hotel.
@@ -334,7 +334,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 6,
         companyName: 'RASI * Whitehat',
-        bgClass: 'bg-sky-100 dark:bg-sky-950 dark:bg-opacity-50',
+        bgClass: 'bg-sky-100 dark:bg-sky-950 dark:bg-opacity-75',
         image: '../../../../assets/images/whitehatuniversal.jpg',
         title: 'RASI Universal Services for Backoffice support',
         subtitle: `
@@ -399,7 +399,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 7,
         companyName: 'Resimator * IZY',
-        bgClass: 'bg-cyan-100 dark:bg-cyan-950 dark:bg-opacity-50',
+        bgClass: 'bg-cyan-100 dark:bg-cyan-950 dark:bg-opacity-75',
         image: '../../../../assets/images/izyportal.jpg',
         title: 'IZY Portal Simpler everyday life for every landlords',
         subtitle: `
@@ -529,7 +529,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 9,
         companyName: 'SoftwareQ * Senang',
-        bgClass: 'bg-pink-100 dark:bg-pink-950 dark:bg-opacity-50',
+        bgClass: 'bg-pink-100 dark:bg-pink-950 dark:bg-opacity-75',
         image: '../../../../assets/images/softwareqlp.jpg',
         title: 'Various websites for insurance providers linked with Senang',
         subtitle: `
@@ -594,7 +594,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 10,
         companyName: 'SoftwareQ * Senang',
-        bgClass: 'bg-pink-100 dark:bg-pink-950 dark:bg-opacity-50',
+        bgClass: 'bg-pink-100 dark:bg-pink-950 dark:bg-opacity-75',
         image: '../../../../assets/images/softwareqlp.jpg',
         title: 'Vehicle Portal for generation quotation for insurance',
         subtitle: `
@@ -658,7 +658,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       },
       {
         id: 11,
-        bgClass: 'bg-amber-100 dark:bg-amber-950 dark:bg-opacity-50',
+        bgClass: 'bg-amber-100 dark:bg-amber-950 dark:bg-opacity-75',
         companyName: 'SoftwareQ * Senang',
         image: '../../../../assets/images/softwareqadminportal.jpg',
         title:
@@ -725,7 +725,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 12,
         companyName: 'Khatapana',
-        bgClass: 'bg-purple-100 dark:bg-purple-950 dark:bg-opacity-50',
+        bgClass: 'bg-purple-100 dark:bg-purple-950 dark:bg-opacity-75',
         image: '../../../../assets/images/khatapana.jpg',
         title: 'Khatapana | Simplest way to manage your money!',
         url: 'https://khatapana.com/',
@@ -736,7 +736,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 13,
         companyName: 'TechNepal',
-        bgClass: 'bg-violet-100 dark:bg-violet-950 dark:bg-opacity-50',
+        bgClass: 'bg-violet-100 dark:bg-violet-950 dark:bg-opacity-75',
         image: '../../../../assets/images/technepal.jpg',
         title: 'Tech Nepal | Website for tech learner and enthusiast',
         subtitle: `
@@ -801,7 +801,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 14,
         companyName: 'Personal Portfolio',
-        bgClass: 'bg-sky-100 dark:bg-sky-950 dark:bg-opacity-50',
+        bgClass: 'bg-sky-100 dark:bg-sky-950 dark:bg-opacity-75',
         image: '../../../../assets/images/kgarney.jpg',
         title: 'Kgarney | Web-app that uses firebase tools for hosting',
         subtitle: `
@@ -866,7 +866,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       {
         id: 15,
         companyName: 'Personal Portfolio',
-        bgClass: 'bg-slate-200 dark:bg-slate-900 dark:bg-opacity-50',
+        bgClass: 'bg-slate-200 dark:bg-slate-900 dark:bg-opacity-75',
         image: '../../../../assets/images/generate.jpg',
         title: 'Generate | Tried to implement clone of canva functioning',
         subtitle: `
@@ -932,7 +932,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
   },
   {
     id: 2,
-    name: 'Mobile applications',
+    name: 'Mobile Applications',
     showCases: [
       {
         id: 1,
@@ -1253,7 +1253,7 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
   },
   {
     id: 3,
-    name: 'Graphics design',
+    name: 'Graphics Designing',
     showCases: [
       {
         id: 1,

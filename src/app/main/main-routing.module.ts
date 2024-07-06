@@ -10,6 +10,7 @@ import { ExperienceComponent } from './pages/experience/experience.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { CommunityComponent } from './pages/community/community.component';
 import { ShowcaseListComponent } from './pages/showcase-list/showcase-list.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent,
+      },
+      {
+        path: 'portfolio',
+        component: PortfolioComponent,
       },
       {
         path: 'about',

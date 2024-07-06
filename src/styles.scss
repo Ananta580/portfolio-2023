@@ -98,3 +98,34 @@ html::-webkit-scrollbar-thumb:hover
         opacity: 0;
     }
 }
+
+
+/* Custom tooltip styles */
+[title] {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  [title]::after {
+    content: attr(title);
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 0px 15px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    bottom: -100%; 
+    left: 50%;
+    transform: translateX(-20%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  [title]:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  

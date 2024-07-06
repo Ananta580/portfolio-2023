@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { FileDownloadService } from 'src/app/shared/services/file-download.service';
 import { ThemeService } from 'src/app/shared/services/theme.service';
 
 @Component({
@@ -10,11 +11,12 @@ import { ThemeService } from 'src/app/shared/services/theme.service';
 export class TopNavComponent {
   topMenus = [
     { label: 'Home', value: 'home' },
+    { label: 'Projects', value: 'portfolio' },
     { label: 'Skills', value: 'skill' },
     { label: 'Experience', value: 'experience' },
     { label: 'Graphics', value: 'graphics' },
-    { label: 'Blog', value: 'blog' },
-    { label: 'Community', value: 'community' },
+    // { label: 'Blog', value: 'blog' },
+    // { label: 'Community', value: 'community' },
     { label: 'Contact', value: 'contact' },
     { label: 'About', value: 'about' },
   ];
@@ -27,7 +29,11 @@ export class TopNavComponent {
 
   currentMenu = '';
 
-  constructor(public themeService: ThemeService, private router: Router) {
+  constructor(
+    public themeService: ThemeService,
+    private router: Router,
+    private downloadService: FileDownloadService
+  ) {
     this.setActiveMenu();
   }
 
@@ -44,5 +50,11 @@ export class TopNavComponent {
   changeMenu(menu: string) {
     this.currentMenu = menu;
     this.router.navigate([menu]);
+  }
+
+  downloadResume() {
+    this.downloadService.downloadFile(
+      'Ananta_Poudel_Software_Engineer_Resume.pdf'
+    );
   }
 }
