@@ -100,7 +100,8 @@
           />
           <div class="flex flex-col text-sm">
             <h2 class="font-medium flex gap-x-2 flex-wrap">
-              {{ education.course }} <span>{{ education.degree }}</span>
+              {{ education.course }}
+              <span> • {{ education.degree }} </span>
             </h2>
             <p>{{ education.college }}</p>
             <p>{{ education.year }}</p>
@@ -131,13 +132,13 @@
             [src]="certificate.gotFromLogo"
           />
           <div class="flex flex-col text-sm">
-            <h2 class="font-medium flex gap-x-2 items-center flex-wrap">
+            <h2 class="font-medium flex gap-x-4 items-center flex-wrap">
               {{ certificate.name }}
               <a
-                class="text-[var(--blue-color)]"
+                class="text-[var(--blue-color)] max-lg:my-1 flex items-center gap-1 border px-2 rounded-full border-[var(--blue-color)]"
                 target="_blank"
                 [href]="certificate.url"
-                >view
+                >View
                 <span class="text-sm material-symbols-outlined">
                   open_in_new
                 </span></a
