@@ -31,6 +31,7 @@ export class ThemeService {
     // Set to System Default & Add to local storage.
     else {
       localStorage.setItem('preferred-theme', 'system');
+      this.matchSystemTheme();
     }
   }
 

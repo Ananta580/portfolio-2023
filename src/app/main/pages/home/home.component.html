@@ -37,6 +37,7 @@
     </div>
 
     <div
+      routerLink="/portfolio"
       class="p-2 flex gap-3 items-center px-5 view-more rounded-md cursor-pointer mt-3"
     >
       View all projects
@@ -69,14 +70,15 @@
               >
             </h2>
             <p class="flex gap-2 items-center">
-              • {{ experience.companySlogan }} •
+              • {{ experience.companySlogan }}
             </p>
-            <p class="">{{ experience.timeline }}</p>
+            <p class="">• {{ experience.timeline }}</p>
           </div>
         </div>
       </div>
 
       <div
+        routerLink="/experience"
         class="p-2 flex gap-3 items-center px-5 view-more rounded-md cursor-pointer mt-3"
       >
         View all {{ experiences.length }} experience

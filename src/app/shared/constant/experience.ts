@@ -9,7 +9,7 @@ export const WORK_EXPEREICNE = [
 
     projectUrl: 'https://senang.io/',
     position: 'Senior Software Engineer',
-    timeline: 'April 2024 - present',
+    timeline: 'April 2024 - Present',
     workDescription: [
       'As a Senior Software Engineer at Senang, I specialize in Angular development.',
       'Leading the implementation of enhancements to web applications, enhancing user experiences at Senang.',
