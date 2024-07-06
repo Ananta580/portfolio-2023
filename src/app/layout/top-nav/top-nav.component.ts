@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { FileDownloadService } from 'src/app/shared/services/file-download.service';
 import { ThemeService } from 'src/app/shared/services/theme.service';
 
 @Component({
@@ -28,7 +29,11 @@ export class TopNavComponent {
 
   currentMenu = '';
 
-  constructor(public themeService: ThemeService, private router: Router) {
+  constructor(
+    public themeService: ThemeService,
+    private router: Router,
+    private downloadService: FileDownloadService
+  ) {
     this.setActiveMenu();
   }
 
@@ -45,5 +50,11 @@ export class TopNavComponent {
   changeMenu(menu: string) {
     this.currentMenu = menu;
     this.router.navigate([menu]);
+  }
+
+  downloadResume() {
+    this.downloadService.downloadFile(
+      'Ananta_Poudel_Software_Engineer_Resume.pdf'
+    );
   }
 }

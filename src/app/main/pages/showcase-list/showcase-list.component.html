@@ -18,28 +18,10 @@
         class="flex items-center gap-3 gap-y-5 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
       >
         <!-- Cards -->
-        <a
-          (click)="showDetail(showcase)"
-          class="flex cursor-pointer flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%]"
-          *ngFor="let showcase of section.showCases"
-        >
-          <img
-            class="w-full h-auto object-cover object-top rounded-lg"
-            [src]="showcase.image"
-          />
-          <h3 class="development-title text-ellipsis line-clamp-2">
-            {{ showcase.title }}
-          </h3>
-          <p class="text-xs text-blue-500 -my-1 font-medium">
-            {{ showcase.tags }}
-          </p>
-          <p class="text-xs flex items-center gap-2">
-            {{ showcase.workDone }}
-          </p>
-          <p class="text-[0.6rem] -mt-2 flex items-center gap-2">
-            {{ showcase.workedDate | dateDifference }} ago
-          </p>
-        </a>
+        <ng-container *ngFor="let showcase of section.showCases">
+          <p-show-card [showcase]="showcase" (click)="showDetail(showcase)">
+          </p-show-card>
+        </ng-container>
       </div>
     </div>
   </div>

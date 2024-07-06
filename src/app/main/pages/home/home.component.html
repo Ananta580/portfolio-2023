@@ -23,28 +23,17 @@
       class="flex items-center gap-3 gap-y-5 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
     >
       <!-- Cards -->
-      <a
-        (click)="showDetail(showcase.id, showcase.id)"
+
+      <ng-container
         class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%] cursor-pointer"
         *ngFor="let showcase of showCases | slice : 0 : 5"
       >
-        <img
-          class="w-full h-auto object-cover object-top rounded-lg"
-          [src]="showcase.image"
-        />
-        <h3 class="development-title">
-          {{ showcase.title }}
-        </h3>
-        <p class="text-xs text-blue-500 -my-1 font-medium">
-          {{ showcase.tags }}
-        </p>
-        <p class="text-xs flex items-center gap-2">
-          {{ showcase.workDone }}
-        </p>
-        <p class="text-[0.6rem] -mt-2 flex items-center gap-2">
-          {{ showcase.workedDate | dateDifference }} ago
-        </p>
-      </a>
+        <p-show-card
+          [showcase]="showcase"
+          (click)="showDetail(showcase.id, showcase.id)"
+        >
+        </p-show-card>
+      </ng-container>
     </div>
 
     <div
@@ -57,7 +46,7 @@
 
   <div class="flex flex-col w-full gap-3">
     <!-- Title section -->
-    <div class="flex flex-col gap-4 cursor-pointer">
+    <div class="flex flex-col gap-4">
       <h2 class="section-title flex items-center gap-2">
         Experiences <span class="text-base"></span>
       </h2>
@@ -72,14 +61,15 @@
             [src]="experience.companyLogo"
           />
           <div class="flex flex-col text-sm">
-            <h2 class="font-medium">
-              {{ experience.position }} | .Net & Angular
-            </h2>
-            <p class="flex gap-2 items-center">
+            <h2 class="font-medium flex items-center gap-3">
+              {{ experience.position }}
               <span
-                class="flex pl-2 pr-5 rounded-md rounded-r-full bg-blue-200 bg-opacity-25 my-1 py-[2px]"
+                class="flex pl-2 pr-5 font-normal rounded-md rounded-r-full bg-blue-200 bg-opacity-25 my-1 py-[2px]"
                 >{{ experience.company }}</span
               >
+            </h2>
+            <p class="flex gap-2 items-center">
+              • {{ experience.companySlogan }} •
             </p>
             <p class="">{{ experience.timeline }}</p>
           </div>
@@ -97,7 +87,7 @@
 
   <div class="flex flex-col w-full gap-3">
     <!-- Title section -->
-    <div class="flex flex-col gap-4 cursor-pointer">
+    <div class="flex flex-col gap-4">
       <h2 class="section-title">Education</h2>
 
       <div class="flex flex-col" *ngFor="let education of educations">

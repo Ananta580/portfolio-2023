@@ -40,7 +40,10 @@
           </span></p-button
         ></a
       >
-      <p-button [title]="'Dowload my resume'" class="flex items-center"
+      <p-button
+        (click)="downloadResume()"
+        [title]="'Dowload my resume'"
+        class="flex items-center"
         ><span class="material-symbols-outlined"> download </span></p-button
       >
       <!-- Theme toogle section -->
