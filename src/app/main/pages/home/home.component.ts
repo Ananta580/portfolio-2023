@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CERTIFICATES } from 'src/app/shared/constant/certificates';
 import { EDUCATION } from 'src/app/shared/constant/education';
 import { WORK_EXPEREICNE } from 'src/app/shared/constant/experience';
 import { SHOWCASE_SECTION } from 'src/app/shared/constant/showcases';
@@ -27,6 +28,8 @@ export class HomeComponent {
   experiences = WORK_EXPEREICNE;
 
   educations = EDUCATION;
+
+  certificates = CERTIFICATES;
 
   constructor(private router: Router) {}
 

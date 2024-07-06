@@ -58,11 +58,11 @@
       >
         <div class="flex gap-10 items-center max-lg:gap-4">
           <img
-            class="w-20 h-20 object-contain rounded-md bg-white p-2"
+            class="w-20 h-20 object-contain rounded-md bg-white p-4"
             [src]="experience.companyLogo"
           />
           <div class="flex flex-col text-sm">
-            <h2 class="font-medium flex items-center gap-3">
+            <h2 class="font-medium flex flex-wrap items-center gap-x-3">
               {{ experience.position }}
               <span
                 class="flex pl-2 pr-5 font-normal rounded-md rounded-r-full bg-blue-200 bg-opacity-25 my-1 py-[2px]"
@@ -95,15 +95,58 @@
       <div class="flex flex-col" *ngFor="let education of educations">
         <div class="flex gap-10 items-center max-lg:gap-4">
           <img
-            class="w-20 h-20 object-contain rounded-md bg-white p-2"
+            class="w-20 h-20 object-contain rounded-md bg-white p-4"
             [src]="education.image"
           />
           <div class="flex flex-col text-sm">
-            <h2 class="font-medium">
-              {{ education.course }} | {{ education.degree }}
+            <h2 class="font-medium flex gap-x-2 flex-wrap">
+              {{ education.course }} <span>{{ education.degree }}</span>
             </h2>
             <p>{{ education.college }}</p>
             <p>{{ education.year }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col w-full gap-3">
+    <!-- Title section -->
+    <div
+      class="flex flex-col gap-6 p-4 rounded-md px-5 max-lg:px-0 max-lg:bg-transparent -mx-5 max-lg:mx-0 bg-[var(--primary-btn-bg)]"
+    >
+      <h2 class="section-title">Certificates & Licenses</h2>
+
+      <div
+        class="flex flex-col"
+        *ngFor="let certificate of certificates; let i = index"
+      >
+        <div class="flex gap-10 items-center max-lg:gap-4">
+          <img
+            [ngClass]="{
+              'bg-black': i == 1 || i == 2,
+              'bg-white': i == 0
+            }"
+            class="w-20 h-20 object-contain rounded-md p-4"
+            [src]="certificate.gotFromLogo"
+          />
+          <div class="flex flex-col text-sm">
+            <h2 class="font-medium flex gap-x-2 items-center flex-wrap">
+              {{ certificate.name }}
+              <a
+                class="text-[var(--blue-color)]"
+                target="_blank"
+                [href]="certificate.url"
+                >view
+                <span class="text-sm material-symbols-outlined">
+                  open_in_new
+                </span></a
+              >
+            </h2>
+            <p>
+              {{ certificate.gotFrom }}
+            </p>
+            <p>{{ certificate.ValidTimeline }}</p>
           </div>
         </div>
       </div>
