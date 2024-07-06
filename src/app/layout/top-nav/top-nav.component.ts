@@ -10,11 +10,12 @@ import { ThemeService } from 'src/app/shared/services/theme.service';
 export class TopNavComponent {
   topMenus = [
     { label: 'Home', value: 'home' },
+    { label: 'Projects', value: 'portfolio' },
     { label: 'Skills', value: 'skill' },
     { label: 'Experience', value: 'experience' },
     { label: 'Graphics', value: 'graphics' },
-    { label: 'Blog', value: 'blog' },
-    { label: 'Community', value: 'community' },
+    // { label: 'Blog', value: 'blog' },
+    // { label: 'Community', value: 'community' },
     { label: 'Contact', value: 'contact' },
     { label: 'About', value: 'about' },
   ];

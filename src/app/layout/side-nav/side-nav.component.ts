@@ -8,8 +8,11 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class SideNavComponent {
   @ViewChild('sideMenu') sideMenu?: ElementRef;
 
+  today = new Date();
+
   sideMenus = [
     { label: 'Welcome', icon: 'home', value: '/home' },
+    { label: 'Projects', icon: 'folder_special', value: '/portfolio' },
     { label: 'Skills', icon: 'videocam', value: '/skill' },
     { label: 'Experience', icon: 'work_history', value: '/experience' },
   ];
