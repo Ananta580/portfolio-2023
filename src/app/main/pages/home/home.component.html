@@ -12,10 +12,10 @@
   </div>
 
   <!-- Section -->
-  <div class="flex flex-col w-full gap-3" *ngFor="let section of sections">
+  <div class="flex flex-col w-full gap-3">
     <!-- Title section -->
     <div class="flex items-center gap-4 cursor-pointer">
-      <h2 class="section-title">{{ section.name }}</h2>
+      <h2 class="section-title">Featured projects</h2>
     </div>
 
     <!-- Body section -->
@@ -24,9 +24,9 @@
     >
       <!-- Cards -->
       <a
-        (click)="showDetail(section.id, showcase.id)"
+        (click)="showDetail(showcase.id, showcase.id)"
         class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%] cursor-pointer"
-        *ngFor="let showcase of section.showCases | slice : 0 : 5"
+        *ngFor="let showcase of showCases | slice : 0 : 5"
       >
         <img
           class="w-full h-auto object-cover object-top rounded-lg"
@@ -48,11 +48,73 @@
     </div>
 
     <div
-      *ngIf="section.showCases.length > 5"
-      [routerLink]="'/showcase/' + section.id"
-      class="p-2 flex gap-3 items-center px-5 view-more rounded-md w-auto cursor-pointer mt-3"
+      class="p-2 flex gap-3 items-center px-5 view-more rounded-md cursor-pointer mt-3"
     >
-      View all <span class="material-symbols-outlined text-lg">east</span>
+      View all projects
+      <span class="material-symbols-outlined text-lg">east</span>
+    </div>
+  </div>
+
+  <div class="flex flex-col w-full gap-3">
+    <!-- Title section -->
+    <div class="flex flex-col gap-4 cursor-pointer">
+      <h2 class="section-title flex items-center gap-2">
+        Experiences <span class="text-base"></span>
+      </h2>
+
+      <div
+        class="flex flex-col"
+        *ngFor="let experience of experiences | slice : 0 : 2"
+      >
+        <div class="flex gap-10 items-center max-lg:gap-4">
+          <img
+            class="w-20 h-20 object-contain rounded-md bg-white p-2"
+            [src]="experience.companyLogo"
+          />
+          <div class="flex flex-col text-sm">
+            <h2 class="font-medium">
+              {{ experience.position }} | .Net & Angular
+            </h2>
+            <p class="flex gap-2 items-center">
+              <span
+                class="flex pl-2 pr-5 rounded-md rounded-r-full bg-blue-200 bg-opacity-25 my-1 py-[2px]"
+                >{{ experience.company }}</span
+              >
+            </p>
+            <p class="">{{ experience.timeline }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="p-2 flex gap-3 items-center px-5 view-more rounded-md cursor-pointer mt-3"
+      >
+        View all {{ experiences.length }} experience
+        <span class="material-symbols-outlined text-lg">east</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col w-full gap-3">
+    <!-- Title section -->
+    <div class="flex flex-col gap-4 cursor-pointer">
+      <h2 class="section-title">Education</h2>
+
+      <div class="flex flex-col" *ngFor="let education of educations">
+        <div class="flex gap-10 items-center max-lg:gap-4">
+          <img
+            class="w-20 h-20 object-contain rounded-md bg-white p-2"
+            [src]="education.image"
+          />
+          <div class="flex flex-col text-sm">
+            <h2 class="font-medium">
+              {{ education.course }} | {{ education.degree }}
+            </h2>
+            <p>{{ education.college }}</p>
+            <p>{{ education.year }}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
