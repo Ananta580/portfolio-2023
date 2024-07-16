@@ -2,3 +2,7 @@
     @apply text-sm  font-medium;
     color: var(--title-color);
 }
+
+:host{
+    @apply w-[200px] max-xl:w-[190px] max-[500px]:w-[45%] 
+}

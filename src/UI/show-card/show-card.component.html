@@ -1,9 +1,6 @@
-<a
-  *ngIf="showcase"
-  class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[45%] cursor-pointer"
->
+<a *ngIf="showcase" class="flex flex-col gap-2 w-[full cursor-pointer">
   <img
-    class="w-full h-auto object-cover object-top rounded-lg"
+    class="w-full h-auto object-cover object-top rounded-lg hover:rounded-none transition-all duration-300"
     [src]="showcase.image"
   />
   <h3 class="development-title line-clamp-2">
