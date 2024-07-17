@@ -20,14 +20,12 @@ export class DateDifferencePipe implements PipeTransform {
     const days = differenceInDays(today, target);
 
     let result = '';
-    console.log(years, months, days);
 
     if (years >= 1) {
       const remainingMonths = differenceInMonths(
         addYears(today, -years),
         target
       );
-      console.log(remainingMonths);
       const totalYears = years + remainingMonths / 12;
       result = totalYears.toFixed(1) + ' years';
     } else if (months >= 1) {
