@@ -58,9 +58,9 @@
 
       <p>{{ showcase.subtitle }}</p>
 
-      <div class="text-justify flex gap-4 flex-col">
+      <div class="flex gap-4 flex-col">
         <p
-          class="even:p-4 even:border even:rounded-md border-[var(--border-color)] even:bg-[var(--side-nav-bg)] even:text-[var(--nav-title-color)]"
+          class="even:-mx-4 even:p-4 even:border even:rounded-md border-[var(--border-color)] even:bg-[var(--side-nav-bg)] even:text-[var(--nav-title-color)]"
           *ngFor="let item of showcase.body; let i = index"
         >
           {{ item }}
