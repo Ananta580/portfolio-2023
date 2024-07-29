@@ -26,6 +26,9 @@ export class ShowcaseListComponent {
   }
 
   showDetail(showcase: Showcase) {
+    if (showcase.isGraphics) {
+      return;
+    }
     this.router.navigateByUrl(
       `/showcase-detail/${showcase.id}?parentId=${this.section?.id}`
     );

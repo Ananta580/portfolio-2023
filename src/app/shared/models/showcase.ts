@@ -6,6 +6,7 @@ export interface ShowcaseSection {
 
 export interface Showcase {
   id: number;
+  isGraphics?: boolean;
   isPrivate?: boolean;
   companyName?: string;
   image: string;

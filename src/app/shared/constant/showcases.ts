@@ -1486,6 +1486,8 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
     showCases: [
       {
         id: 1,
+        isGraphics: true,
+        companyName: 'FY',
         image: '../../../../assets/images/foreveryngcover.jpg',
         title: `FOREVERYNG | Nepal's best Cosmetics website`,
         url: 'https://ananta-poudel.com.np/graphics#Foreveryng',
@@ -1495,6 +1497,8 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       },
       {
         id: 2,
+        isGraphics: true,
+        companyName: 'KD',
         image: '../../../../assets/images/khaaidimcover.jpg',
         title: `KHAAIDIM | Food delivery at your footstep`,
         url: 'https://ananta-poudel.com.np/graphics#Khaaidim',
@@ -1504,6 +1508,8 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       },
       {
         id: 3,
+        isGraphics: true,
+        companyName: 'SPG',
         image: '../../../../assets/images/shinningcover.jpg',
         title: `Shining Paradise | Your gaming partner`,
         url: 'https://ananta-poudel.com.np/graphics#Khaaidim',
@@ -1513,6 +1519,8 @@ export const SHOWCASE_SECTION: ShowcaseSection[] = [
       },
       {
         id: 4,
+        isGraphics: true,
+        companyName: 'LEO',
         image: '../../../../assets/images/leocover.jpg',
         title: `Leo Club of Kathmandu Resunga | IT Head`,
         url: 'https://ananta-poudel.com.np/graphics#Khaaidim',

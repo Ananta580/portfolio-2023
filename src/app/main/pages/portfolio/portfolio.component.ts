@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { SHOWCASE_SECTION } from 'src/app/shared/constant/showcases';
+import { Showcase } from 'src/app/shared/models/showcase';
 
 @Component({
   selector: 'p-portfolio',
@@ -12,7 +13,15 @@ export class PortfolioComponent {
 
   constructor(private router: Router) {}
 
-  showDetail(parentId: number, id: number) {
-    this.router.navigateByUrl(`/showcase-detail/${id}?parentId=${parentId}`);
+  showDetail(parentId: number, showcase: Showcase) {
+    if (showcase.isGraphics) {
+      this.router.navigate([`/graphics`], {
+        fragment: showcase.companyName,
+      });
+      return;
+    }
+    this.router.navigateByUrl(
+      `/showcase-detail/${showcase.id}?parentId=${parentId}`
+    );
   }
 }
