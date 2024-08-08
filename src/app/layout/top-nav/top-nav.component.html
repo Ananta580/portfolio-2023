@@ -2,14 +2,23 @@
   class="flex w-full p-6 px-24 gap-5 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-10 fade-in-1"
 >
   <!-- Profile Image -->
-  <img
-    class="rounded-full w-40 h-40 cursor-pointer max-sm:hidden hover:scale-[1.05] hover:drop-shadow-lg hover:shadow-md transition-all duration-1000"
-    src="./../../../assets/images/profile.jpeg"
-  />
+  <div class="relative w-40 h-40 cursor-pointer max-sm:hidden group">
+    <div
+      style="
+        background: linear-gradient(to top right, #d42626 50%, #185bae 50%);
+      "
+      class="absolute -top-[5%] -left-[5%] bg-opacity-20 rounded-full -z-10 w-[110%] h-[110%] transition-transform duration-1000 ease-in-out group-hover:rotate-180 group-hover:animate-pulse"
+    ></div>
+    <img
+      class="rounded-full w-full h-full object-cover"
+      src="./../../../assets/images/profile.jpeg"
+    />
+  </div>
 
   <!-- Title and Descriptions -->
   <div class="flex flex-col w-auto max-sm:mt-10">
     <div class="flex gap-4 items-center">
+      <!-- For mobile screen profile image -->
       <img
         class="hidden rounded-full w-10 h-10 hover:grayscale-[40%] cursor-pointer max-sm:flex"
         src="./../../../assets/images/profile.jpeg"
