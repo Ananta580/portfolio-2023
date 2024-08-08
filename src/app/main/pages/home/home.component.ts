@@ -19,10 +19,22 @@ export class HomeComponent {
   career growth.`;
 
   showCases = [
-    SHOWCASE_SECTION[0].showCases[0],
-    SHOWCASE_SECTION[1].showCases[0],
-    SHOWCASE_SECTION[0].showCases[1],
-    SHOWCASE_SECTION[0].showCases[5],
+    {
+      id: 1,
+      detail: SHOWCASE_SECTION[0].showCases[0],
+    },
+    {
+      id: 2,
+      detail: SHOWCASE_SECTION[1].showCases[0],
+    },
+    {
+      id: 1,
+      detail: SHOWCASE_SECTION[0].showCases[1],
+    },
+    {
+      id: 1,
+      detail: SHOWCASE_SECTION[0].showCases[5],
+    },
   ];
 
   experiences = WORK_EXPEREICNE;

@@ -29,8 +29,8 @@
         *ngFor="let showcase of showCases | slice : 0 : 5"
       >
         <p-show-card
-          [showcase]="showcase"
-          (click)="showDetail(showcase.id, showcase.id)"
+          [showcase]="showcase.detail"
+          (click)="showDetail(showcase.id, showcase.detail.id)"
         >
         </p-show-card>
       </ng-container>
