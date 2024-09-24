@@ -53,26 +53,24 @@
       </h2>
 
       <div
-        class="flex flex-col"
+        class="flex flex-col gap-5"
         *ngFor="let experience of experiences | slice : 0 : 2"
       >
         <div class="flex gap-10 items-center max-lg:gap-4">
           <img
-            class="w-20 h-20 object-contain rounded-md bg-white p-4"
+            class="w-20 h-20 object-contain rounded-md dark:bg-white border border-gray-100 shadow-sm p-4"
             [src]="experience.companyLogo"
           />
           <div class="flex flex-col text-sm">
-            <h2 class="font-medium flex flex-wrap items-center gap-x-3">
+            <h2 class="font-medium flex flex-wrap items-center gap-x-2">
               {{ experience.position }}
-              <span
-                class="flex pl-2 pr-5 font-normal rounded-md rounded-r-full bg-blue-200 bg-opacity-25 my-1 py-[2px]"
-                >{{ experience.company }}</span
-              >
+              <span> •</span><span>{{ experience.company }} </span>
             </h2>
-            <p class="flex gap-2 items-center">
-              • {{ experience.companySlogan }}
+            <p class="flex gap-2">
+              {{ experience.jobType }} <span>•</span>
+              <span>{{ experience.jobLocation }}</span>
             </p>
-            <p class="">• {{ experience.timeline }}</p>
+            <p class="">{{ experience.timeline }}</p>
           </div>
         </div>
       </div>
@@ -95,13 +93,13 @@
       <div class="flex flex-col" *ngFor="let education of educations">
         <div class="flex gap-10 items-center max-lg:gap-4">
           <img
-            class="w-20 h-20 object-contain rounded-md bg-white p-4"
+            class="w-20 h-20 object-contain rounded-md dark:bg-white border border-gray-100 shadow-sm p-4"
             [src]="education.image"
           />
           <div class="flex flex-col text-sm">
             <h2 class="font-medium flex gap-x-2 flex-wrap">
               {{ education.course }}
-              <span> • {{ education.degree }} </span>
+              <span> •</span><span> {{ education.degree }} </span>
             </h2>
             <p>{{ education.college }}</p>
             <p>{{ education.year }}</p>

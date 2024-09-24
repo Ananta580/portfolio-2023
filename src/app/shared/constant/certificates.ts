@@ -1,5 +1,13 @@
 export const CERTIFICATES = [
   {
+    name: 'SQL Advanced Certificate',
+    gotFrom: 'Hacker Rank',
+    ValidTimeline: 'Jul 2021',
+    gotFromLogo:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/HackerRank_Icon-1000px.png/440px-HackerRank_Icon-1000px.png',
+    url: 'hhttps://www.hackerrank.com/certificates/2ab6fc06f122',
+  },
+  {
     name: 'Registered Computer Engineer',
     gotFrom: 'Nepal Engineering Council',
     ValidTimeline: 'April 2022',
@@ -14,13 +22,5 @@ export const CERTIFICATES = [
     gotFromLogo:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/HackerRank_Icon-1000px.png/440px-HackerRank_Icon-1000px.png',
     url: 'https://www.hackerrank.com/certificates/877c87526e67',
-  },
-  {
-    name: 'SQL Advanced Certificate',
-    gotFrom: 'Hacker Rank',
-    ValidTimeline: 'Jul 2021',
-    gotFromLogo:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/HackerRank_Icon-1000px.png/440px-HackerRank_Icon-1000px.png',
-    url: 'hhttps://www.hackerrank.com/certificates/2ab6fc06f122',
   },
 ];

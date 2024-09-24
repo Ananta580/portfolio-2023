@@ -1,26 +1,23 @@
 <div
-  class="flex flex-col gap-6 w-[90%] p-6 px-24 items-center max-xl:px-5 max-lg:px-20 max-sm:mx-10 max-sm:px-0 max-xl:w-auto fade-in-1">
+  class="flex flex-col gap-6 w-[90%] p-6 px-24 items-center max-xl:px-5 max-lg:px-20 max-sm:mx-10 max-sm:px-0 max-xl:w-auto fade-in-1"
+>
   <!-- Experience section -->
   <div *ngFor="let experience of workExperiences" class="experience-box">
     <p class="text-xs py-1 font-semibold w-[200px] text-right max-md:hidden">
       {{ experience.timeline | uppercase }}
     </p>
 
-    <div class="flex flex-col gap-3">
+    <div class="flex flex-col">
       <div class="flex flex-col">
         <p class="flex items-center gap-3">
           <span class="company">{{ experience.company }}</span>
-          <a class="cursor-pointer hover:underline" [href]="experience.projectUrl" target="_blank">{{ experience.project
-            | uppercase }}</a>
-
-
-        <p class="italic text-xs">{{ experience.companySlogan }}</p>
+        </p>
 
         <p class="text-xs py-1 font-semibold w-[200px] min-[768px]:hidden">
           [ {{ experience.timeline | uppercase }} ]
         </p>
       </div>
-      <div class="pb-4 pl-3 rounded-bl-xl w-full max-[768px]:pl-0">
+      <div class="pb-4 rounded-bl-xl w-full max-[768px]:pl-0">
         <p class="experience-text">
           {{ experience.position }}
         </p>
