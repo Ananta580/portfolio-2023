@@ -60,14 +60,25 @@
       <div
         class="max-[800px]:flex hidden items-center gap-2 px-3 !h-[40px] py-[11px] cursor-pointer rounded-full bg-[var(--border-color)]"
       >
-        <span
+        <div
           *ngFor="let theme of themeSetting"
           (click)="themeService.changeTheme(theme.name)"
-          [ngClass]="{ 'active-item fill': theme.name === themeService.theme }"
+          [ngClass]="{
+            'active-item fill': theme.name === themeService.theme,
+            'h-4 w-4': !theme.icon
+          }"
           class="material-symbols-outlined text-base text-gray-400"
         >
-          {{ theme.icon }}
-        </span>
+          <ng-container *ngIf="theme.icon; else createIcon">
+            {{ theme.icon }}
+          </ng-container>
+          <ng-template #createIcon>
+            <ng-container
+              *ngTemplateOutlet="colorIcon; context: { $implicit: theme }"
+            >
+            </ng-container>
+          </ng-template>
+        </div>
       </div>
     </div>
   </div>
@@ -94,10 +105,37 @@
     <span
       *ngFor="let theme of themeSetting"
       (click)="themeService.changeTheme(theme.name)"
-      [ngClass]="{ 'active-item fill': theme.name === themeService.theme }"
+      [ngClass]="{
+        'active-item fill': theme.name === themeService.theme,
+        'h-6 w-6': !theme.icon
+      }"
       class="material-symbols-outlined text-gray-400"
     >
-      {{ theme.icon }}
+      <ng-container *ngIf="theme.icon; else createIcon">
+        {{ theme.icon }}
+      </ng-container>
+      <ng-template #createIcon>
+        <ng-container
+          *ngTemplateOutlet="colorIcon; context: { $implicit: theme }"
+        >
+        </ng-container>
+      </ng-template>
     </span>
   </div>
 </div>
+
+<ng-template #colorIcon let-theme>
+  <div
+    class="h-full bg-opacity-70 rotate-45 w-full rounded-full relative {{
+      theme.color
+    }}"
+    [ngClass]="{ 'bg-opacity-100': theme.name === themeService.theme }"
+  >
+    {{ theme.icon }}
+    <div
+      [ngClass]="theme.type === 'light' ? 'bg-white' : 'bg-black'"
+      [ngClass]="{ 'bg-opacity-100': theme.name === themeService.theme }"
+      class="absolute right-0 top-0 h-full w-1/2 bg-opacity-70 bg-black rounded-r-full"
+    ></div>
+  </div>
+</ng-template>

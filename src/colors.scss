@@ -77,4 +77,42 @@
         --status-dot-color:#15803d;
 
     }
+
+    // Indigo dark theme colors
+    .indigo-dark{
+
+        //Texts
+        --background:#1e1b4b;
+        --text-color:#c7d2fe;
+        --title-color:#e0e7ff;
+        --nav-title-color:#a5b4fc;
+        --p-text-color:#c4b5fd;
+        --exp-text-color:#d8b4fe;
+
+        //Border
+        --border-color:#3730a3;
+
+        //Buttons
+        --primary-btn-bg:#4c1d95;
+        --primary-btn-bg-hover:#5b21b6;
+        --primary-btn-text:#e0e7ff;
+        --primary-btn-text-hover:#e0e7ff;
+
+        //Music Player
+        --audio-player-background:#4c1d95;
+        --volume-slider-background:#5b21b6;
+        --volume-percentage-background:#7c3aed;
+
+        //Side Navigation Menu
+        --side-nav-bg:#1e1b4b;
+        --side-nav-button-text-hover-active:#e0e7ff;
+        --side-nav-button-bg:transparent;
+        --side-nav-button-bg-hover:#4c1d95;
+        --side-nav-button-bg-active:#4c1d95;
+
+        //Availability Status
+        --status-bg-color:#6d28d9;
+        --status-dot-color:#a78bfa;
+
+    }
 }

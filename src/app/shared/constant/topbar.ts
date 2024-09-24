@@ -23,7 +23,13 @@ export const TOPBAR_MENU = [
 ];
 
 export const THEME_SETTINGS = [
-  { icon: 'dark_mode', name: 'dark' },
-  { icon: 'light_mode', name: 'light' },
-  { icon: 'contrast', name: 'system' },
+  { icon: 'dark_mode', name: 'dark', color: 'dark' },
+  { icon: 'light_mode', name: 'light', color: 'light' },
+  { icon: 'contrast', name: 'system', color: 'system' },
+  {
+    icon: undefined,
+    color: 'bg-indigo-700',
+    type: 'dark',
+    name: 'indigo-dark',
+  },
 ];

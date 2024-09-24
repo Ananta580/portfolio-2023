@@ -18,15 +18,10 @@ export class ThemeService {
       // If system preferred
       if (preferredTheme === 'system') {
         this.matchSystemTheme();
+        return;
       }
-      // If dark choosen
-      else if (preferredTheme === 'dark') {
-        this.body.className = 'dark';
-      }
-      // Otherwise light
-      else {
-        this.body.className = '';
-      }
+
+      this.body.className = preferredTheme;
     }
     // Set to System Default & Add to local storage.
     else {
@@ -50,24 +45,8 @@ export class ThemeService {
     // If system preferred
     if (theme === 'system') {
       this.matchSystemTheme();
+      return;
     }
-    // If dark choosen
-    else if (theme === 'dark') {
-      this.body.className = 'dark';
-    }
-    // Otherwise light
-    else {
-      this.body.className = 'light';
-    }
-  }
-
-  toogleTheme() {
-    if (this.body.className === 'dark') {
-      this.body.className = 'fade-out-2';
-      localStorage.setItem('preferred-theme', 'light');
-    } else {
-      this.body.className = 'dark fade-in-1';
-      localStorage.setItem('preferred-theme', 'dark');
-    }
+    this.body.className = theme;
   }
 }
