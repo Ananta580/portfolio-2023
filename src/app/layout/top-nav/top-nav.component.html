@@ -133,9 +133,12 @@
   >
     {{ theme.icon }}
     <div
-      [ngClass]="theme.type === 'light' ? 'bg-white' : 'bg-black'"
-      [ngClass]="{ 'bg-opacity-100': theme.name === themeService.theme }"
-      class="absolute right-0 top-0 h-full w-1/2 bg-opacity-70 bg-black rounded-r-full"
+      [ngClass]="{
+        'bg-white': theme.type === 'light',
+        'bg-black': theme.type === 'dark',
+        'bg-opacity-100': theme.name === themeService.theme
+      }"
+      class="absolute right-0 top-0 h-full w-1/2 rounded-r-full"
     ></div>
   </div>
 </ng-template>

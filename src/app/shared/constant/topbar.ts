@@ -32,4 +32,10 @@ export const THEME_SETTINGS = [
     type: 'dark',
     name: 'indigo-dark',
   },
+  {
+    icon: undefined,
+    color: 'bg-indigo-700',
+    type: 'light',
+    name: 'indigo-light',
+  },
 ];

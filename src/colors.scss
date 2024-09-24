@@ -115,4 +115,42 @@
         --status-dot-color:#a78bfa;
 
     }
+
+        // Indigo light theme colors
+        .indigo-light{
+
+            //Texts
+            --background:#e0e7ff;
+            --text-color:#1e1b4b;
+            --title-color:#3730a3;
+            --nav-title-color:#4c1d95;
+            --p-text-color:#5b21b6;
+            --exp-text-color:#7c3aed;
+        
+            //Border
+            --border-color:#c7d2fe;
+        
+            //Buttons
+            --primary-btn-bg:#a78bfa;
+            --primary-btn-bg-hover:#c4b5fd;
+            --primary-btn-text:#1e1b4b;
+            --primary-btn-text-hover:#1e1b4b;
+        
+            //Music Player
+            --audio-player-background:#a78bfa;
+            --volume-slider-background:#c4b5fd;
+            --volume-percentage-background:#d8b4fe;
+        
+            //Side Navigation Menu
+            --side-nav-bg:#e0e7ff;
+            --side-nav-button-text-hover-active:#1e1b4b;
+            --side-nav-button-bg:transparent;
+            --side-nav-button-bg-hover:#a78bfa;
+            --side-nav-button-bg-active:#a78bfa;
+        
+            //Availability Status
+            --status-bg-color:#d8b4fe;
+            --status-dot-color:#7c3aed;
+        
+        }
 }
