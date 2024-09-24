@@ -1,5 +1,7 @@
+import { PROFILE_DETAIL } from './../../shared/constant/topbar';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { THEME_SETTINGS, TOPBAR_MENU } from 'src/app/shared/constant/topbar';
 import { FileDownloadService } from 'src/app/shared/services/file-download.service';
 import { ThemeService } from 'src/app/shared/services/theme.service';
 
@@ -9,23 +11,10 @@ import { ThemeService } from 'src/app/shared/services/theme.service';
   styleUrls: ['./top-nav.component.scss'],
 })
 export class TopNavComponent {
-  topMenus = [
-    { label: 'Home', value: 'home' },
-    { label: 'Projects', value: 'portfolio' },
-    { label: 'Skills', value: 'skill' },
-    { label: 'Experience', value: 'experience' },
-    { label: 'Graphics', value: 'graphics' },
-    // { label: 'Blog', value: 'blog' },
-    // { label: 'Community', value: 'community' },
-    { label: 'Contact', value: 'contact' },
-    { label: 'About', value: 'about' },
-  ];
+  profile = PROFILE_DETAIL;
+  topMenus = TOPBAR_MENU;
 
-  themeSetting = [
-    { icon: 'dark_mode', name: 'dark' },
-    { icon: 'light_mode', name: 'light' },
-    { icon: 'contrast', name: 'system' },
-  ];
+  themeSetting = THEME_SETTINGS;
 
   currentMenu = '';
 
@@ -53,8 +42,6 @@ export class TopNavComponent {
   }
 
   downloadResume() {
-    this.downloadService.downloadFile(
-      'Ananta_Poudel_Software_Engineer_Resume.pdf'
-    );
+    this.downloadService.downloadFile(this.profile.resume);
   }
 }

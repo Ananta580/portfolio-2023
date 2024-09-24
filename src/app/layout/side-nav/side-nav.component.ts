@@ -1,4 +1,9 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import {
+  PROFESSITIONAL_ACCOUNTS,
+  SIDEBAR_MENU,
+  SOCIAL_ACCOUNTS,
+} from 'src/app/shared/constant/sidebar';
 
 @Component({
   selector: 'p-side-nav',
@@ -10,43 +15,11 @@ export class SideNavComponent {
 
   today = new Date();
 
-  sideMenus = [
-    { label: 'Welcome', icon: 'home', value: '/home' },
-    { label: 'Projects', icon: 'folder_special', value: '/portfolio' },
-    { label: 'Skills', icon: 'videocam', value: '/skill' },
-    { label: 'Experience', icon: 'work_history', value: '/experience' },
-  ];
+  sideMenus = SIDEBAR_MENU;
 
-  professionalAccounts = [
-    {
-      label: 'Github',
-      image: '../../../assets/professional/github.svg',
-      url: 'https://github.com/ananta580',
-    },
-    {
-      label: 'Upwork',
-      image: '../../../assets/professional/upwork.svg',
-      url: 'https://www.upwork.com/freelancers/~0188bd9446a88c1e33',
-    },
-    {
-      label: 'Behance',
-      image: '../../../assets/professional/behance.svg',
-      url: 'https://www.behance.net/anantapoudel',
-    },
-  ];
+  professionalAccounts = PROFESSITIONAL_ACCOUNTS;
 
-  socialAccounts = [
-    {
-      label: 'Linkedin',
-      image: '../../../assets/social/linkedin.svg',
-      url: 'https://www.linkedin.com/in/ananta580/',
-    },
-    {
-      label: 'Youtube',
-      image: '../../../assets/social/youtube.svg',
-      url: 'https://www.youtube.com/@ananta.poudel',
-    },
-  ];
+  socialAccounts = SOCIAL_ACCOUNTS;
 
   hideMenu() {
     const nat = this.sideMenu?.nativeElement as HTMLElement;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CONTACT_PAGE } from 'src/app/shared/constant/contact-page';
 
 @Component({
   selector: 'p-contact',
@@ -6,16 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-  contactNo = '+977-9846863918';
-  address = 'Gaindakot | Nawalparasi | Nepal';
+  contactInfo = CONTACT_PAGE;
 
-  ngOnInit(): void {
-    if (
-      Intl.DateTimeFormat().resolvedOptions().timeZone.toLocaleLowerCase() !==
-      'asia/kuala_lumpur '
-    ) {
-      this.contactNo = '+1-4378187032';
-      this.address = '6 Amulet Street | Ontario | Canada';
-    }
-  }
+  ngOnInit(): void {}
 }

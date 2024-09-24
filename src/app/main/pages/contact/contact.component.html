@@ -1,29 +1,32 @@
-<div class="flex w-full p-6 px-24 max-xl:px-5 max-lg:px-20 max-sm:px-10 fade-in-1">
+<div
+  class="flex w-full p-6 px-24 max-xl:px-5 max-lg:px-20 max-sm:px-10 fade-in-1"
+>
   <!-- Body section -->
   <div class="flex w-[600px] flex-col items-center gap-3">
     <!-- Email  -->
     <div class="contact-box">
       <p class="contact-label">Email</p>
-      <p class="text-base">ap.ananta.poudel@gmail.com</p>
+
+      <p class="text-base">{{ contactInfo.email }}</p>
     </div>
 
     <!-- Phone  -->
     <div class="contact-box">
       <p class="contact-label">Phone</p>
-      <p class="text-base">{{ contactNo }}</p>
+      <p class="text-base">{{ contactInfo.contactNo }}</p>
     </div>
 
     <!-- Address  -->
     <div class="contact-box">
       <p class="contact-label">Address</p>
-      <p class="text-base">{{ address }}</p>
+      <p class="text-base">{{ contactInfo.address }}</p>
     </div>
 
     <!-- Status  -->
     <div class="contact-box">
       <p class="contact-label">Status</p>
       <div class="status-box">
-        <span class="font-medium">Open to Work</span>
+        <span class="font-medium">{{ contactInfo.status }}</span>
         <p class="status-dot"></p>
       </div>
     </div>

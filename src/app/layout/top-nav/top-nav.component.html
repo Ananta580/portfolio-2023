@@ -11,7 +11,7 @@
     ></div>
     <img
       class="rounded-full w-full h-full object-cover"
-      src="./../../../assets/images/profile.jpeg"
+      [src]="profile.profilePic"
     />
   </div>
 
@@ -21,28 +21,29 @@
       <!-- For mobile screen profile image -->
       <img
         class="hidden rounded-full w-10 h-10 hover:grayscale-[40%] cursor-pointer max-sm:flex"
-        src="./../../../assets/images/profile-small.jpeg"
+        [src]="profile.profilePicSmall"
       />
-      <h1 class="text-4xl font-semibold leading-[3rem] mb-1">Ananta Poudel</h1>
+      <h1 class="text-4xl font-semibold leading-[3rem] mb-1">
+        {{ profile.name }}
+      </h1>
     </div>
     <p class="text-sm">
-      <span>ap.ananta.poudel@gmail.com </span>
+      <span>{{ profile.email }} </span>
       <span class="px-2">*</span>
-      <span>senior software engineer</span>
+      <span>{{ profile.designation }}</span>
       <span class="px-2">*</span>
-      <span>works remotely</span>
+      <span>{{ profile.location }}</span>
     </p>
     <p
       class="py-3 text-sm cursor-pointer items-center flex gap-2"
       routerLink="/about"
     >
-      I am a Software engineer, with a hobby of graphic designing and User
-      inteface ...
+      {{ profile.shortAbout }}
       <span class="material-symbols-outlined text-sm">chevron_right</span>
     </p>
     <div class="flex gap-2 py-2 flex-wrap items-center">
       <p-button routerLink="contact">Contact info</p-button>
-      <a href="mailto:ap.ananta.poudel@gmail.com"
+      <a [href]="'mailto:' + profile.email"
         ><p-button [title]="'Send me an email'">
           <span class="material-symbols-outlined">
             outgoing_mail
