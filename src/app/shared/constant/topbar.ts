@@ -26,16 +26,5 @@ export const THEME_SETTINGS = [
   { icon: 'dark_mode', name: 'dark', color: 'dark' },
   { icon: 'light_mode', name: 'light', color: 'light' },
   { icon: 'contrast', name: 'system', color: 'system' },
-  {
-    icon: undefined,
-    color: 'bg-indigo-700',
-    type: 'dark',
-    name: 'indigo-dark',
-  },
-  {
-    icon: undefined,
-    color: 'bg-indigo-700',
-    type: 'light',
-    name: 'indigo-light',
-  },
+  { icon: 'shuffle', name: 'shuffle', color: 'none' },
 ];

@@ -3,6 +3,7 @@ import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SHOWCASE_SECTION } from 'src/app/shared/constant/showcases';
+import { ThemeService } from 'src/app/shared/services/theme.service';
 
 @Component({
   selector: 'p-showcase-detail',
@@ -12,7 +13,11 @@ import { SHOWCASE_SECTION } from 'src/app/shared/constant/showcases';
 export class ShowcaseDetailComponent {
   showcase?: Showcase;
 
-  constructor(private _route: ActivatedRoute, private location: Location) {
+  constructor(
+    private _route: ActivatedRoute,
+    private location: Location,
+    public theme: ThemeService
+  ) {
     const id = this._route.snapshot.paramMap.get('id');
     const parentId = this._route.snapshot.queryParamMap.get('parentId');
     if (id && parentId) {
