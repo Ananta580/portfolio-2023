@@ -8,5 +8,5 @@ import { Component, Input } from '@angular/core';
 export class ButtonComponent {
   @Input() variant: 'primary' | 'secondary' = 'primary';
   @Input() rounded: 'full' | 'medium' | 'none' = 'full';
-  @Input() title = '';
+  @Input() popup = '';
 }

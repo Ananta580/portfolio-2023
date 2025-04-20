@@ -1,131 +1,115 @@
-@import './colors.scss';
+@import "./colors.scss";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: var(--background);
-    color: var(--text-color);
-    font-family: "Roboto","Arial",sans-serif
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
-.dark .github img{
-    filter: invert(1);
+.dark .github img {
+  filter: invert(1);
 }
 
 .material-symbols-outlined {
-    &.fill{
-        font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-    }
-    &.thin{
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 300,
-        'GRAD' 0,
-        'opsz' 24
-    }
+  &.fill {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
   }
-
-h1,h2{
-    color: var(--title-color);
+  &.thin {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  }
 }
 
-h3{
-    color: var(--nav-title-color);
+h1,
+h2 {
+  color: var(--title-color);
 }
 
-
-html::-webkit-scrollbar-track
-{
-	background-color: #b4b4b4;
+h3 {
+  color: var(--nav-title-color);
 }
 
-html::-webkit-scrollbar
-{
-	width: 8px;
-	background-color: #747474;
+html::-webkit-scrollbar-track {
+  background-color: #b4b4b4;
 }
 
-html::-webkit-scrollbar-thumb
-{
-	background-color: #8d8d8d;
-    border-radius: 4px;
-}
-html::-webkit-scrollbar-thumb:hover
-{
-	background-color: #5f5f5f;
+html::-webkit-scrollbar {
+  width: 8px;
+  background-color: #747474;
 }
 
-
+html::-webkit-scrollbar-thumb {
+  background-color: #8d8d8d;
+  border-radius: 4px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #5f5f5f;
+}
 
 .fade-in {
-    animation: fadeIn 0.6s;
+  animation: fadeIn 0.6s;
 }
 
 .fade-in-1 {
-    animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fade-out {
-    animation: fadeOut 0.6s;
+  animation: fadeOut 0.6s;
 }
 
 .fade-out-2 {
-    animation: fadeOut 1s;
+  animation: fadeOut 1s;
 }
 
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
-
 
 /* Custom tooltip styles */
 [title] {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  [title]::after {
-    content: attr(title);
-    position: absolute;
-    background: #333;
-    color: #fff;
-    padding: 0px 15px;
-    border-radius: 3px;
-    font-size: 12px;
-    white-space: nowrap;
-    z-index: 1000;
-    bottom: -100%; 
-    left: 50%;
-    transform: translateX(-20%);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-  }
-  
-  [title]:hover::after {
-    opacity: 1;
-    visibility: visible;
-  }
-  
+  position: relative;
+  cursor: pointer;
+}
+
+[title]::after {
+  content: attr(title);
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 0px 15px;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-20%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+[title]:hover::after {
+  opacity: 1;
+  visibility: visible;
+}

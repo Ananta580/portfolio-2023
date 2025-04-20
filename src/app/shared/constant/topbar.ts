@@ -11,7 +11,7 @@ export const PROFILE_DETAIL = {
 };
 
 export const TOPBAR_MENU = [
-  { label: 'Home', value: 'home' },
+  { label: 'Summary', value: 'home' },
   { label: 'Projects', value: 'portfolio' },
   { label: 'Skills', value: 'skill' },
   { label: 'Experience', value: 'experience' },
@@ -26,5 +26,5 @@ export const THEME_SETTINGS = [
   { icon: 'dark_mode', name: 'dark', color: 'dark' },
   { icon: 'light_mode', name: 'light', color: 'light' },
   { icon: 'contrast', name: 'system', color: 'system' },
-  { icon: 'shuffle', name: 'shuffle', color: 'none' },
+  // { icon: 'shuffle', name: 'shuffle', color: 'none' },
 ];

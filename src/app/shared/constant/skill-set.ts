@@ -4,7 +4,7 @@ export const SKILL_SETS = [
     subset: [
       {
         name: 'Core',
-        skills: ['.NET', 'Angular'],
+        skills: ['.NET', 'Angular', 'Node.js', 'React'],
       },
       {
         name: 'Frontend',
@@ -38,7 +38,13 @@ export const SKILL_SETS = [
       },
       {
         name: 'Mobile App',
-        skills: ['Ionic', 'Flutter', 'MAUI', 'Blazor'],
+        skills: [
+          'Ionic',
+          'Flutter',
+          'MAUI',
+          'Blazor',
+          'Android (Jetpack Compose)',
+        ],
       },
     ],
   },

@@ -1,18 +1,49 @@
 export const WORK_EXPEREICNE = [
   {
+    company: 'Beacontree Technologies',
+    companyWebsite: 'https://beacontree.ca/',
+    companyLogo:
+      'https://beacontree.net/wp-content/uploads/2022/02/beacontree-technologies.png',
+    position: 'Senior Software Engineer',
+    jobType: 'Full Time',
+    jobLocation: 'Canada, Remote',
+    timeline: 'Apr 2025 - Present',
+    workDescription: [
+      'Transitioning from co-op to full-time Senior Software Engineer.',
+      'Leading full-stack development with React, Node.js, and Android.',
+      'Architecting scalable solutions for client-facing applications.',
+      'Driving technical excellence and mentoring junior developers.',
+    ],
+  },
+  {
+    company: 'Beacontree Technologies',
+    companyWebsite: 'https://beacontree.ca/',
+    companyLogo:
+      'https://beacontree.net/wp-content/uploads/2022/02/beacontree-technologies.png',
+    position: 'Software Engineer (Co-op)',
+    jobType: 'Internship',
+    jobLocation: 'Canada, Remote',
+    timeline: 'Feb 2025 - Apr 2025',
+    workDescription: [
+      'Worked on full-stack solutions using React, Node.js, and Android.',
+      'Built and maintained key modules for operational efficiency.',
+      'Participated in sprint planning and Agile development cycles.',
+      'Contributed to design discussions and implemented scalable features.',
+    ],
+  },
+  {
     company: 'Dunn Edwards Paints',
     companyWebsite: 'https://www.dunnedwards.com/',
     companyLogo:
       'https://yt3.googleusercontent.com/PRhpY1fH8UbQRkna5h1MbnichXFBue_DMunJFfbXOrzgMeGjhf1LJrhu7QzFwtXuLlGvDTWs=s900-c-k-c0x00ffffff-no-rj',
-
     position: 'Technical Consultant',
     jobType: 'Contract',
     jobLocation: 'United States , Remote',
     timeline: 'Feb 2024 - Aug 2024',
     workDescription: [
-      'Built .NET Background Service to Sync up HubSpot and SAP internal Database.',
-      'Stabilized Incentive admin application, updated architecture, and AWS deployment throughout all environments (Staging to Prod)',
-      'Worked on Shopify and .NET internal worker services for dunn-edwards.',
+      'Built .NET Background Service to sync HubSpot and SAP internal Database.',
+      'Stabilized Incentive admin application and deployed via AWS across all environments.',
+      'Maintained Shopify and .NET internal worker services.',
     ],
   },
   {

@@ -1,5 +1,5 @@
 export const SIDEBAR_MENU = [
-  { label: 'Welcome', icon: 'home', value: '/home' },
+  { label: 'Summary', icon: 'overview', value: '/home' },
   { label: 'Projects', icon: 'folder_special', value: '/portfolio' },
   { label: 'Skills', icon: 'videocam', value: '/skill' },
   { label: 'Experience', icon: 'work_history', value: '/experience' },

@@ -11,37 +11,26 @@
     </div>
   </div>
 
-  <!-- Section -->
-  <div class="flex flex-col w-full gap-3">
-    <!-- Title section -->
-    <div class="flex items-center gap-4 cursor-pointer">
-      <h2 class="section-title">Featured projects</h2>
-    </div>
-
-    <!-- Body section -->
+  <div class="flex w-full flex-wrap max-lg:flex-auto gap-3">
     <div
-      class="flex items-center gap-3 gap-y-5 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
+      *ngFor="let item of cardItems"
+      class="w-[220px] max-sm:w-[48%] p-5 group cursor-pointer flex-col gap-4 transition-all duration-500 card-item flex justify-center items-center rounded-lg"
     >
-      <!-- Cards -->
-
-      <ng-container
-        class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%] cursor-pointer"
-        *ngFor="let showcase of showCases | slice : 0 : 5"
+      <p
+        class="{{
+          item.class
+        }} text-5xl transition-all duration-500 font-bold flex items-end"
       >
-        <p-show-card
-          [showcase]="showcase.detail"
-          (click)="showDetail(showcase.id, showcase.detail.id)"
+        <span
+          *ngIf="item.icon1"
+          class="material-symbols-outlined fill text-4xl"
+          >{{ item.icon1 }}</span
         >
-        </p-show-card>
-      </ng-container>
-    </div>
-
-    <div
-      routerLink="/portfolio"
-      class="p-2 flex gap-3 items-center px-5 view-more rounded-md cursor-pointer mt-3"
-    >
-      View all projects
-      <span class="material-symbols-outlined text-lg">east</span>
+        <span *ngIf="item.icon2" class="material-symbols-outlined text-xl">{{
+          item.icon2
+        }}</span>
+      </p>
+      <p class="text-base">{{ item.label }}</p>
     </div>
   </div>
 
@@ -106,6 +95,40 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Section -->
+  <div class="flex flex-col w-full gap-3">
+    <!-- Title section -->
+    <div class="flex items-center gap-4 cursor-pointer">
+      <h2 class="section-title">Featured projects</h2>
+    </div>
+
+    <!-- Body section -->
+    <div
+      class="flex items-center gap-3 gap-y-5 flex-wrap max-[500px]:items-start max-[500px]:justify-between"
+    >
+      <!-- Cards -->
+
+      <ng-container
+        class="flex flex-col gap-2 w-[200px] max-xl:w-[190px] max-[500px]:w-[47%] cursor-pointer"
+        *ngFor="let showcase of showCases | slice : 0 : 5"
+      >
+        <p-show-card
+          [showcase]="showcase.detail"
+          (click)="showDetail(showcase.id, showcase.detail.id)"
+        >
+        </p-show-card>
+      </ng-container>
+    </div>
+
+    <div
+      routerLink="/portfolio"
+      class="p-2 flex gap-3 items-center px-5 view-more rounded-md cursor-pointer mt-3"
+    >
+      View all projects
+      <span class="material-symbols-outlined text-lg">east</span>
     </div>
   </div>
 

@@ -1,5 +1,5 @@
 <div
-  class="flex w-full p-6 px-24 gap-5 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-10 fade-in-1"
+  class="flex w-full p-10 px-24 gap-10 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-10 fade-in-1"
 >
   <!-- Profile Image -->
   <div class="relative w-40 h-40 cursor-pointer max-sm:hidden group">
@@ -27,13 +27,20 @@
         {{ profile.name }}
       </h1>
     </div>
-    <p class="text-sm">
-      <span>{{ profile.email }} </span>
-      <span class="px-2">*</span>
-      <span>{{ profile.designation }}</span>
-      <span class="px-2">*</span>
-      <span>{{ profile.location }}</span>
-    </p>
+    <div class="flex gap-1 flex-wrap">
+      <p-button routerLink="contact">
+        <span class="material-symbols-outlined">landscape</span
+        >{{ profile.designation }}</p-button
+      >
+      <p-button routerLink="contact">
+        <span class="material-symbols-outlined text-sm">alternate_email</span>
+        {{ profile.email }}</p-button
+      >
+      <p-button routerLink="contact">
+        <span class="material-symbols-outlined text-sm">location_on</span
+        >{{ profile.location }}</p-button
+      >
+    </div>
     <p
       class="py-3 text-sm cursor-pointer items-center flex gap-2"
       routerLink="/about"
@@ -44,7 +51,7 @@
     <div class="flex gap-2 py-2 flex-wrap items-center">
       <p-button routerLink="contact">Contact info</p-button>
       <a [href]="'mailto:' + profile.email"
-        ><p-button [title]="'Send me an email'">
+        ><p-button [popup]="'Send me an email'">
           <span class="material-symbols-outlined">
             outgoing_mail
           </span></p-button
@@ -52,7 +59,7 @@
       >
       <p-button
         (click)="downloadResume()"
-        [title]="'Dowload my resume'"
+        [popup]="'Dowload my resume'"
         class="flex items-center"
         ><span class="material-symbols-outlined"> download </span></p-button
       >
