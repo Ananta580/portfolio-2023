@@ -28,15 +28,18 @@
       </h1>
     </div>
     <div class="flex gap-2 flex-wrap">
-      <p-button routerLink="contact">
+      <p-button>
         <span class="material-symbols-outlined">landscape</span
         >{{ profile.designation }}</p-button
       >
-      <p-button routerLink="contact">
-        <span class="material-symbols-outlined text-sm">alternate_email</span>
-        {{ profile.email }}</p-button
+      <a href="mailto:{{ profile.email }}"
+        ><p-button>
+          <span class="material-symbols-outlined text-sm">alternate_email</span>
+          {{ profile.email }}</p-button
+        ></a
       >
-      <p-button routerLink="contact">
+
+      <p-button>
         <span class="material-symbols-outlined text-sm">location_on</span
         >{{ profile.location }}</p-button
       >
