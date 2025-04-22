@@ -1,8 +1,8 @@
 <div
-  class="flex w-full p-10 px-24 gap-10 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-10 fade-in-1"
+  class="flex w-full p-10 max-[800px]:pb-4 px-24 gap-10 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-10 fade-in-1"
 >
   <!-- Profile Image -->
-  <div class="relative w-40 h-40 cursor-pointer max-sm:hidden group">
+  <!-- <div class="relative w-40 h-40 cursor-pointer max-sm:hidden group">
     <div
       style="
         background: linear-gradient(to top right, #d42626 50%, #185bae 50%);
@@ -13,21 +13,21 @@
       class="rounded-full w-full h-full object-cover"
       [src]="profile.profilePic"
     />
-  </div>
+  </div> -->
 
   <!-- Title and Descriptions -->
-  <div class="flex flex-col w-auto max-sm:mt-10">
+  <div class="flex flex-col w-auto gap-5 max-sm:mt-10">
     <div class="flex gap-4 items-center">
       <!-- For mobile screen profile image -->
       <img
-        class="hidden rounded-full w-10 h-10 hover:grayscale-[40%] cursor-pointer max-sm:flex"
+        class="rounded-full w-14 h-14 hover:grayscale-[40%] cursor-pointer max-sm:flex"
         [src]="profile.profilePicSmall"
       />
-      <h1 class="text-4xl font-semibold leading-[3rem] mb-1">
+      <h1 class="text-5xl max-sm:text-4xl font-semibold">
         {{ profile.name }}
       </h1>
     </div>
-    <div class="flex gap-1 flex-wrap">
+    <div class="flex gap-2 flex-wrap">
       <p-button routerLink="contact">
         <span class="material-symbols-outlined">landscape</span
         >{{ profile.designation }}</p-button
@@ -40,64 +40,46 @@
         <span class="material-symbols-outlined text-sm">location_on</span
         >{{ profile.location }}</p-button
       >
+      <p-button (click)="downloadResume()" class="flex items-center"
+        ><span class="material-symbols-outlined text-base"> download </span
+        >Download Resume</p-button
+      >
     </div>
-    <p
-      class="py-3 text-sm cursor-pointer items-center flex gap-2"
-      routerLink="/about"
+
+    <!-- Theme toogle section -->
+    <div
+      class="max-[800px]:flex hidden items-center gap-2 px-3 cursor-pointer rounded-full"
     >
-      {{ profile.shortAbout }}
-      <span class="material-symbols-outlined text-sm">chevron_right</span>
-    </p>
-    <div class="flex gap-2 py-2 flex-wrap items-center">
-      <p-button routerLink="contact">Contact info</p-button>
-      <a [href]="'mailto:' + profile.email"
-        ><p-button [popup]="'Send me an email'">
-          <span class="material-symbols-outlined">
-            outgoing_mail
-          </span></p-button
-        ></a
-      >
-      <p-button
-        (click)="downloadResume()"
-        [popup]="'Dowload my resume'"
-        class="flex items-center"
-        ><span class="material-symbols-outlined"> download </span></p-button
-      >
-      <!-- Theme toogle section -->
-      <div
-        class="max-[800px]:flex hidden items-center gap-2 px-3 !h-[40px] py-[11px] cursor-pointer rounded-full bg-[var(--border-color)]"
-      >
-        <ng-container *ngFor="let theme of themeSetting">
-          <div
-            *ngIf="theme.name !== 'shuffle' || !themeService.color"
-            (click)="
-              themeService.changeTheme(theme.name, theme.name === 'shuffle')
-            "
-            [ngClass]="{
+      <ng-container *ngFor="let theme of themeSetting">
+        <div
+          *ngIf="theme.name !== 'shuffle' || !themeService.color"
+          (click)="
+            themeService.changeTheme(theme.name, theme.name === 'shuffle')
+          "
+          [ngClass]="{
             'active-item fill': theme.name === themeService.theme,
             
           }"
-            class="material-symbols-outlined text-base text-gray-400"
-          >
-            {{ theme.icon }}
-          </div>
+          class="material-symbols-outlined text-base text-gray-400"
+        >
+          {{ theme.icon }}
+        </div>
 
+        <div
+          (click)="
+            themeService.changeTheme(theme.name, theme.name === 'shuffle')
+          "
+          *ngIf="theme.name == 'shuffle' && themeService.color"
+          class="transition-all duration-300 select-none h-5 flex items-center gap-1 w-14 pr-1 bg-white rounded-full"
+        >
           <div
-            (click)="
-              themeService.changeTheme(theme.name, theme.name === 'shuffle')
-            "
-            *ngIf="theme.name == 'shuffle' && themeService.color"
-            class="transition-all duration-300 select-none h-5 flex items-center gap-1 w-14 pr-1 bg-white rounded-full"
+            class="h-full w-10 transition-all duration-300 bg-[var(--exp-text-color)] rounded-full"
+          ></div>
+          <span class="material-symbols-outlined text-base text-gray-400"
+            >shuffle</span
           >
-            <div
-              class="h-full w-10 transition-all duration-300 bg-[var(--exp-text-color)] rounded-full"
-            ></div>
-            <span class="material-symbols-outlined text-base text-gray-400"
-              >shuffle</span
-            >
-          </div>
-        </ng-container>
-      </div>
+        </div>
+      </ng-container>
     </div>
   </div>
 </div>

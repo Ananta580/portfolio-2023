@@ -13,14 +13,10 @@
 
   <div class="flex w-full flex-wrap max-lg:flex-auto gap-3">
     <div
-      *ngFor="let item of cardItems"
-      class="w-[220px] max-sm:w-[48%] p-5 group cursor-pointer flex-col gap-4 transition-all duration-500 card-item flex justify-center items-center rounded-lg"
+      *ngFor="let item of cardItems; let i = index"
+      class="w-[220px] overflow-clip group relative max-sm:w-[48%] p-5 cursor-pointer flex-col gap-4 transition-all duration-500 flex justify-center items-center rounded-lg"
     >
-      <p
-        class="{{
-          item.class
-        }} text-5xl transition-all duration-500 font-bold flex items-end"
-      >
+      <p class="{{ item.class }} text-5xl  font-bold flex items-end">
         <span
           *ngIf="item.icon1"
           class="material-symbols-outlined fill text-4xl"
@@ -31,6 +27,11 @@
         }}</span>
       </p>
       <p class="text-base">{{ item.label }}</p>
+      <div class="card-item rounded-lg"></div>
+      <div class="card-upper rounded-lg"></div>
+      <div
+        class="invisible group-hover:visible shinny {{ item.bgClass }}"
+      ></div>
     </div>
   </div>
 

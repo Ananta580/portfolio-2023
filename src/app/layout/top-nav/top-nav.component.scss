@@ -1,31 +1,30 @@
-.top-nav{
-    @apply flex w-full px-24 gap-1 border-b sticky top-0 z-10 max-xl:px-5 max-xl:gap-0 max-lg:px-0 max-lg:mx-20 max-lg:w-auto max-md:overflow-x-auto  max-sm:mx-10;
-    overflow-x:scroll;
-    overflow-y:hidden;
-    -webkit-overflow-scrolling: touch; /* Enables native scrolling on mobile */
-    background-color: var(--background);
-    border-color: var(--border-color);
+.top-nav {
+  @apply flex w-full px-24 gap-1 border-b sticky top-0 z-10 max-xl:px-5 max-xl:gap-0 max-lg:px-0 max-lg:mx-20 max-lg:w-auto max-md:overflow-x-auto  max-sm:mx-10;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; /* Enables native scrolling on mobile */
+  background-color: var(--background);
+  border-color: var(--border-color);
 }
 
-.top-nav-active-item{
-    @apply border-black border-b-2;
-    color: var(--title-color);
-    border-color: var(--title-color);
+.top-nav-active-item {
+  @apply border-black border-b-2;
+  color: var(--title-color);
+  border-color: var(--title-color);
 }
 
-.top-nav-inactive-item{
-    @apply hover:border-gray-400 hover:border-b-2;
+.top-nav-inactive-item {
+  @apply hover:border-gray-400 hover:border-b-2;
 }
 
-.theme-toggler{
-    @apply  items-center gap-2 px-3 cursor-pointer rounded-full scale-[0.65];
-    background: var(--border-color);
+.theme-toggler {
+  @apply items-center gap-3 px-3 cursor-pointer rounded-full scale-[0.80];
 }
 
-.active-item{
-    color:var(--title-color) !important;
+.active-item {
+  color: var(--title-color) !important;
 }
-  
-  ::-webkit-scrollbar {
-      display: none;
-  }
+
+::-webkit-scrollbar {
+  display: none;
+}
