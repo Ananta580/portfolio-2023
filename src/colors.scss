@@ -1,535 +1,509 @@
-:root{
+:root {
+  // Light theme colors
 
-    // Light theme colors
+  // Texts
+  --background: white;
+  --text-color: #606060;
+  --title-color: #0f0f0f;
+  --nav-title-color: #3d3d3d;
+  --p-text-color: #747474;
+  --exp-text-color: #dc2626;
 
-    // Texts
-    --background:white;
-    --text-color:#606060;
-    --title-color:#0f0f0f;
-    --nav-title-color:#3d3d3d;
-    --p-text-color:#747474;
-    --exp-text-color:#dc2626;
+  //Border
+  --border-color: #e5e7eb;
 
+  //Buttons
+  --primary-btn-bg: #0000000d;
+  --primary-btn-bg-hover: #00000022;
+  --primary-btn-text: #0f0f0f;
+  --primary-btn-text-hover: #0f0f0f;
+
+  //Music Player
+  --audio-player-background: #0000000d;
+  --volume-slider-background: #bfbfbf;
+  --volume-percentage-background: #0000000d;
+
+  //Side Navigation Menu
+  --side-nav-bg: #f7f7f7;
+  --side-nav-button-text-hover-active: black;
+  --side-nav-button-bg: transparent;
+  --side-nav-button-bg-hover: #0000000d;
+  --side-nav-button-bg-active: #0000000d;
+
+  //Availability Status
+  --status-bg-color: #dcfce7;
+  --status-dot-color: #22c55e;
+
+  // Blue colors
+  --blue-color: #2563eb;
+
+  // Dark theme colors
+  .dark {
+    //Texts
+    --background: #0f0f0f;
+    --text-color: #aaa;
+    --title-color: #fff;
+    --nav-title-color: #ffffffd9;
+    --p-text-color: #bfbfbf;
+    --exp-text-color: #ff7a7a;
 
     //Border
-    --border-color:#e5e7eb;
+    --border-color: #373737;
 
     //Buttons
-    --primary-btn-bg:#0000000d;
-    --primary-btn-bg-hover:#00000022;
-    --primary-btn-text:#0f0f0f;
-    --primary-btn-text-hover:#0f0f0f;
+    --primary-btn-bg: #60606054;
+    --primary-btn-bg-hover: #ffffff31;
+    --primary-btn-text: #fff;
+    --primary-btn-text-hover: #fff;
 
     //Music Player
-    --audio-player-background:#0000000d;
-    --volume-slider-background:#bfbfbf;
-    --volume-percentage-background:#0000000d;
+    --audio-player-background: #60606054;
+    --volume-slider-background: #bfbfbf;
+    --volume-percentage-background: #211f1f71;
 
     //Side Navigation Menu
-    --side-nav-bg:#f7f7f7;
-    --side-nav-button-text-hover-active:black;
-    --side-nav-button-bg:transparent;
-    --side-nav-button-bg-hover:#0000000d;
-    --side-nav-button-bg-active:#0000000d;
+    --side-nav-bg: rgb(4, 4, 4);
+    --side-nav-button-text-hover-active: #fff;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #60606054;
+    --side-nav-button-bg-active: #60606054;
 
     //Availability Status
-    --status-bg-color:#dcfce7;
-    --status-dot-color:#22c55e;
-
+    --status-bg-color: #86efac;
+    --status-dot-color: #15803d;
     // Blue colors
-    --blue-color: #2563eb;
-
-
-    // Dark theme colors
-    .dark{
-
-        //Texts
-        --background:#0f0f0f;
-        --text-color:#aaa;
-        --title-color:#fff;
-        --nav-title-color:#ffffffd9;
-        --p-text-color:#bfbfbf;
-        --exp-text-color:#ff7a7a;
-
-        //Border
-        --border-color:#373737;
-
-        //Buttons
-        --primary-btn-bg:#60606054;
-        --primary-btn-bg-hover:#ffffff31;
-        --primary-btn-text:#fff;
-        --primary-btn-text-hover:#fff;
-
-        //Music Player
-        --audio-player-background:#60606054;
-        --volume-slider-background:#bfbfbf;
-        --volume-percentage-background:#211f1f71;
-
-        //Side Navigation Menu
-        --side-nav-bg:rgb(4, 4, 4);
-        --side-nav-button-text-hover-active:#fff;
-        --side-nav-button-bg:transparent;
-        --side-nav-button-bg-hover:#60606054;
-        --side-nav-button-bg-active:#60606054;
-
-        //Availability Status
-        --status-bg-color:#86efac;
-        --status-dot-color:#15803d;
-
-    }
-
-    // Indigo dark theme colors
-    .indigo-dark{
-
-        //Texts
-        --background:#1e1b4b;
-        --text-color:#c7d2fe;
-        --title-color:#e0e7ff;
-        --nav-title-color:#a5b4fc;
-        --p-text-color:#c4b5fd;
-        --exp-text-color:#d8b4fe;
-
-        //Border
-        --border-color:#3730a3;
-
-        //Buttons
-        --primary-btn-bg:#4c1d95;
-        --primary-btn-bg-hover:#5b21b6;
-        --primary-btn-text:#e0e7ff;
-        --primary-btn-text-hover:#e0e7ff;
-
-        //Music Player
-        --audio-player-background:#4c1d95;
-        --volume-slider-background:#5b21b6;
-        --volume-percentage-background:#7c3aed;
-
-        //Side Navigation Menu
-        --side-nav-bg:#1e1b4b;
-        --side-nav-button-text-hover-active:#e0e7ff;
-        --side-nav-button-bg:transparent;
-        --side-nav-button-bg-hover:#4c1d95;
-        --side-nav-button-bg-active:#4c1d95;
-
-        //Availability Status
-        --status-bg-color:#6d28d9;
-        --status-dot-color:#a78bfa;
-
-    }
-
-        // Indigo light theme colors
-        .indigo-light{
-
-            //Texts
-            --background:#e0e7ff;
-            --text-color:#1e1b4b;
-            --title-color:#3730a3;
-            --nav-title-color:#4c1d95;
-            --p-text-color:#5b21b6;
-            --exp-text-color:#7c3aed;
-        
-            //Border
-            --border-color:#c7d2fe;
-        
-            //Buttons
-            --primary-btn-bg:#a78bfa;
-            --primary-btn-bg-hover:#c4b5fd;
-            --primary-btn-text:#1e1b4b;
-            --primary-btn-text-hover:#1e1b4b;
-        
-            //Music Player
-            --audio-player-background:#a78bfa;
-            --volume-slider-background:#c4b5fd;
-            --volume-percentage-background:#d8b4fe;
-        
-            //Side Navigation Menu
-            --side-nav-bg:#e0e7ff;
-            --side-nav-button-text-hover-active:#1e1b4b;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#a78bfa;
-            --side-nav-button-bg-active:#a78bfa;
-        
-            //Availability Status
-            --status-bg-color:#d8b4fe;
-            --status-dot-color:#7c3aed;
-        }
-        
-        // Red dark theme colors
-        .red-dark{
-
-            //Texts
-            --background:#4a0000;
-            --text-color:#ffb3b3;
-            --title-color:#ffcccc;
-            --nav-title-color:#ff9999;
-            --p-text-color:#ff8080;
-            --exp-text-color:#ff6666;
-
-            //Border
-            --border-color:#800000;
-
-            //Buttons
-            --primary-btn-bg:#660000;
-            --primary-btn-bg-hover:#990000;
-            --primary-btn-text:#ffcccc;
-            --primary-btn-text-hover:#ffcccc;
-
-            //Music Player
-            --audio-player-background:#660000;
-            --volume-slider-background:#990000;
-            --volume-percentage-background:#cc0000;
-
-            //Side Navigation Menu
-            --side-nav-bg:#4a0000;
-            --side-nav-button-text-hover-active:#ffcccc;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#660000;
-            --side-nav-button-bg-active:#660000;
-
-            //Availability Status
-            --status-bg-color:#cc0000;
-            --status-dot-color:#ff6666;
-
-        }
-
-        // Red light theme colors
-        .red-light{
-
-            //Texts
-            --background:#ffcccc;
-            --text-color:#4a0000;
-            --title-color:#800000;
-            --nav-title-color:#660000;
-            --p-text-color:#990000;
-            --exp-text-color:#cc0000;
-        
-            //Border
-            --border-color:#ffb3b3;
-        
-            //Buttons
-            --primary-btn-bg:#ff6666;
-            --primary-btn-bg-hover:#ff8080;
-            --primary-btn-text:#4a0000;
-            --primary-btn-text-hover:#4a0000;
-        
-            //Music Player
-            --audio-player-background:#ff6666;
-            --volume-slider-background:#ff8080;
-            --volume-percentage-background:#ff9999;
-        
-            //Side Navigation Menu
-            --side-nav-bg:#ffcccc;
-            --side-nav-button-text-hover-active:#4a0000;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#ff6666;
-            --side-nav-button-bg-active:#ff6666;
-        
-            //Availability Status
-            --status-bg-color:#ff9999;
-            --status-dot-color:#cc0000;
-        
-        }
-
-        // Green dark theme colors
-        .green-dark{
-
-            //Texts
-            --background:#003300;
-            --text-color:#99ff99;
-            --title-color:#ccffcc;
-            --nav-title-color:#66ff66;
-            --p-text-color:#33cc33;
-            --exp-text-color:#00ff00;
-
-            //Border
-            --border-color:#006600;
-
-            //Buttons
-            --primary-btn-bg:#004d00;
-            --primary-btn-bg-hover:#009900;
-            --primary-btn-text:#ccffcc;
-            --primary-btn-text-hover:#ccffcc;
-
-            //Music Player
-            --audio-player-background:#004d00;
-            --volume-slider-background:#009900;
-            --volume-percentage-background:#00cc00;
-
-            //Side Navigation Menu
-            --side-nav-bg:#003300;
-            --side-nav-button-text-hover-active:#ccffcc;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#004d00;
-            --side-nav-button-bg-active:#004d00;
-
-            //Availability Status
-            --status-bg-color:#00cc00;
-            --status-dot-color:#00ff00;
-
-        }
-
-        // Green light theme colors
-        .green-light{
-
-            //Texts
-            --background:#ccffcc;
-            --text-color:#003300;
-            --title-color:#006600;
-            --nav-title-color:#004d00;
-            --p-text-color:#009900;
-            --exp-text-color:#00cc00;
-
-            //Border
-            --border-color:#99ff99;
-
-            //Buttons
-            --primary-btn-bg:#66ff66;
-            --primary-btn-bg-hover:#99ff99;
-            --primary-btn-text:#003300;
-            --primary-btn-text-hover:#003300;
-
-            //Music Player
-            --audio-player-background:#66ff66;
-            --volume-slider-background:#99ff99;
-            --volume-percentage-background:#ccffcc;
-
-            //Side Navigation Menu
-            --side-nav-bg:#ccffcc;
-            --side-nav-button-text-hover-active:#003300;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#66ff66;
-            --side-nav-button-bg-active:#66ff66;
-
-            //Availability Status
-            --status-bg-color:#99ff99;
-            --status-dot-color:#00cc00;
-
-        }
-
-        // Orange dark theme colors
-        .orange-dark{
-
-            //Texts
-            --background:#4a1a00;
-            --text-color:#ffb380;
-            --title-color:#ffcc99;
-            --nav-title-color:#ff9966;
-            --p-text-color:#ff8040;
-            --exp-text-color:#ff6600;
-
-            //Border
-            --border-color:#804000;
-
-            //Buttons
-            --primary-btn-bg:#663300;
-            --primary-btn-bg-hover:#994d00;
-            --primary-btn-text:#ffcc99;
-            --primary-btn-text-hover:#ffcc99;
-
-            //Music Player
-            --audio-player-background:#663300;
-            --volume-slider-background:#994d00;
-            --volume-percentage-background:#cc6600;
-
-            //Side Navigation Menu
-            --side-nav-bg:#4a1a00;
-            --side-nav-button-text-hover-active:#ffcc99;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#663300;
-            --side-nav-button-bg-active:#663300;
-
-            //Availability Status
-            --status-bg-color:#cc6600;
-            --status-dot-color:#ff8040;
-
-        }
-
-        // Orange light theme colors
-        .orange-light{
-
-            //Texts
-            --background:#ffcc99;
-            --text-color:#4a1a00;
-            --title-color:#804000;
-            --nav-title-color:#663300;
-            --p-text-color:#994d00;
-            --exp-text-color:#cc6600;
-
-            //Border
-            --border-color:#ffb380;
-
-            //Buttons
-            --primary-btn-bg:#ff9966;
-            --primary-btn-bg-hover:#ffb380;
-            --primary-btn-text:#4a1a00;
-            --primary-btn-text-hover:#4a1a00;
-
-            //Music Player
-            --audio-player-background:#ff9966;
-            --volume-slider-background:#ffb380;
-            --volume-percentage-background:#ffcc99;
-
-            //Side Navigation Menu
-            --side-nav-bg:#ffcc99;
-            --side-nav-button-text-hover-active:#4a1a00;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#ff9966;
-            --side-nav-button-bg-active:#ff9966;
-
-            //Availability Status
-            --status-bg-color:#ffb380;
-            --status-dot-color:#cc6600;
-
-        }
-
-        // Purple dark theme colors
-        .purple-dark{
-
-            //Texts
-            --background:#2e004a;
-            --text-color:#d9b3ff;
-            --title-color:#e6ccff;
-            --nav-title-color:#cc99ff;
-            --p-text-color:#b366ff;
-            --exp-text-color:#9933ff;
-
-            //Border
-            --border-color:#660099;
-
-            //Buttons
-            --primary-btn-bg:#4d0066;
-            --primary-btn-bg-hover:#660099;
-            --primary-btn-text:#e6ccff;
-            --primary-btn-text-hover:#e6ccff;
-
-            //Music Player
-            --audio-player-background:#4d0066;
-            --volume-slider-background:#660099;
-            --volume-percentage-background:#9933cc;
-
-            //Side Navigation Menu
-            --side-nav-bg:#2e004a;
-            --side-nav-button-text-hover-active:#e6ccff;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#4d0066;
-            --side-nav-button-bg-active:#4d0066;
-
-            //Availability Status
-            --status-bg-color:#9933cc;
-            --status-dot-color:#b366ff;
-
-        }
-
-        // Purple light theme colors
-        .purple-light{
-
-            //Texts
-            --background:#e6ccff;
-            --text-color:#2e004a;
-            --title-color:#660099;
-            --nav-title-color:#4d0066;
-            --p-text-color:#660099;
-            --exp-text-color:#9933cc;
-
-            //Border
-            --border-color:#d9b3ff;
-
-            //Buttons
-            --primary-btn-bg:#cc99ff;
-            --primary-btn-bg-hover:#d9b3ff;
-            --primary-btn-text:#2e004a;
-            --primary-btn-text-hover:#2e004a;
-
-            //Music Player
-            --audio-player-background:#cc99ff;
-            --volume-slider-background:#d9b3ff;
-            --volume-percentage-background:#e6ccff;
-
-            //Side Navigation Menu
-            --side-nav-bg:#e6ccff;
-            --side-nav-button-text-hover-active:#2e004a;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#cc99ff;
-            --side-nav-button-bg-active:#cc99ff;
-
-            //Availability Status
-            --status-bg-color:#d9b3ff;
-            --status-dot-color:#9933cc;
-
-        }
-
-        // Blue dark theme colors
-        .blue-dark{
-
-            //Texts
-            --background:#001a4d;
-            --text-color:#80b3ff;
-            --title-color:#99ccff;
-            --nav-title-color:#6699ff;
-            --p-text-color:#407fff;
-            --exp-text-color:#0055ff;
-
-            //Border
-            --border-color:#003399;
-
-            //Buttons
-            --primary-btn-bg:#003366;
-            --primary-btn-bg-hover:#004d99;
-            --primary-btn-text:#99ccff;
-            --primary-btn-text-hover:#99ccff;
-
-            //Music Player
-            --audio-player-background:#003366;
-            --volume-slider-background:#004d99;
-            --volume-percentage-background:#0066cc;
-
-            //Side Navigation Menu
-            --side-nav-bg:#001a4d;
-            --side-nav-button-text-hover-active:#99ccff;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#003366;
-            --side-nav-button-bg-active:#003366;
-
-            //Availability Status
-            --status-bg-color:#0066cc;
-            --status-dot-color:#407fff;
-
-        }
-
-        // Blue light theme colors
-        .blue-light{
-
-            //Texts
-            --background:#99ccff;
-            --text-color:#001a4d;
-            --title-color:#003399;
-            --nav-title-color:#003366;
-            --p-text-color:#004d99;
-            --exp-text-color:#0066cc;
-
-            //Border
-            --border-color:#80b3ff;
-
-            //Buttons
-            --primary-btn-bg:#6699ff;
-            --primary-btn-bg-hover:#80b3ff;
-            --primary-btn-text:#001a4d;
-            --primary-btn-text-hover:#001a4d;
-
-            //Music Player
-            --audio-player-background:#6699ff;
-            --volume-slider-background:#80b3ff;
-            --volume-percentage-background:#99ccff;
-
-            //Side Navigation Menu
-            --side-nav-bg:#99ccff;
-            --side-nav-button-text-hover-active:#001a4d;
-            --side-nav-button-bg:transparent;
-            --side-nav-button-bg-hover:#6699ff;
-            --side-nav-button-bg-active:#6699ff;
-
-            //Availability Status
-            --status-bg-color:#80b3ff;
-            --status-dot-color:#0066cc;
-
-        }
+    --blue-color: #3b82f6;
+  }
+
+  // Indigo dark theme colors
+  .indigo-dark {
+    //Texts
+    --background: #1e1b4b;
+    --text-color: #c7d2fe;
+    --title-color: #e0e7ff;
+    --nav-title-color: #a5b4fc;
+    --p-text-color: #c4b5fd;
+    --exp-text-color: #d8b4fe;
+
+    //Border
+    --border-color: #3730a3;
+
+    //Buttons
+    --primary-btn-bg: #4c1d95;
+    --primary-btn-bg-hover: #5b21b6;
+    --primary-btn-text: #e0e7ff;
+    --primary-btn-text-hover: #e0e7ff;
+
+    //Music Player
+    --audio-player-background: #4c1d95;
+    --volume-slider-background: #5b21b6;
+    --volume-percentage-background: #7c3aed;
+
+    //Side Navigation Menu
+    --side-nav-bg: #1e1b4b;
+    --side-nav-button-text-hover-active: #e0e7ff;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #4c1d95;
+    --side-nav-button-bg-active: #4c1d95;
+
+    //Availability Status
+    --status-bg-color: #6d28d9;
+    --status-dot-color: #a78bfa;
+  }
+
+  // Indigo light theme colors
+  .indigo-light {
+    //Texts
+    --background: #e0e7ff;
+    --text-color: #1e1b4b;
+    --title-color: #3730a3;
+    --nav-title-color: #4c1d95;
+    --p-text-color: #5b21b6;
+    --exp-text-color: #7c3aed;
+
+    //Border
+    --border-color: #c7d2fe;
+
+    //Buttons
+    --primary-btn-bg: #a78bfa;
+    --primary-btn-bg-hover: #c4b5fd;
+    --primary-btn-text: #1e1b4b;
+    --primary-btn-text-hover: #1e1b4b;
+
+    //Music Player
+    --audio-player-background: #a78bfa;
+    --volume-slider-background: #c4b5fd;
+    --volume-percentage-background: #d8b4fe;
+
+    //Side Navigation Menu
+    --side-nav-bg: #e0e7ff;
+    --side-nav-button-text-hover-active: #1e1b4b;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #a78bfa;
+    --side-nav-button-bg-active: #a78bfa;
+
+    //Availability Status
+    --status-bg-color: #d8b4fe;
+    --status-dot-color: #7c3aed;
+  }
+
+  // Red dark theme colors
+  .red-dark {
+    //Texts
+    --background: #4a0000;
+    --text-color: #ffb3b3;
+    --title-color: #ffcccc;
+    --nav-title-color: #ff9999;
+    --p-text-color: #ff8080;
+    --exp-text-color: #ff6666;
+
+    //Border
+    --border-color: #800000;
+
+    //Buttons
+    --primary-btn-bg: #660000;
+    --primary-btn-bg-hover: #990000;
+    --primary-btn-text: #ffcccc;
+    --primary-btn-text-hover: #ffcccc;
+
+    //Music Player
+    --audio-player-background: #660000;
+    --volume-slider-background: #990000;
+    --volume-percentage-background: #cc0000;
+
+    //Side Navigation Menu
+    --side-nav-bg: #4a0000;
+    --side-nav-button-text-hover-active: #ffcccc;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #660000;
+    --side-nav-button-bg-active: #660000;
+
+    //Availability Status
+    --status-bg-color: #cc0000;
+    --status-dot-color: #ff6666;
+  }
+
+  // Red light theme colors
+  .red-light {
+    //Texts
+    --background: #ffcccc;
+    --text-color: #4a0000;
+    --title-color: #800000;
+    --nav-title-color: #660000;
+    --p-text-color: #990000;
+    --exp-text-color: #cc0000;
+
+    //Border
+    --border-color: #ffb3b3;
+
+    //Buttons
+    --primary-btn-bg: #ff6666;
+    --primary-btn-bg-hover: #ff8080;
+    --primary-btn-text: #4a0000;
+    --primary-btn-text-hover: #4a0000;
+
+    //Music Player
+    --audio-player-background: #ff6666;
+    --volume-slider-background: #ff8080;
+    --volume-percentage-background: #ff9999;
+
+    //Side Navigation Menu
+    --side-nav-bg: #ffcccc;
+    --side-nav-button-text-hover-active: #4a0000;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #ff6666;
+    --side-nav-button-bg-active: #ff6666;
+
+    //Availability Status
+    --status-bg-color: #ff9999;
+    --status-dot-color: #cc0000;
+  }
+
+  // Green dark theme colors
+  .green-dark {
+    //Texts
+    --background: #003300;
+    --text-color: #99ff99;
+    --title-color: #ccffcc;
+    --nav-title-color: #66ff66;
+    --p-text-color: #33cc33;
+    --exp-text-color: #00ff00;
+
+    //Border
+    --border-color: #006600;
+
+    //Buttons
+    --primary-btn-bg: #004d00;
+    --primary-btn-bg-hover: #009900;
+    --primary-btn-text: #ccffcc;
+    --primary-btn-text-hover: #ccffcc;
+
+    //Music Player
+    --audio-player-background: #004d00;
+    --volume-slider-background: #009900;
+    --volume-percentage-background: #00cc00;
+
+    //Side Navigation Menu
+    --side-nav-bg: #003300;
+    --side-nav-button-text-hover-active: #ccffcc;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #004d00;
+    --side-nav-button-bg-active: #004d00;
+
+    //Availability Status
+    --status-bg-color: #00cc00;
+    --status-dot-color: #00ff00;
+  }
+
+  // Green light theme colors
+  .green-light {
+    //Texts
+    --background: #ccffcc;
+    --text-color: #003300;
+    --title-color: #006600;
+    --nav-title-color: #004d00;
+    --p-text-color: #009900;
+    --exp-text-color: #00cc00;
+
+    //Border
+    --border-color: #99ff99;
+
+    //Buttons
+    --primary-btn-bg: #66ff66;
+    --primary-btn-bg-hover: #99ff99;
+    --primary-btn-text: #003300;
+    --primary-btn-text-hover: #003300;
+
+    //Music Player
+    --audio-player-background: #66ff66;
+    --volume-slider-background: #99ff99;
+    --volume-percentage-background: #ccffcc;
+
+    //Side Navigation Menu
+    --side-nav-bg: #ccffcc;
+    --side-nav-button-text-hover-active: #003300;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #66ff66;
+    --side-nav-button-bg-active: #66ff66;
+
+    //Availability Status
+    --status-bg-color: #99ff99;
+    --status-dot-color: #00cc00;
+  }
+
+  // Orange dark theme colors
+  .orange-dark {
+    //Texts
+    --background: #4a1a00;
+    --text-color: #ffb380;
+    --title-color: #ffcc99;
+    --nav-title-color: #ff9966;
+    --p-text-color: #ff8040;
+    --exp-text-color: #ff6600;
+
+    //Border
+    --border-color: #804000;
+
+    //Buttons
+    --primary-btn-bg: #663300;
+    --primary-btn-bg-hover: #994d00;
+    --primary-btn-text: #ffcc99;
+    --primary-btn-text-hover: #ffcc99;
+
+    //Music Player
+    --audio-player-background: #663300;
+    --volume-slider-background: #994d00;
+    --volume-percentage-background: #cc6600;
+
+    //Side Navigation Menu
+    --side-nav-bg: #4a1a00;
+    --side-nav-button-text-hover-active: #ffcc99;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #663300;
+    --side-nav-button-bg-active: #663300;
+
+    //Availability Status
+    --status-bg-color: #cc6600;
+    --status-dot-color: #ff8040;
+  }
+
+  // Orange light theme colors
+  .orange-light {
+    //Texts
+    --background: #ffcc99;
+    --text-color: #4a1a00;
+    --title-color: #804000;
+    --nav-title-color: #663300;
+    --p-text-color: #994d00;
+    --exp-text-color: #cc6600;
+
+    //Border
+    --border-color: #ffb380;
+
+    //Buttons
+    --primary-btn-bg: #ff9966;
+    --primary-btn-bg-hover: #ffb380;
+    --primary-btn-text: #4a1a00;
+    --primary-btn-text-hover: #4a1a00;
+
+    //Music Player
+    --audio-player-background: #ff9966;
+    --volume-slider-background: #ffb380;
+    --volume-percentage-background: #ffcc99;
+
+    //Side Navigation Menu
+    --side-nav-bg: #ffcc99;
+    --side-nav-button-text-hover-active: #4a1a00;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #ff9966;
+    --side-nav-button-bg-active: #ff9966;
+
+    //Availability Status
+    --status-bg-color: #ffb380;
+    --status-dot-color: #cc6600;
+  }
+
+  // Purple dark theme colors
+  .purple-dark {
+    //Texts
+    --background: #2e004a;
+    --text-color: #d9b3ff;
+    --title-color: #e6ccff;
+    --nav-title-color: #cc99ff;
+    --p-text-color: #b366ff;
+    --exp-text-color: #9933ff;
+
+    //Border
+    --border-color: #660099;
+
+    //Buttons
+    --primary-btn-bg: #4d0066;
+    --primary-btn-bg-hover: #660099;
+    --primary-btn-text: #e6ccff;
+    --primary-btn-text-hover: #e6ccff;
+
+    //Music Player
+    --audio-player-background: #4d0066;
+    --volume-slider-background: #660099;
+    --volume-percentage-background: #9933cc;
+
+    //Side Navigation Menu
+    --side-nav-bg: #2e004a;
+    --side-nav-button-text-hover-active: #e6ccff;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #4d0066;
+    --side-nav-button-bg-active: #4d0066;
+
+    //Availability Status
+    --status-bg-color: #9933cc;
+    --status-dot-color: #b366ff;
+  }
+
+  // Purple light theme colors
+  .purple-light {
+    //Texts
+    --background: #e6ccff;
+    --text-color: #2e004a;
+    --title-color: #660099;
+    --nav-title-color: #4d0066;
+    --p-text-color: #660099;
+    --exp-text-color: #9933cc;
+
+    //Border
+    --border-color: #d9b3ff;
+
+    //Buttons
+    --primary-btn-bg: #cc99ff;
+    --primary-btn-bg-hover: #d9b3ff;
+    --primary-btn-text: #2e004a;
+    --primary-btn-text-hover: #2e004a;
+
+    //Music Player
+    --audio-player-background: #cc99ff;
+    --volume-slider-background: #d9b3ff;
+    --volume-percentage-background: #e6ccff;
+
+    //Side Navigation Menu
+    --side-nav-bg: #e6ccff;
+    --side-nav-button-text-hover-active: #2e004a;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #cc99ff;
+    --side-nav-button-bg-active: #cc99ff;
+
+    //Availability Status
+    --status-bg-color: #d9b3ff;
+    --status-dot-color: #9933cc;
+  }
+
+  // Blue dark theme colors
+  .blue-dark {
+    //Texts
+    --background: #001a4d;
+    --text-color: #80b3ff;
+    --title-color: #99ccff;
+    --nav-title-color: #6699ff;
+    --p-text-color: #407fff;
+    --exp-text-color: #0055ff;
+
+    //Border
+    --border-color: #003399;
+
+    //Buttons
+    --primary-btn-bg: #003366;
+    --primary-btn-bg-hover: #004d99;
+    --primary-btn-text: #99ccff;
+    --primary-btn-text-hover: #99ccff;
+
+    //Music Player
+    --audio-player-background: #003366;
+    --volume-slider-background: #004d99;
+    --volume-percentage-background: #0066cc;
+
+    //Side Navigation Menu
+    --side-nav-bg: #001a4d;
+    --side-nav-button-text-hover-active: #99ccff;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #003366;
+    --side-nav-button-bg-active: #003366;
+
+    //Availability Status
+    --status-bg-color: #0066cc;
+    --status-dot-color: #407fff;
+  }
+
+  // Blue light theme colors
+  .blue-light {
+    //Texts
+    --background: #99ccff;
+    --text-color: #001a4d;
+    --title-color: #003399;
+    --nav-title-color: #003366;
+    --p-text-color: #004d99;
+    --exp-text-color: #0066cc;
+
+    //Border
+    --border-color: #80b3ff;
+
+    //Buttons
+    --primary-btn-bg: #6699ff;
+    --primary-btn-bg-hover: #80b3ff;
+    --primary-btn-text: #001a4d;
+    --primary-btn-text-hover: #001a4d;
+
+    //Music Player
+    --audio-player-background: #6699ff;
+    --volume-slider-background: #80b3ff;
+    --volume-percentage-background: #99ccff;
+
+    //Side Navigation Menu
+    --side-nav-bg: #99ccff;
+    --side-nav-button-text-hover-active: #001a4d;
+    --side-nav-button-bg: transparent;
+    --side-nav-button-bg-hover: #6699ff;
+    --side-nav-button-bg-active: #6699ff;
+
+    //Availability Status
+    --status-bg-color: #80b3ff;
+    --status-dot-color: #0066cc;
+  }
 }

@@ -1,31 +1,62 @@
 <div
-  class="flex flex-col gap-6 w-[90%] p-6 px-24 items-center max-xl:px-5 max-lg:px-20 max-sm:mx-10 max-sm:px-0 max-xl:w-auto fade-in-1"
+  class="flex flex-col gap-6 w-[90%] p-6 px-24 items-start max-xl:px-5 max-lg:px-20 max-sm:mx-10 max-sm:px-0 max-xl:w-auto fade-in-1"
 >
   <!-- Experience section -->
-  <div *ngFor="let experience of workExperiences" class="experience-box">
-    <p class="text-xs py-1 font-semibold w-[200px] text-right max-md:hidden">
-      {{ experience.timeline | uppercase }}
-    </p>
-
-    <div class="flex flex-col">
-      <div class="flex flex-col">
-        <p class="flex items-center gap-3">
-          <span class="company">{{ experience.company }}</span>
-        </p>
-
-        <p class="text-xs py-1 font-semibold w-[200px] min-[768px]:hidden">
-          [ {{ experience.timeline | uppercase }} ]
-        </p>
+  <div
+    class="flex gap-6 items-start max-lg:gap-4"
+    *ngFor="let experience of workExperiences"
+  >
+    <div class="flex flex-col text-sm">
+      <div class="flex items-start gap-3">
+        <img
+          class="w-11 h-11 object-cover object-left-top rounded p-[2px] bg-white"
+          [src]="experience.companyLogo"
+        />
+        <div class="flex flex-col">
+          <a
+            target="_blank"
+            [href]="experience.companyWebsite"
+            class="font-medium text-base text-[var(--title-color)] hover:text-[var(--blue-color)] hover:underline flex gap-x-4 items-center flex-wrap"
+          >
+            {{ experience.company }}
+          </a>
+          <span>{{ experience.jobLocation }}</span>
+        </div>
       </div>
-      <div class="pb-4 rounded-bl-xl w-full max-[768px]:pl-0">
-        <p class="experience-text">
-          {{ experience.position }}
-        </p>
-        <ul class="list-disc ml-5 pt-3 text-sm leading-normal w-auto">
-          <li *ngFor="let desc of experience.workDescription">
-            <span class="relative left-3 contents">{{ desc }}</span>
-          </li>
-        </ul>
+
+      <div class="flex flex-col gap-6 mt-3">
+        <div
+          class="flex flex-col gap-4"
+          *ngFor="let position of experience.positions"
+        >
+          <div class="flex items-start gap-2">
+            <div class="flex flex-col justify-center mr-1 gap-2 items-center">
+              <span
+                class="w-4 h-2 flex-grow border-l-[2px] border-b-[2px] border-[var(--exp-text-color)] mr-1 rounded-bl-2xl"
+              ></span>
+            </div>
+            <div class="flex flex-col">
+              <h2
+                class="font-medium text-[var(--exp-text-color)] flex flex-wrap items-center gap-x-2"
+              >
+                {{ position.position }}
+              </h2>
+              <p class="flex gap-2">
+                {{ position.timeline }}<span>•</span> {{ position.jobType }}
+              </p>
+            </div>
+          </div>
+          <ul>
+            <li *ngFor="let task of position.workDescription">
+              <p class="text-sm flex items-center gap-1">
+                <span class="material-symbols-outlined text-base"
+                  >check_circle</span
+                >
+                {{ task }}
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

@@ -42,25 +42,47 @@
         Work Experiences <span class="text-base"></span>
       </h2>
 
-      <div
-        class="flex flex-col gap-5"
-        *ngFor="let experience of experiences | slice : 0 : 2"
-      >
-        <div class="flex gap-10 items-center max-lg:gap-4">
+      <div class="flex flex-col gap-6">
+        <div
+          class="flex gap-6 items-start max-lg:gap-4"
+          *ngFor="let experience of experiences | slice : 0 : 2"
+        >
           <img
-            class="w-20 h-20 object-contain rounded-md bg-white border border-[var(--border-color)] shadow-sm p-4"
+            class="w-16 h-16 object-cover object-left-top rounded-full bg-white p-2"
             [src]="experience.companyLogo"
           />
           <div class="flex flex-col text-sm">
-            <h2 class="font-medium flex flex-wrap items-center gap-x-2">
-              {{ experience.position }}
-              <span> •</span><span>{{ experience.company }} </span>
-            </h2>
-            <p class="flex gap-2">
-              {{ experience.jobType }} <span>•</span>
-              <span>{{ experience.jobLocation }}</span>
-            </p>
-            <p class="">{{ experience.timeline }}</p>
+            <a
+              target="_blank"
+              [href]="experience.companyWebsite"
+              class="font-medium text-base text-[var(--title-color)] hover:text-[var(--blue-color)] hover:underline flex gap-x-4 items-center flex-wrap"
+            >
+              {{ experience.company }}
+            </a>
+            <span>{{ experience.jobLocation }}</span>
+            <div class="flex flex-row max-sm:flex-col gap-20 max-sm:gap-3 mt-3">
+              <div
+                class="flex items-start gap-2"
+                *ngFor="let position of experience.positions"
+              >
+                <div
+                  class="flex flex-col justify-center mr-1 gap-2 items-center"
+                >
+                  <span
+                    class="w-4 h-2 flex-grow border-l-[2px] border-b-[2px] border-[var(--exp-text-color)] opacity-50 mr-1 rounded-bl-2xl"
+                  ></span>
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="font-medium flex flex-wrap items-center gap-x-2">
+                    {{ position.position }}
+                  </h2>
+                  <p class="flex gap-2">
+                    {{ position.jobType }}
+                  </p>
+                  <p class="">{{ position.timeline }}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,18 +102,24 @@
     <div class="flex flex-col gap-4">
       <h2 class="section-title">Education</h2>
 
-      <div class="flex flex-col" *ngFor="let education of educations">
-        <div class="flex gap-10 items-center max-lg:gap-4">
+      <div class="flex flex-col gap-6 mt-2">
+        <div
+          *ngFor="let education of educations"
+          class="flex gap-6 items-center max-lg:gap-4"
+        >
           <img
-            class="w-20 h-20 object-contain rounded-md bg-white border border-[var(--border-color)] shadow-sm p-4"
+            class="w-16 h-16 object-contain rounded-full bg-white p-2"
             [src]="education.image"
           />
           <div class="flex flex-col text-sm">
-            <h2 class="font-medium flex gap-x-2 flex-wrap">
-              {{ education.course }}
-              <span> •</span><span> {{ education.degree }} </span>
-            </h2>
-            <p>{{ education.college }}</p>
+            <a
+              target="_blank"
+              [href]="education.collegeWebsite"
+              class="font-medium text-base text-[var(--title-color)] hover:text-[var(--blue-color)] hover:underline flex gap-x-4 items-center flex-wrap"
+            >
+              {{ education.college }}
+            </a>
+            <h2>{{ education.degree }}, {{ education.course }}</h2>
             <p>{{ education.year }}</p>
           </div>
         </div>
@@ -136,7 +164,7 @@
   <div class="flex flex-col w-full gap-3">
     <!-- Title section -->
     <div
-      class="flex flex-col gap-6 p-4 rounded-md px-5 max-lg:px-0 max-xl:bg-transparent -mx-5 max-lg:mx-0 bg-[var(--side-nav-bg)]"
+      class="flex flex-col gap-6 rounded-md max-lg:px-0 max-xl:bg-transparent max-lg:mx-0"
     >
       <h2 class="section-title">Certificates & Licenses</h2>
 
@@ -144,28 +172,19 @@
         class="flex flex-col"
         *ngFor="let certificate of certificates; let i = index"
       >
-        <div class="flex gap-10 items-center max-lg:gap-4">
+        <div class="flex gap-6 max-lg:gap-4">
           <img
-            [ngClass]="{
-              'bg-black': i == 1 || i == 2,
-              'bg-white': i == 0
-            }"
-            class="w-20 h-20 object-contain rounded-md p-4"
+            class="w-16 h-16 object-contain rounded-md p-2"
             [src]="certificate.gotFromLogo"
           />
           <div class="flex flex-col text-sm">
-            <h2 class="font-medium flex gap-x-4 items-center flex-wrap">
+            <a
+              target="_blank"
+              [href]="certificate.url"
+              class="font-medium text-base text-[var(--title-color)] hover:text-[var(--blue-color)] hover:underline flex gap-x-4 items-center flex-wrap"
+            >
               {{ certificate.name }}
-              <a
-                class="text-[var(--blue-color)] max-lg:my-1 flex items-center gap-1 border px-2 rounded-full border-[var(--blue-color)]"
-                target="_blank"
-                [href]="certificate.url"
-                >View
-                <span class="text-sm material-symbols-outlined">
-                  open_in_new
-                </span></a
-              >
-            </h2>
+            </a>
             <p>
               {{ certificate.gotFrom }}
             </p>
