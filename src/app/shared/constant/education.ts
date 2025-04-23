@@ -4,7 +4,7 @@ export const EDUCATION = [
     course: 'Software Development',
     year: '2023 - 2025',
     image:
-      'https://media.licdn.com/dms/image/v2/D560BAQG4MWYO9WC-5g/company-logo_200_200/company-logo_200_200/0/1666810801136/lambton_college_sarnia_logo?e=1750896000&v=beta&t=NWOqMVm0zovFlAdy_NahSOXhN2fvMbxfhAbrlT_d-Wk',
+      'https://www.lambtoncollege.ca/images/default-source/media/lambton-college-logo.png?sfvrsn=3b307876_1',
     college: 'Lambton College in Toronto',
     collegeWebsite: 'https://www.lambtoncollege.ca/',
   },
@@ -13,7 +13,7 @@ export const EDUCATION = [
     course: 'Computer Engineering',
     year: '2016 - 2020',
     image:
-      'https://media.licdn.com/dms/image/v2/C560BAQG2ingZrQS1Dg/company-logo_200_200/company-logo_200_200/0/1676120000190/kantipur_engg_college_logo?e=1750896000&v=beta&t=Rwv4LfbayubTE2SAtZABZx6Lk2hD9krLBYC5ifD3cv0',
+      'https://kec.edu.np/wp-content/uploads/2024/06/KEC-College-logo-2-1.png',
     college: 'Kantipur Engineering College',
     collegeWebsite: 'https://www.kec.edu.np/',
   },

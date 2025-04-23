@@ -55,7 +55,7 @@ export const WORK_EXPEREICNE = [
     company: 'Dunn-Edwards Paints (via Upwork)',
     companyWebsite: 'https://www.dunnedwards.com/',
     companyLogo:
-      'https://media.licdn.com/dms/image/v2/C4D0BAQFA4pxszwAehA/company-logo_200_200/company-logo_200_200/0/1631350702459?e=1750896000&v=beta&t=VEff4w2iejKdCiV5hH_NxHb9kRgKdn6z3oL15Bz3UAU',
+      'https://images.icon-icons.com/2699/PNG/512/upwork_logo_icon_170310.png',
     jobLocation: 'United States , Remote',
     positions: [
       {
@@ -91,7 +91,7 @@ export const WORK_EXPEREICNE = [
     company: 'Verisk ISO',
     companyWebsite: 'https://www.verisk.com/',
     companyLogo:
-      'https://media.licdn.com/dms/image/v2/C4E0BAQHsjp1GOw4Rmw/company-logo_200_200/company-logo_200_200/0/1641304478140/verisk_analytics_logo?e=1750896000&v=beta&t=Y31EprZBJrkxUM_juvBq8fT5xWRwSCq2uyZ-HbHUa-Q',
+      'https://www.verisk.com/4a5ce1/globalassets/svgs/verisk_logo.svg',
     jobLocation: 'Kathmandu Nepal , Hybrid',
     positions: [
       {
