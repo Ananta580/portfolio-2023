@@ -1,8 +1,11 @@
 <a *ngIf="showcase" class="flex flex-col gap-2 w-full cursor-pointer">
-  <img
-    class="w-full h-auto object-cover object-top rounded-lg hover:rounded-none transition-all duration-300"
-    [src]="showcase.image"
-  />
+  <div class="{{ showcase.bgClass }} rounded-lg">
+    <img
+      class="w-full h-auto object-cover object-top rounded-lg hover:scale-95 transition-all duration-300"
+      [src]="showcase.image"
+    />
+  </div>
+
   <h3 class="development-title line-clamp-2">
     {{ showcase.title }}
   </h3>
