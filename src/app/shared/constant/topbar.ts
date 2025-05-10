@@ -6,7 +6,7 @@ export const PROFILE_DETAIL = {
   profilePicSmall: './../../../assets/images/profile-small.jpeg',
   shortAbout: `I am a Software engineer, with a hobby of graphic designing and User
       inteface ...`,
-  resume: 'Ananta_Poudel_Software_Engineer_Resume.pdf',
+  resume: 'AnantaPoudel_SoftwareEngineer_Resume.pdf',
   email: 'ap.ananta.poudel@gmail.com',
 };
 
