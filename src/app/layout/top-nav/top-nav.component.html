@@ -1,47 +1,32 @@
 <div
   class="flex w-full p-10 max-[800px]:pb-4 px-24 gap-10 max-xl:px-5 max-lg:px-20 max-sm:px-8 max-sm:pl-10 fade-in-1"
 >
-  <!-- Profile Image -->
-  <!-- <div class="relative w-40 h-40 cursor-pointer max-sm:hidden group">
-    <div
-      style="
-        background: linear-gradient(to top right, #d42626 50%, #185bae 50%);
-      "
-      class="absolute -top-[5%] -left-[5%] bg-opacity-20 rounded-full -z-10 w-[110%] h-[110%] transition-transform duration-1000 ease-in-out group-hover:rotate-180 group-hover:animate-pulse"
-    ></div>
-    <img
-      class="rounded-full w-full h-full object-cover"
-      [src]="profile.profilePic"
-    />
-  </div> -->
-
   <!-- Title and Descriptions -->
   <div class="flex flex-col w-auto gap-5 max-sm:mt-10">
     <div class="flex gap-4 items-center">
       <!-- For mobile screen profile image -->
       <img
-        class="rounded-full w-14 h-14 hover:grayscale-[40%] cursor-pointer max-sm:flex"
+        class="rounded-full w-18 h-16 hover:grayscale-[40%] cursor-pointer max-sm:flex"
         [src]="profile.profilePicSmall"
       />
-      <h1 class="text-5xl max-sm:text-4xl font-semibold">
-        {{ profile.name }}
-      </h1>
+      <div class="flex flex-col">
+        <h1 class="text-5xl max-sm:text-4xl font-semibold">
+          {{ profile.name }}
+        </h1>
+        <a href="mailto:{{ profile.email }}" class="flex items-center gap-1">
+          {{ profile.designation }}
+          <span class="material-symbols-outlined text-sm">distance</span>
+          {{ profile.location }}</a
+        >
+      </div>
     </div>
+
     <div class="flex gap-2 flex-wrap">
-      <p-button>
-        <span class="material-symbols-outlined">landscape</span
-        >{{ profile.designation }}</p-button
-      >
       <a href="mailto:{{ profile.email }}"
         ><p-button>
           <span class="material-symbols-outlined text-sm">alternate_email</span>
           {{ profile.email }}</p-button
         ></a
-      >
-
-      <p-button>
-        <span class="material-symbols-outlined text-sm">location_on</span
-        >{{ profile.location }}</p-button
       >
       <p-button (click)="downloadResume()" class="flex items-center"
         ><span class="material-symbols-outlined text-base"> download </span

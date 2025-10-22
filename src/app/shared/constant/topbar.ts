@@ -1,6 +1,6 @@
 export const PROFILE_DETAIL = {
   name: 'Ananta Poudel',
-  designation: 'Software Engineer',
+  designation: 'Senior Software Engineer',
   location: 'Toronto, Ontario',
   profilePic: './../../../assets/images/profile.jpeg',
   profilePicSmall: './../../../assets/images/profile-small.jpeg',
