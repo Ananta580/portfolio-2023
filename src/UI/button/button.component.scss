@@ -1,13 +1,23 @@
-button{
-    line-height: 36px;
-    padding: 0 16px;
-    min-height: 40px;
-    &.primary{
-        background-color: var(--primary-btn-bg);
-        color: var(--primary-btn-text);
-        &:hover{
-            background-color: var(--primary-btn-bg-hover);
-            color: var(--primary-btn-text-hover);
-        }
+button {
+  line-height: 36px;
+  padding: 0 16px;
+  min-height: 40px;
+  &.primary {
+    background-color: var(--primary-btn-bg);
+    color: var(--primary-btn-text);
+    &:hover {
+      background-color: var(--primary-btn-bg-hover);
+      color: var(--primary-btn-text-hover);
     }
+  }
+
+  &.special {
+    background-image: linear-gradient(
+      to right,
+      var(--special-btn-from),
+      var(--special-btn-to)
+    );
+    padding: 0px 15px 0px 10px;
+    color: var(--primary-btn-text);
+  }
 }

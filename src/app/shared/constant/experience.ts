@@ -109,7 +109,7 @@ export const WORK_EXPEREICNE = [
   {
     company: 'Crossover Nepal',
     companyWebsite: 'https://www.crossovernepal.com/',
-    companyLogo: 'https://www.crossovernepal.com/images/crossover.jpg',
+    companyLogo: 'https://crossovernepal.com/front/images/crossover.webp',
     jobLocation: 'Kathmandu Nepal , Physical',
     positions: [
       {

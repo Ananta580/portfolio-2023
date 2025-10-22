@@ -8,6 +8,7 @@ export const PROFILE_DETAIL = {
       inteface ...`,
   resume: 'AnantaPoudel_SoftwareEngineer_Resume.pdf',
   email: 'ap.ananta.poudel@gmail.com',
+  toolUrl: 'https://tools.anantapoudel.com/tools',
 };
 
 export const TOPBAR_MENU = [

@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-  @Input() variant: 'primary' | 'secondary' = 'primary';
+  @Input() variant: 'primary' | 'secondary' | 'special' = 'primary';
   @Input() rounded: 'full' | 'medium' | 'none' = 'full';
   @Input() popup = '';
 }
