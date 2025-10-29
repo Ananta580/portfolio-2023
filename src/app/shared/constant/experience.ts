@@ -34,7 +34,7 @@ export const WORK_EXPEREICNE = [
   },
   {
     company: 'Software Q',
-    companyWebsite: 'https://www.dunnedwards.com/',
+    companyWebsite: 'https://www.softwareq.com/',
     companyLogo:
       'https://cdn.prod.website-files.com/675e75c50d1a187fc431553e/675e7841b78063f21e999138_owl-p-500.png',
     jobLocation: 'Malaysia, Remote',
